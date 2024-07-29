@@ -1,0 +1,52 @@
+[gd_scene load_steps=9 format=3 uid="uid://ba8iadakctx7"]
+
+[ext_resource type="Script" path="res://Code/Mech.gd" id="1_fcjsr"]
+[ext_resource type="Texture2D" uid="uid://b5hnmaco8qm8q" path="res://TestImages/Test Legs.png" id="2_4go6c"]
+[ext_resource type="PackedScene" uid="uid://bjnxt3imrjojp" path="res://Prefabs/bullet.tscn" id="2_vofjp"]
+[ext_resource type="Texture2D" uid="uid://drmm50rbunkwk" path="res://TestImages/Test Body.png" id="3_kpslh"]
+[ext_resource type="PackedScene" uid="uid://cr1ewlsrbwkpm" path="res://Prefabs/rocket.tscn" id="3_ngh1p"]
+[ext_resource type="Texture2D" uid="uid://bh46yihw3rodt" path="res://TestImages/Test Gun 1.png" id="4_t2v0k"]
+[ext_resource type="Texture2D" uid="uid://btwlab80sh8r4" path="res://TestImages/Test Gun 2.png" id="5_20cx2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ydudx"]
+radius = 259.017
+
+[node name="TestScene" type="Node2D"]
+
+[node name="Mech" type="CharacterBody2D" parent="."]
+z_index = 1
+motion_mode = 1
+script = ExtResource("1_fcjsr")
+speed = 200.0
+bullet = ExtResource("2_vofjp")
+rocket = ExtResource("3_ngh1p")
+
+[node name="Body Collision" type="CollisionShape2D" parent="Mech"]
+shape = SubResource("CircleShape2D_ydudx")
+
+[node name="Legs" type="Sprite2D" parent="Mech"]
+z_index = 1
+texture = ExtResource("2_4go6c")
+offset = Vector2(28.001, 0)
+
+[node name="Body" type="Sprite2D" parent="Mech"]
+z_index = 3
+texture = ExtResource("3_kpslh")
+offset = Vector2(64.49, 0)
+
+[node name="Gun1" type="Sprite2D" parent="Mech/Body"]
+texture = ExtResource("5_20cx2")
+offset = Vector2(0, -150)
+
+[node name="Marker2D1" type="Marker2D" parent="Mech/Body/Gun1"]
+position = Vector2(114, -151)
+
+[node name="Gun2" type="Sprite2D" parent="Mech/Body"]
+texture = ExtResource("4_t2v0k")
+offset = Vector2(0, 150)
+
+[node name="Marker2D2" type="Marker2D" parent="Mech/Body/Gun2"]
+position = Vector2(114, 149)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.5, 0.5)
