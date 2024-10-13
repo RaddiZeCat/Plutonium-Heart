@@ -1,24 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://bjnxt3imrjojp"]
+[gd_scene load_steps=4 format=3 uid="uid://dq4qkqyv8qvnc"]
 
-[ext_resource type="Script" path="res://Code/Bullet.gd" id="1_5ycha"]
-[ext_resource type="Texture2D" uid="uid://c42ee7ruj50tb" path="res://Assets/Player/Projectiles2.png" id="2_afd4d"]
+[ext_resource type="Script" path="res://Code/Bullet.gd" id="1_gfwxd"]
+[ext_resource type="Texture2D" uid="uid://u7rhq522aydg" path="res://Assets/Player/Projectiles3.png" id="2_5bkh1"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0s5lg"]
-radius = 1.0
-height = 6.0
+radius = 0.999998
+height = 3.0
 
 [node name="Bullet" type="Area2D"]
 z_index = 2
 collision_layer = 4
 collision_mask = 10
-script = ExtResource("1_5ycha")
-speed = 200
-damage = 2
+script = ExtResource("1_gfwxd")
+speed = 250
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_afd4d")
+texture = ExtResource("2_5bkh1")
+offset = Vector2(0, 0.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_0s5lg")
 
