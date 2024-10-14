@@ -1,17 +1,17 @@
 [gd_scene load_steps=5 format=3 uid="uid://kgqxw8cfb21d"]
 
-[ext_resource type="Script" path="res://Code/enemy.gd" id="1_bpmp4"]
+[ext_resource type="Script" path="res://Prefabs/enemy.gd" id="1_j17jc"]
 [ext_resource type="Texture2D" uid="uid://ckv63fk25nu0l" path="res://Assets/Enemy/EnemyTank.png" id="1_mkoa7"]
 [ext_resource type="Texture2D" uid="uid://bufd6alcwglcw" path="res://Assets/Enemy/EnemyTankTurret1.png" id="2_3es1g"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qet7y"]
 
-[node name="EnemyLMG" type="CharacterBody2D" groups=["enemy"]]
+[node name="EnemyLMG" type="CharacterBody2D"]
 collision_layer = 2
 collision_mask = 13
 motion_mode = 1
 wall_min_slide_angle = 0.0
-script = ExtResource("1_bpmp4")
+script = ExtResource("1_j17jc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_qet7y")
@@ -26,7 +26,6 @@ hframes = 4
 texture = ExtResource("2_3es1g")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
-path_desired_distance = 1.0
 debug_enabled = true
 debug_path_custom_color = Color(1, 0, 0, 1)
 

@@ -18,6 +18,7 @@ radius = 8.0
 [node name="TestScene" type="Node2D"]
 
 [node name="Mech" type="CharacterBody2D" parent="."]
+unique_name_in_owner = true
 z_index = 1
 collision_mask = 14
 motion_mode = 1
@@ -68,6 +69,11 @@ layer_0/tile_data = PackedInt32Array(-3, 1, 2, -2, 1, 2, -1, 1, 2, -65536, 1, 2,
 
 [node name="Enemy" type="Node" parent="."]
 
-[node name="EnemyLMG" parent="." node_paths=PackedStringArray("player") instance=ExtResource("11_7j58o")]
-position = Vector2(127, -1)
-player = NodePath("../Mech")
+[node name="EnemyLMG" parent="." instance=ExtResource("11_7j58o")]
+position = Vector2(121, -5)
+
+[node name="EnemyLMG2" parent="." instance=ExtResource("11_7j58o")]
+position = Vector2(17, -139)
+
+[node name="EnemyLMG3" parent="." instance=ExtResource("11_7j58o")]
+position = Vector2(-223, -141)
