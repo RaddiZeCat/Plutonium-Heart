@@ -7,8 +7,8 @@ extends CharacterBody2D
 @onready var gun2 = $Body/Gun2
 @onready var muzzle1 = $Body/Gun1/Marker2D1
 @onready var muzzle2 = $Body/Gun2/Marker2D2
-@export var speed:float = 30
-@export var speed_multiplyer = 1
+@onready var speed:float = 30
+@onready var accelerationDuration = 1
 @onready var cameraMarker = $CameraMarker2D
 @export var cameraSpeed = 30
 
@@ -18,6 +18,8 @@ extends CharacterBody2D
 @export var rocket:PackedScene
 @onready var shotL:PackedScene = bullet
 @onready var shotR:PackedScene = rocket
+@onready var timerL = $TimerL
+@onready var timerR = $TimerR
 
 enum GunState{SHIELD,LMG,MINIGUN,SHOTGUN,LAUNCHER}
 var gunStateL = GunState.LMG
@@ -27,15 +29,35 @@ var waitR = 1
 var shootingL:bool
 var shootingR:bool
 
+@export var accelerationCurve:Curve
+@export var decelerationCurve:Curve
+var accelerationTime:float = 0.0
+var decelerationTime:float = 0.0
+enum LegState{BIPED,QUADRUPED,THREADS}
+var legState = LegState.THREADS
+
 func _ready():
-	setWeapon1(gunStateL) #Globals.gunStateL
-	setWeapon2(gunStateR) #Globals.gunStateR
+	setWeapon1(gunStateL) #TODO Globals.gunStateL
+	setWeapon2(gunStateR) #TODO Globals.gunStateR
+	setLegs(legState) #TODO Globals.legState
 
 func _physics_process(delta):
 	var input_horizontal = Input.get_axis("move_left","move_right")
 	var input_vertical = Input.get_axis("move_up","move_down")
 	var input = Vector2(input_horizontal,input_vertical)
-	velocity = input.normalized() * speed * speed_multiplyer
+	
+	var currentSpeed = speed
+	if(input != Vector2.ZERO):
+		decelerationTime = 0.0
+		accelerationTime += delta * accelerationDuration
+		currentSpeed = accelerationCurve.sample(accelerationTime)
+		velocity = input.normalized() * speed * currentSpeed
+	else:
+		accelerationTime = 0.0
+		decelerationTime += delta * (accelerationDuration * 2)
+		currentSpeed = decelerationCurve.sample(decelerationTime)
+		velocity = velocity * currentSpeed
+	
 	move_and_slide()
 	
 	legs.look_at(mech.position + input)
@@ -65,24 +87,19 @@ func shoot2():
 	r.transform = muzzle2.global_transform
 
 func _process(delta):
-	var pewL = true
 	if shootingL == true:
-		if pewL == true:
-			await get_tree().create_timer(waitL).timeout
-			pewL = false
-		elif pewL == false:
-			shoot1()
-			pewL = true
-	
-	var pewR = false
-	if shootingR == true:
-		if pewR == true:
-			pass
+		if timerL.time_left > 0.0:
+			return
 		else:
-			pewR = true
+			shoot1()
+			timerL.start(waitL)
+	
+	if shootingR == true:
+		if timerR.time_left > 0.0:
+			return
+		else:
 			shoot2()
-			await get_tree().create_timer(waitR).timeout
-			pewR = false
+			timerR.start(waitR)
 
 func setWeapon1(gunStateL):
 	match gunStateL:
@@ -119,3 +136,15 @@ func setWeapon2(gunStateR):
 			shotR = rocket
 			waitR = 1
 	pass
+
+func setLegs(legState):
+	match legState:
+		LegState.BIPED:
+			accelerationDuration = 2
+			speed = 50
+		LegState.QUADRUPED:
+			accelerationDuration = 1
+			speed = 30
+		LegState.THREADS:
+			accelerationDuration = 0.5
+			speed = 20

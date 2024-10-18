@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://du4w5dcflie8w"]
+[gd_scene load_steps=11 format=3 uid="uid://du4w5dcflie8w"]
 
 [ext_resource type="Script" path="res://Code/Mech.gd" id="1_xw55t"]
 [ext_resource type="PackedScene" uid="uid://bjnxt3imrjojp" path="res://Prefabs/bullet.tscn" id="2_gkgy7"]
@@ -10,14 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://bduqjk2oflmxg" path="res://Assets/Player/Guns2.png" id="8_3pl6o"]
 [ext_resource type="Texture2D" uid="uid://buhflxmfjl7ki" path="res://Assets/Player/Guns5.png" id="9_h0n55"]
 
-[sub_resource type="Curve" id="Curve_sqdtj"]
-_data = [Vector2(0, 0), 0.0, 0.506174, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
-point_count = 2
-
-[sub_resource type="Curve" id="Curve_7abh1"]
-_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -2.86524, 0.0, 0, 0]
-point_count = 2
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_ydudx"]
 radius = 8.0
 
@@ -26,12 +18,11 @@ z_index = 1
 collision_mask = 14
 motion_mode = 1
 script = ExtResource("1_xw55t")
+speed = 50.0
 bullet = ExtResource("2_gkgy7")
 minibullet = ExtResource("3_t6qpy")
 shotbullet = ExtResource("4_f4fan")
 rocket = ExtResource("5_ukvmh")
-accelerationCurve = SubResource("Curve_sqdtj")
-decelerationCurve = SubResource("Curve_7abh1")
 
 [node name="Body Collision" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ydudx")

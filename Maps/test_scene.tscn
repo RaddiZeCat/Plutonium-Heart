@@ -1,66 +1,13 @@
-[gd_scene load_steps=13 format=3 uid="uid://ba8iadakctx7"]
+[gd_scene load_steps=4 format=3 uid="uid://ba8iadakctx7"]
 
-[ext_resource type="Script" path="res://Code/Mech.gd" id="1_fcjsr"]
-[ext_resource type="PackedScene" uid="uid://bjnxt3imrjojp" path="res://Prefabs/bullet.tscn" id="2_vofjp"]
-[ext_resource type="PackedScene" uid="uid://cr1ewlsrbwkpm" path="res://Prefabs/rocket.tscn" id="3_ngh1p"]
-[ext_resource type="PackedScene" uid="uid://dq4qkqyv8qvnc" path="res://Prefabs/miniBullet.tscn" id="3_t4gag"]
-[ext_resource type="PackedScene" uid="uid://cusqm6h3hxqnt" path="res://Prefabs/shotBullet.tscn" id="4_8o1jh"]
-[ext_resource type="Texture2D" uid="uid://dywitp024x4g5" path="res://Assets/Player/MechLegs.png" id="4_mpudk"]
-[ext_resource type="Texture2D" uid="uid://dpd7b5e61n4jf" path="res://Assets/Player/MechTop.png" id="5_1u7in"]
-[ext_resource type="Texture2D" uid="uid://bduqjk2oflmxg" path="res://Assets/Player/Guns2.png" id="6_idafr"]
-[ext_resource type="Texture2D" uid="uid://buhflxmfjl7ki" path="res://Assets/Player/Guns5.png" id="7_26ef5"]
+[ext_resource type="PackedScene" uid="uid://du4w5dcflie8w" path="res://Prefabs/mech.tscn" id="1_uq13m"]
 [ext_resource type="TileSet" uid="uid://dwebt5s375yri" path="res://Assets/Map/City_tile_set.tres" id="8_83e5g"]
 [ext_resource type="PackedScene" uid="uid://kgqxw8cfb21d" path="res://Prefabs/enemyLMG.tscn" id="11_7j58o"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_ydudx"]
-radius = 8.0
-
 [node name="TestScene" type="Node2D"]
 
-[node name="Mech" type="CharacterBody2D" parent="."]
+[node name="Mech" parent="." instance=ExtResource("1_uq13m")]
 unique_name_in_owner = true
-z_index = 1
-collision_mask = 14
-motion_mode = 1
-script = ExtResource("1_fcjsr")
-speed = 50.0
-bullet = ExtResource("2_vofjp")
-minibullet = ExtResource("3_t4gag")
-shotbullet = ExtResource("4_8o1jh")
-rocket = ExtResource("3_ngh1p")
-
-[node name="Body Collision" type="CollisionShape2D" parent="Mech"]
-shape = SubResource("CircleShape2D_ydudx")
-
-[node name="Legs" type="Sprite2D" parent="Mech"]
-z_index = 1
-texture = ExtResource("4_mpudk")
-hframes = 12
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Mech/Legs"]
-
-[node name="Body" type="Sprite2D" parent="Mech"]
-z_index = 3
-texture = ExtResource("5_1u7in")
-
-[node name="Gun1" type="Sprite2D" parent="Mech/Body"]
-position = Vector2(0, -9)
-texture = ExtResource("6_idafr")
-
-[node name="Marker2D1" type="Marker2D" parent="Mech/Body/Gun1"]
-position = Vector2(7, 0)
-
-[node name="Gun2" type="Sprite2D" parent="Mech/Body"]
-position = Vector2(0, 9)
-texture = ExtResource("7_26ef5")
-
-[node name="Marker2D2" type="Marker2D" parent="Mech/Body/Gun2"]
-position = Vector2(7, 0.5)
-
-[node name="CameraMarker2D" type="Marker2D" parent="Mech"]
-
-[node name="Camera2D" type="Camera2D" parent="Mech/CameraMarker2D"]
-zoom = Vector2(6, 6)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("8_83e5g")
