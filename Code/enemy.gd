@@ -7,8 +7,15 @@ extends CharacterBody2D
 @onready var player:Node2D
 @onready var navAgent = $NavigationAgent2D as NavigationAgent2D
 @onready var last_position:Vector2
+@onready var shotTimer = $Timer2
+@export var shotCooldown = 0.5
+@export var projectile:PackedScene
 var currentHealth
 var reactionSpeed
+enum TankState{SEARCH,SHOOT}
+var tankState = TankState.SEARCH
+var walk = true
+var shoot = false
 
 func _ready():
 	player = get_node("%Mech")
@@ -20,8 +27,29 @@ func _ready():
 
 func _physics_process(delta: float)-> void:
 	var dir = to_local(navAgent.get_next_path_position()).normalized()
-	velocity = dir * speed
-	move_and_slide()
+	
+	match tankState:
+		TankState.SEARCH:
+			walk = true
+			shoot = false
+		TankState.SHOOT:
+			walk = false
+			shoot = true
+	
+	if walk == true:
+		velocity = dir * speed
+		move_and_slide()
+	else:
+		velocity = Vector2.ZERO
+	
+	if shoot == true:
+		if shotTimer.time_left > 0.0:
+			print(shotTimer.time_left)
+		else:
+			var p = projectile.instantiate()
+			owner.add_child(p)
+			p.transform = $Turret/Marker2D.global_transform
+			shotTimer.start(shotCooldown)
 	
 	legs.look_at($".".position + Vector2($".".velocity.x,$".".velocity.y))
 	turret.look_at(player.position)
@@ -30,6 +58,8 @@ func _physics_process(delta: float)-> void:
 		$AnimationPlayer.play("Walk")
 	else:
 		$AnimationPlayer.play("Idle")
+	
+	
  
 func seek() -> void:
 	navAgent.target_position = player.global_position
@@ -41,3 +71,13 @@ func hit(damage):
 	currentHealth = currentHealth - damage
 	if currentHealth <= 0:
 		queue_free()
+
+
+
+func _on_area_2d_body_entered(body):
+	if body.is_in_group("player"):
+		tankState = TankState.SHOOT
+
+
+func _on_area_2d_body_exited(body):
+	tankState = TankState.SEARCH
