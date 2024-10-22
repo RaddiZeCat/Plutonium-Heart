@@ -25,6 +25,11 @@ func _physics_process(delta: float)-> void:
 	
 	legs.look_at($".".position + Vector2($".".velocity.x,$".".velocity.y))
 	turret.look_at(player.position)
+	
+	if(velocity != Vector2.ZERO):
+		$AnimationPlayer.play("Walk")
+	else:
+		$AnimationPlayer.play("Idle")
  
 func seek() -> void:
 	navAgent.target_position = player.global_position

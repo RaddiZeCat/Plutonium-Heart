@@ -34,7 +34,10 @@ var shootingR:bool
 var accelerationTime:float = 0.0
 var decelerationTime:float = 0.0
 enum LegState{BIPED,QUADRUPED,THREADS}
-var legState = LegState.THREADS
+var legState = LegState.BIPED
+@onready var legAnimator = $Legs/AnimationPlayer
+var legIdle:String
+var legWalk:String
 
 func _ready():
 	setWeapon1(gunStateL) #TODO Globals.gunStateL
@@ -59,6 +62,11 @@ func _physics_process(delta):
 		velocity = velocity * currentSpeed
 	
 	move_and_slide()
+	
+	if(input != Vector2.ZERO):
+		legAnimator.play(legWalk)
+	else:
+		legAnimator.play(legIdle)
 	
 	legs.look_at(mech.position + input)
 	body.look_at(cameraMarker.global_position)
@@ -142,9 +150,15 @@ func setLegs(legState):
 		LegState.BIPED:
 			accelerationDuration = 2
 			speed = 50
+			legIdle = "LegsIdle"
+			legWalk = "LegsWalk"
 		LegState.QUADRUPED:
 			accelerationDuration = 1
 			speed = 30
+			legIdle = "QuadIdle"
+			legWalk = "QuadWalk"
 		LegState.THREADS:
 			accelerationDuration = 0.5
 			speed = 20
+			legIdle = "TrakIdle"
+			legWalk = "TrakWalk"

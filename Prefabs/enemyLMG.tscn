@@ -1,10 +1,65 @@
-[gd_scene load_steps=5 format=3 uid="uid://kgqxw8cfb21d"]
+[gd_scene load_steps=9 format=3 uid="uid://kgqxw8cfb21d"]
 
 [ext_resource type="Script" path="res://Code/enemy.gd" id="1_bpmp4"]
 [ext_resource type="Texture2D" uid="uid://ckv63fk25nu0l" path="res://Assets/Enemy/EnemyTank.png" id="1_mkoa7"]
 [ext_resource type="Texture2D" uid="uid://bufd6alcwglcw" path="res://Assets/Enemy/EnemyTankTurret1.png" id="2_3es1g"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qet7y"]
+
+[sub_resource type="Animation" id="Animation_bmmth"]
+resource_name = "Idle"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_tyg86"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_t8fqh"]
+resource_name = "Walk"
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_n6go7"]
+_data = {
+"Idle": SubResource("Animation_bmmth"),
+"RESET": SubResource("Animation_tyg86"),
+"Walk": SubResource("Animation_t8fqh")
+}
 
 [node name="EnemyLMG" type="CharacterBody2D" groups=["enemy"]]
 collision_layer = 2
@@ -17,6 +72,9 @@ script = ExtResource("1_bpmp4")
 shape = SubResource("CircleShape2D_qet7y")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_n6go7")
+}
 
 [node name="Body" type="Sprite2D" parent="."]
 texture = ExtResource("1_mkoa7")
