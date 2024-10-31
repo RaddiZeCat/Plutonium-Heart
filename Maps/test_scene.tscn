@@ -1,6 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://ba8iadakctx7"]
+[gd_scene load_steps=6 format=3 uid="uid://ba8iadakctx7"]
 
 [ext_resource type="PackedScene" uid="uid://du4w5dcflie8w" path="res://Prefabs/mech.tscn" id="1_uq13m"]
+[ext_resource type="PackedScene" uid="uid://ry33ml30w08b" path="res://Prefabs/enemyRocket.tscn" id="4_5x8mg"]
+[ext_resource type="PackedScene" uid="uid://dwf1fhpajhp5i" path="res://Prefabs/enemyMinigun.tscn" id="5_g8nau"]
 [ext_resource type="TileSet" uid="uid://dwebt5s375yri" path="res://Assets/Map/City_tile_set.tres" id="8_83e5g"]
 [ext_resource type="PackedScene" uid="uid://kgqxw8cfb21d" path="res://Prefabs/enemyLMG.tscn" id="11_7j58o"]
 
@@ -24,3 +26,9 @@ position = Vector2(17, -139)
 
 [node name="EnemyLMG3" parent="." instance=ExtResource("11_7j58o")]
 position = Vector2(-223, -141)
+
+[node name="EnemyLMG4" parent="." instance=ExtResource("4_5x8mg")]
+position = Vector2(319, -20)
+
+[node name="EnemyLMG5" parent="." instance=ExtResource("5_g8nau")]
+position = Vector2(299, -134)

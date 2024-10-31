@@ -11,6 +11,8 @@ extends CharacterBody2D
 @onready var accelerationDuration = 1
 @onready var cameraMarker = $CameraMarker2D
 @export var cameraSpeed = 30
+@export var health:int = 20
+@onready var currentHealth:int = health
 
 @export var bullet:PackedScene
 @export var minibullet:PackedScene
@@ -109,6 +111,18 @@ func _process(delta):
 			shoot2()
 			timerR.start(waitR)
 
+func hit(damage):
+	currentHealth -= damage
+	print(currentHealth)
+	if currentHealth <= 0:
+		game_over()
+	pass
+
+func game_over():
+	print("Game Over")
+	SceneSwitcher.switch_scene(Globals.currentScene)
+	pass
+
 func setWeapon1(gunStateL):
 	match gunStateL:
 		GunState.SHIELD:
@@ -136,13 +150,13 @@ func setWeapon2(gunStateR):
 			waitR = 0.2
 		GunState.MINIGUN:
 			shotR = minibullet
-			waitR = 0.1
+			waitR = 0.07
 		GunState.SHOTGUN:
 			shotR = shotbullet
 			waitR = 0.5
 		GunState.LAUNCHER:
 			shotR = rocket
-			waitR = 1
+			waitR = 2
 	pass
 
 func setLegs(legState):

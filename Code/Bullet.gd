@@ -1,7 +1,7 @@
 extends Area2D
 
 @export var speed = 1000
-@export var damage = 1
+@export var damage = 2
 @export var selfkill:bool = false
 
 func _physics_process(delta):
@@ -13,5 +13,7 @@ func _physics_process(delta):
 
 func _on_body_entered(body):
 	if body.is_in_group("enemy"):
+		body.hit(damage)
+	elif body.is_in_group("player"):
 		body.hit(damage)
 	queue_free()

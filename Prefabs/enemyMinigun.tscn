@@ -1,9 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://kgqxw8cfb21d"]
+[gd_scene load_steps=11 format=3 uid="uid://dwf1fhpajhp5i"]
 
-[ext_resource type="Script" path="res://Code/enemy.gd" id="1_bpmp4"]
-[ext_resource type="Texture2D" uid="uid://ckv63fk25nu0l" path="res://Assets/Enemy/EnemyTank.png" id="1_mkoa7"]
-[ext_resource type="Texture2D" uid="uid://bufd6alcwglcw" path="res://Assets/Enemy/EnemyTankTurret1.png" id="2_3es1g"]
-[ext_resource type="PackedScene" uid="uid://bjnxt3imrjojp" path="res://Prefabs/bullet.tscn" id="2_n245k"]
+[ext_resource type="Script" path="res://Code/enemy.gd" id="1_s8ocf"]
+[ext_resource type="PackedScene" uid="uid://dq4qkqyv8qvnc" path="res://Prefabs/miniBullet.tscn" id="2_fxdls"]
+[ext_resource type="Texture2D" uid="uid://ckv63fk25nu0l" path="res://Assets/Enemy/EnemyTank.png" id="3_06j20"]
+[ext_resource type="Texture2D" uid="uid://b2ohmycpafy5o" path="res://Assets/Enemy/EnemyTankTurret2.png" id="4_cntpx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qet7y"]
 
@@ -70,9 +70,10 @@ collision_layer = 2
 collision_mask = 13
 motion_mode = 1
 wall_min_slide_angle = 0.0
-script = ExtResource("1_bpmp4")
-shotCooldown = 0.8
-projectile = ExtResource("2_n245k")
+script = ExtResource("1_s8ocf")
+speed = 25
+shotCooldown = 0.2
+projectile = ExtResource("2_fxdls")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_qet7y")
@@ -83,11 +84,11 @@ libraries = {
 }
 
 [node name="Body" type="Sprite2D" parent="."]
-texture = ExtResource("1_mkoa7")
+texture = ExtResource("3_06j20")
 hframes = 4
 
 [node name="Turret" type="Sprite2D" parent="."]
-texture = ExtResource("2_3es1g")
+texture = ExtResource("4_cntpx")
 
 [node name="Marker2D" type="Marker2D" parent="Turret"]
 position = Vector2(14, 0)

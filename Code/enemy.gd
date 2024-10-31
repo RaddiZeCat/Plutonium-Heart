@@ -8,7 +8,7 @@ extends CharacterBody2D
 @onready var navAgent = $NavigationAgent2D as NavigationAgent2D
 @onready var last_position:Vector2
 @onready var shotTimer = $Timer2
-@export var shotCooldown = 0.5
+@export var shotCooldown:float = 1
 @export var projectile:PackedScene
 var currentHealth
 var reactionSpeed
@@ -44,7 +44,7 @@ func _physics_process(delta: float)-> void:
 	
 	if shoot == true:
 		if shotTimer.time_left > 0.0:
-			print(shotTimer.time_left)
+			pass
 		else:
 			var p = projectile.instantiate()
 			owner.add_child(p)

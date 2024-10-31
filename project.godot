@@ -15,6 +15,11 @@ run/main_scene="res://Maps/test_scene.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Globals="*res://Code/globals.gd"
+SceneSwitcher="*res://Code/scene_switcher.gd"
+
 [input]
 
 move_left={
