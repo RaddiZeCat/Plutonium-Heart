@@ -20,6 +20,10 @@ config/icon="res://icon.svg"
 Globals="*res://Code/globals.gd"
 SceneSwitcher="*res://Code/scene_switcher.gd"
 
+[display]
+
+window/size/mode=2
+
 [input]
 
 move_left={
@@ -62,6 +66,7 @@ shoot_2={
 2d_physics/layer_2="Enemy"
 2d_physics/layer_3="Projectile"
 2d_physics/layer_4="Map"
+2d_physics/layer_5="Destructables"
 
 [rendering]
 

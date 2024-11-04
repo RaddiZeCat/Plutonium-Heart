@@ -1,10 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://ba8iadakctx7"]
+[gd_scene load_steps=7 format=3 uid="uid://ba8iadakctx7"]
 
 [ext_resource type="PackedScene" uid="uid://du4w5dcflie8w" path="res://Prefabs/mech.tscn" id="1_uq13m"]
 [ext_resource type="PackedScene" uid="uid://ry33ml30w08b" path="res://Prefabs/enemyRocket.tscn" id="4_5x8mg"]
 [ext_resource type="PackedScene" uid="uid://dwf1fhpajhp5i" path="res://Prefabs/enemyMinigun.tscn" id="5_g8nau"]
 [ext_resource type="PackedScene" uid="uid://b8jddpbvsxc7a" path="res://Prefabs/destructable.tscn" id="6_82ude"]
-[ext_resource type="PackedScene" uid="uid://6nh2pj7txqym" path="res://Prefabs/mapTrigger.tscn" id="7_uuqwc"]
 [ext_resource type="TileSet" uid="uid://dwebt5s375yri" path="res://Assets/Map/City_tile_set.tres" id="8_83e5g"]
 [ext_resource type="PackedScene" uid="uid://kgqxw8cfb21d" path="res://Prefabs/enemyLMG.tscn" id="11_7j58o"]
 
@@ -36,32 +35,5 @@ position = Vector2(319, -20)
 position = Vector2(299, -134)
 
 [node name="Destructable" parent="." instance=ExtResource("6_82ude")]
-position = Vector2(-98, 0)
-
-[node name="Destructable2" parent="." instance=ExtResource("6_82ude")]
-position = Vector2(-86, 0)
-frame = 2
-state = 1
-
-[node name="Destructable3" parent="." instance=ExtResource("6_82ude")]
-position = Vector2(-74, 0)
-frame = 4
+position = Vector2(-22, 0)
 state = 2
-
-[node name="Destructable4" parent="." instance=ExtResource("6_82ude")]
-position = Vector2(-62, 0)
-frame = 5
-state = 3
-
-[node name="Destructable5" parent="." instance=ExtResource("6_82ude")]
-position = Vector2(-51, 0)
-frame = 7
-state = 4
-
-[node name="Destructable6" parent="." instance=ExtResource("6_82ude")]
-position = Vector2(-39, 0)
-frame = 9
-state = 5
-
-[node name="MapTrigger" parent="." instance=ExtResource("7_uuqwc")]
-position = Vector2(-112, -80)

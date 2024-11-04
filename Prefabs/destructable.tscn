@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8jddpbvsxc7a"]
+
+[ext_resource type="Texture2D" uid="uid://dpo7wtllcrwp0" path="res://Assets/Map/Destructables.png" id="1_clka3"]
+[ext_resource type="Script" path="res://Code/destructable.gd" id="2_xusq0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7onmb"]
+radius = 5.0
+
+[node name="Destructable" type="Sprite2D"]
+texture = ExtResource("1_clka3")
+hframes = 11
+script = ExtResource("2_xusq0")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_7onmb")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
