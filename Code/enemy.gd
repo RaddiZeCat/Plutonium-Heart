@@ -23,7 +23,6 @@ func _ready():
 	var rng = RandomNumberGenerator.new()
 	reactionSpeed = rng.randf_range(1.0,3.0)
 	$Timer.wait_time = reactionSpeed
-	print(reactionSpeed)
 
 func _physics_process(delta: float)-> void:
 	var dir = to_local(navAgent.get_next_path_position()).normalized()

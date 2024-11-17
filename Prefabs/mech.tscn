@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://du4w5dcflie8w"]
+[gd_scene load_steps=31 format=3 uid="uid://du4w5dcflie8w"]
 
 [ext_resource type="Script" path="res://Code/Mech.gd" id="1_xw55t"]
 [ext_resource type="PackedScene" uid="uid://bjnxt3imrjojp" path="res://Prefabs/bullet.tscn" id="2_gkgy7"]
@@ -9,6 +9,16 @@
 [ext_resource type="Texture2D" uid="uid://dpd7b5e61n4jf" path="res://Assets/Player/MechTop.png" id="7_yvejw"]
 [ext_resource type="Texture2D" uid="uid://bduqjk2oflmxg" path="res://Assets/Player/Guns2.png" id="8_3pl6o"]
 [ext_resource type="Texture2D" uid="uid://buhflxmfjl7ki" path="res://Assets/Player/Guns5.png" id="9_h0n55"]
+[ext_resource type="Texture2D" uid="uid://fp60lw3owtmg" path="res://Assets/UI/UIBackground.png" id="10_4eauj"]
+[ext_resource type="Script" path="res://Code/GameplayInterface.gd" id="10_dort6"]
+[ext_resource type="Texture2D" uid="uid://deknjvlhmk4sh" path="res://Assets/UI/HealthBar.png" id="11_clugo"]
+[ext_resource type="Texture2D" uid="uid://ccjmxrytp2tdd" path="res://Assets/UI/EquipRobot.png" id="12_kqr31"]
+[ext_resource type="Texture2D" uid="uid://j3ol3ubrq3dp" path="res://Assets/UI/Sammelsorium/EquipmentButton1.png" id="13_nr70g"]
+[ext_resource type="Texture2D" uid="uid://dkfqb5vh7bikv" path="res://Assets/UI/Sammelsorium/EquipmentButton2.png" id="14_17h8v"]
+[ext_resource type="Texture2D" uid="uid://buad20wo8rs70" path="res://Assets/UI/Sammelsorium/EquipmentButton3.png" id="14_puoa7"]
+[ext_resource type="Texture2D" uid="uid://b8byhjrwtbskl" path="res://Assets/UI/Sammelsorium/EquipmentButton4.png" id="15_kc585"]
+[ext_resource type="Texture2D" uid="uid://b0n5m1ewg2cit" path="res://Assets/Player/Guns1.png" id="17_hwa0e"]
+[ext_resource type="Texture2D" uid="uid://be2y7prl4voja" path="res://Assets/Player/Guns3.png" id="18_hib5u"]
 
 [sub_resource type="Curve" id="Curve_sqdtj"]
 _data = [Vector2(0, 0), 0.0, 0.506174, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
@@ -174,7 +184,7 @@ libraries = {
 z_index = 3
 texture = ExtResource("7_yvejw")
 
-[node name="Gun1" type="Sprite2D" parent="Body" groups=["Player"]]
+[node name="Gun1" type="Sprite2D" parent="Body"]
 position = Vector2(0, -9)
 texture = ExtResource("8_3pl6o")
 
@@ -191,10 +201,323 @@ position = Vector2(7, 0.5)
 [node name="CameraMarker2D" type="Marker2D" parent="."]
 
 [node name="Camera2D" type="Camera2D" parent="CameraMarker2D"]
-zoom = Vector2(6, 6)
+zoom = Vector2(3.6, 3.6)
+
+[node name="GameplayInterface" type="Control" parent="CameraMarker2D/Camera2D"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -90.0
+offset_right = 160.0
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("10_dort6")
+
+[node name="ReferenceRect" type="ReferenceRect" parent="CameraMarker2D/Camera2D/GameplayInterface"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+editor_only = false
+
+[node name="Healthbar" type="Sprite2D" parent="CameraMarker2D/Camera2D/GameplayInterface"]
+z_index = 3
+position = Vector2(48, 11)
+texture = ExtResource("11_clugo")
+hframes = 21
+frame = 20
+
+[node name="EquipmentMenu" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface"]
+visible = false
+z_index = 3
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -90.0
+offset_right = 160.0
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_4eauj")
+
+[node name="MechImage" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu"]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 47.0
+offset_right = 281.0
+offset_bottom = 134.0
+texture = ExtResource("12_kqr31")
+
+[node name="ShieldL" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage"]
+layout_mode = 0
+offset_left = -26.0
+offset_top = -14.0
+offset_right = -2.0
+offset_bottom = 10.0
+disabled = true
+action_mode = 0
+texture_normal = ExtResource("13_nr70g")
+texture_pressed = ExtResource("14_17h8v")
+texture_hover = ExtResource("14_puoa7")
+texture_disabled = ExtResource("15_kc585")
+
+[node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/ShieldL"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 19.0
+offset_bottom = 20.0
+texture = ExtResource("17_hwa0e")
+stretch_mode = 2
+
+[node name="ShieldR" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = -14.0
+offset_right = 120.0
+offset_bottom = 10.0
+disabled = true
+action_mode = 0
+texture_normal = ExtResource("13_nr70g")
+texture_pressed = ExtResource("14_17h8v")
+texture_hover = ExtResource("14_puoa7")
+texture_disabled = ExtResource("15_kc585")
+
+[node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/ShieldR"]
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 19.0
+offset_bottom = 20.0
+texture = ExtResource("17_hwa0e")
+stretch_mode = 2
+
+[node name="LMGL" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage"]
+layout_mode = 0
+offset_left = -26.0
+offset_top = 12.0
+offset_right = -2.0
+offset_bottom = 36.0
+action_mode = 0
+texture_normal = ExtResource("13_nr70g")
+texture_pressed = ExtResource("14_17h8v")
+texture_hover = ExtResource("14_puoa7")
+texture_disabled = ExtResource("15_kc585")
+
+[node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/LMGL"]
+offset_left = 4.0
+offset_top = 5.0
+offset_right = 20.0
+offset_bottom = 21.0
+texture = ExtResource("8_3pl6o")
+stretch_mode = 2
+
+[node name="LMGR" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 12.0
+offset_right = 120.0
+offset_bottom = 36.0
+action_mode = 0
+texture_normal = ExtResource("13_nr70g")
+texture_pressed = ExtResource("14_17h8v")
+texture_hover = ExtResource("14_puoa7")
+texture_disabled = ExtResource("15_kc585")
+
+[node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/LMGR"]
+offset_left = 4.0
+offset_top = 5.0
+offset_right = 20.0
+offset_bottom = 21.0
+texture = ExtResource("8_3pl6o")
+stretch_mode = 2
+
+[node name="MinigunL" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage"]
+layout_mode = 0
+offset_left = -26.0
+offset_top = 38.0
+offset_right = -2.0
+offset_bottom = 62.0
+action_mode = 0
+texture_normal = ExtResource("13_nr70g")
+texture_pressed = ExtResource("14_17h8v")
+texture_hover = ExtResource("14_puoa7")
+texture_disabled = ExtResource("15_kc585")
+
+[node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/MinigunL"]
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 19.0
+offset_bottom = 20.0
+texture = ExtResource("18_hib5u")
+stretch_mode = 2
+
+[node name="MinigunR" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 38.0
+offset_right = 120.0
+offset_bottom = 62.0
+action_mode = 0
+texture_normal = ExtResource("13_nr70g")
+texture_pressed = ExtResource("14_17h8v")
+texture_hover = ExtResource("14_puoa7")
+texture_disabled = ExtResource("15_kc585")
+
+[node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/MinigunR"]
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 19.0
+offset_bottom = 20.0
+texture = ExtResource("18_hib5u")
+stretch_mode = 2
+
+[node name="RocketL" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage"]
+layout_mode = 0
+offset_left = -26.0
+offset_top = 64.0
+offset_right = -2.0
+offset_bottom = 88.0
+action_mode = 0
+texture_normal = ExtResource("13_nr70g")
+texture_pressed = ExtResource("14_17h8v")
+texture_hover = ExtResource("14_puoa7")
+texture_disabled = ExtResource("15_kc585")
+
+[node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/RocketL"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 20.0
+offset_bottom = 20.0
+texture = ExtResource("9_h0n55")
+stretch_mode = 2
+
+[node name="RocketR" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 64.0
+offset_right = 120.0
+offset_bottom = 88.0
+action_mode = 0
+texture_normal = ExtResource("13_nr70g")
+texture_pressed = ExtResource("14_17h8v")
+texture_hover = ExtResource("14_puoa7")
+texture_disabled = ExtResource("15_kc585")
+
+[node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/RocketR"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 20.0
+offset_bottom = 20.0
+texture = ExtResource("9_h0n55")
+stretch_mode = 2
+
+[node name="Biped" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 89.0
+offset_right = 25.0
+offset_bottom = 113.0
+action_mode = 0
+texture_normal = ExtResource("13_nr70g")
+texture_pressed = ExtResource("14_17h8v")
+texture_hover = ExtResource("14_puoa7")
+texture_disabled = ExtResource("15_kc585")
+
+[node name="Label" type="Label" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Biped"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 6.0
+offset_right = 22.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 6
+text = "Biped"
+
+[node name="Quadruped" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage"]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 89.0
+offset_right = 59.0
+offset_bottom = 113.0
+action_mode = 0
+texture_normal = ExtResource("13_nr70g")
+texture_pressed = ExtResource("14_17h8v")
+texture_hover = ExtResource("14_puoa7")
+texture_disabled = ExtResource("15_kc585")
+
+[node name="Label" type="Label" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Quadruped"]
+offset_left = -5.0
+offset_top = 6.0
+offset_right = 29.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 6
+text = "Quadruped"
+
+[node name="Threads" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 89.0
+offset_right = 93.0
+offset_bottom = 113.0
+action_mode = 0
+texture_normal = ExtResource("13_nr70g")
+texture_pressed = ExtResource("14_17h8v")
+texture_hover = ExtResource("14_puoa7")
+texture_disabled = ExtResource("15_kc585")
+
+[node name="Label" type="Label" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Threads"]
+offset_top = 6.0
+offset_right = 24.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 6
+text = "Threads"
+
+[node name="Reset" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage"]
+layout_mode = 0
+offset_left = -121.0
+offset_top = 31.0
+offset_right = -97.0
+offset_bottom = 55.0
+action_mode = 0
+texture_normal = ExtResource("13_nr70g")
+texture_pressed = ExtResource("14_17h8v")
+texture_hover = ExtResource("14_puoa7")
+texture_disabled = ExtResource("15_kc585")
+
+[node name="Label" type="Label" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Reset"]
+offset_left = 3.0
+offset_top = 6.0
+offset_right = 27.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 6
+text = "Reload"
 
 [node name="TimerL" type="Timer" parent="."]
 one_shot = true
 
 [node name="TimerR" type="Timer" parent="."]
 one_shot = true
+
+[connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/ShieldL" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_shield_l_pressed"]
+[connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/ShieldR" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_shield_r_pressed"]
+[connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/LMGL" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_lmgl_pressed"]
+[connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/LMGR" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_lmgr_pressed"]
+[connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/MinigunL" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_minigun_l_pressed"]
+[connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/MinigunR" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_minigun_r_pressed"]
+[connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/RocketL" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_rocket_l_pressed"]
+[connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/RocketR" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_rocket_r_pressed"]
+[connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Biped" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_biped_pressed"]
+[connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Quadruped" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_quadruped_pressed"]
+[connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Threads" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_threads_pressed"]
+[connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Reset" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_reset_pressed"]

@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+@onready var scene = get_tree()
 @onready var mech = $"."
 @onready var legs = $Legs
 @onready var body = $Body
@@ -13,6 +14,7 @@ extends CharacterBody2D
 @export var cameraSpeed = 30
 @export var health:int = 20
 @onready var currentHealth:int = health
+@onready var healthBar = $CameraMarker2D/Camera2D/GameplayInterface/Healthbar
 
 @export var bullet:PackedScene
 @export var minibullet:PackedScene
@@ -40,6 +42,7 @@ var legState = LegState.BIPED
 @onready var legAnimator = $Legs/AnimationPlayer
 var legIdle:String
 var legWalk:String
+var DamageMultiplyer
 
 func _ready():
 	setWeapon1(gunStateL) #TODO Globals.gunStateL
@@ -112,8 +115,8 @@ func _process(delta):
 			timerR.start(waitR)
 
 func hit(damage):
-	currentHealth -= damage
-	print(currentHealth)
+	currentHealth -= (damage * DamageMultiplyer)
+	healthBar.frame = currentHealth
 	if currentHealth <= 0:
 		game_over()
 	pass
@@ -166,13 +169,17 @@ func setLegs(legState):
 			speed = 50
 			legIdle = "LegsIdle"
 			legWalk = "LegsWalk"
+			DamageMultiplyer = 2
 		LegState.QUADRUPED:
 			accelerationDuration = 1
 			speed = 30
 			legIdle = "QuadIdle"
 			legWalk = "QuadWalk"
+			DamageMultiplyer = 1
 		LegState.THREADS:
-			accelerationDuration = 0.5
+			accelerationDuration = 0.7
 			speed = 20
 			legIdle = "TrakIdle"
 			legWalk = "TrakWalk"
+			DamageMultiplyer = 0.5
+

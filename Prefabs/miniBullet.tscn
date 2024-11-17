@@ -13,6 +13,7 @@ collision_layer = 4
 collision_mask = 11
 script = ExtResource("1_gfwxd")
 speed = 250
+damage = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_5bkh1")
