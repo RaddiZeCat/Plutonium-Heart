@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bjnxt3imrjojp"]
+[gd_scene load_steps=6 format=3 uid="uid://bjnxt3imrjojp"]
 
 [ext_resource type="Script" path="res://Code/Bullet.gd" id="1_5ycha"]
+[ext_resource type="PackedScene" uid="uid://b7rqsremtcfov" path="res://Prefabs/bullet_decal.tscn" id="2_48704"]
 [ext_resource type="Texture2D" uid="uid://c42ee7ruj50tb" path="res://Assets/Player/Projectiles2.png" id="2_afd4d"]
+[ext_resource type="PackedScene" uid="uid://d37o2b0ojf841" path="res://Prefabs/explosion.tscn" id="3_5eapr"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0s5lg"]
 radius = 1.0
@@ -13,6 +15,8 @@ collision_layer = 4
 collision_mask = 11
 script = ExtResource("1_5ycha")
 speed = 200
+decal = ExtResource("2_48704")
+explosion = ExtResource("3_5eapr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_afd4d")
@@ -20,5 +24,8 @@ texture = ExtResource("2_afd4d")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_0s5lg")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(4, 0)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

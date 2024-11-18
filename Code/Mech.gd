@@ -33,12 +33,15 @@ var waitR = 1
 var shootingL:bool
 var shootingR:bool
 
+var usingController:bool = false
+var controllerLook:Vector2
+
 @export var accelerationCurve:Curve
 @export var decelerationCurve:Curve
 var accelerationTime:float = 0.0
 var decelerationTime:float = 0.0
 enum LegState{BIPED,QUADRUPED,THREADS}
-var legState = LegState.BIPED
+var legState = LegState.QUADRUPED
 @onready var legAnimator = $Legs/AnimationPlayer
 var legIdle:String
 var legWalk:String
@@ -53,6 +56,10 @@ func _physics_process(delta):
 	var input_horizontal = Input.get_axis("move_left","move_right")
 	var input_vertical = Input.get_axis("move_up","move_down")
 	var input = Vector2(input_horizontal,input_vertical)
+	
+	var controllerInput_horizontal = Input.get_axis("look_left","look_right")
+	var controllerInput_Vertical = Input.get_axis("look_up","look_down")
+	controllerLook = Vector2(controllerInput_horizontal,controllerInput_Vertical)
 	
 	var currentSpeed = speed
 	if(input != Vector2.ZERO):
@@ -75,9 +82,15 @@ func _physics_process(delta):
 	
 	legs.look_at(mech.position + input)
 	body.look_at(cameraMarker.global_position)
-	gun1.look_at(get_global_mouse_position())
-	gun2.look_at(get_global_mouse_position())
-	cameraMarker.position = lerp(cameraMarker.position,(get_local_mouse_position() - body.position)*0.2,cameraSpeed*delta)
+	if usingController == false:
+		gun1.look_at(get_global_mouse_position())
+		gun2.look_at(get_global_mouse_position())
+		cameraMarker.position = lerp(cameraMarker.position,(get_local_mouse_position() - body.position)*0.2,cameraSpeed*delta)
+	elif usingController == true:
+		if controllerLook != Vector2(0,0):
+			gun1.look_at(body.global_position + controllerLook * 1000)
+			gun2.look_at(body.global_position + controllerLook * 1000)
+		cameraMarker.position = lerp(cameraMarker.position,((controllerLook * 100) - body.position)*0.2,cameraSpeed*delta)
 
 func _input(event):
 	if Input.is_action_just_pressed("shoot_1"):
@@ -88,7 +101,12 @@ func _input(event):
 		shootingR = true
 	if Input.is_action_just_released("shoot_2"):
 		shootingR = false
-	
+		
+	if controllerLook != Vector2(0,0):
+		usingController = true
+	if event is InputEventMouseMotion:
+		usingController = false
+
 func shoot1():
 	var l = shotL.instantiate()
 	owner.add_child(l)

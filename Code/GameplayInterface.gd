@@ -82,4 +82,5 @@ func _on_threads_pressed():
 
 
 func _on_reset_pressed():
+	scene.unpause()
 	SceneSwitcher.switch_scene(Globals.currentScene)

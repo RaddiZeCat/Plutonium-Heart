@@ -296,6 +296,7 @@ texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
 
 [node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/ShieldR"]
+layout_mode = 0
 offset_left = 3.0
 offset_top = 4.0
 offset_right = 19.0
@@ -309,6 +310,10 @@ offset_left = -26.0
 offset_top = 12.0
 offset_right = -2.0
 offset_bottom = 36.0
+tooltip_text = "Light Machine Gun
+Firerate: 5/s
+Damage: 2
+"
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -316,6 +321,7 @@ texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
 
 [node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/LMGL"]
+layout_mode = 0
 offset_left = 4.0
 offset_top = 5.0
 offset_right = 20.0
@@ -329,6 +335,9 @@ offset_left = 96.0
 offset_top = 12.0
 offset_right = 120.0
 offset_bottom = 36.0
+tooltip_text = "Light Machine Gun
+Firerate: 5/s
+Damage: 2"
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -336,6 +345,7 @@ texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
 
 [node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/LMGR"]
+layout_mode = 0
 offset_left = 4.0
 offset_top = 5.0
 offset_right = 20.0
@@ -349,6 +359,9 @@ offset_left = -26.0
 offset_top = 38.0
 offset_right = -2.0
 offset_bottom = 62.0
+tooltip_text = "Rotary Machine Gun
+Firerate: 10/s
+Damage: 1"
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -356,6 +369,7 @@ texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
 
 [node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/MinigunL"]
+layout_mode = 0
 offset_left = 3.0
 offset_top = 4.0
 offset_right = 19.0
@@ -369,6 +383,9 @@ offset_left = 96.0
 offset_top = 38.0
 offset_right = 120.0
 offset_bottom = 62.0
+tooltip_text = "Rotary Machine Gun
+Firerate: 10/s
+Damage: 1"
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -376,6 +393,7 @@ texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
 
 [node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/MinigunR"]
+layout_mode = 0
 offset_left = 3.0
 offset_top = 4.0
 offset_right = 19.0
@@ -389,6 +407,10 @@ offset_left = -26.0
 offset_top = 64.0
 offset_right = -2.0
 offset_bottom = 88.0
+tooltip_text = "Rocket Launcher
+Firerate: 1/s
+Damage: 10
+Secondary Damage: 5"
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -396,6 +418,7 @@ texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
 
 [node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/RocketL"]
+layout_mode = 0
 offset_left = 4.0
 offset_top = 4.0
 offset_right = 20.0
@@ -409,6 +432,10 @@ offset_left = 96.0
 offset_top = 64.0
 offset_right = 120.0
 offset_bottom = 88.0
+tooltip_text = "Rocket Launcher
+Firerate: 1/s
+Damage: 10
+Secondary Damage: 5"
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -416,6 +443,7 @@ texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
 
 [node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/RocketR"]
+layout_mode = 0
 offset_left = 4.0
 offset_top = 4.0
 offset_right = 20.0
@@ -429,6 +457,8 @@ offset_left = 1.0
 offset_top = 89.0
 offset_right = 25.0
 offset_bottom = 113.0
+tooltip_text = "
+"
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -450,6 +480,10 @@ offset_left = 35.0
 offset_top = 89.0
 offset_right = 59.0
 offset_bottom = 113.0
+tooltip_text = "Quadrupal Mobility Module
+Mobility: Medium
+Durability: Medium
+"
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -457,6 +491,7 @@ texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
 
 [node name="Label" type="Label" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Quadruped"]
+layout_mode = 0
 offset_left = -5.0
 offset_top = 6.0
 offset_right = 29.0
@@ -470,6 +505,9 @@ offset_left = 69.0
 offset_top = 89.0
 offset_right = 93.0
 offset_bottom = 113.0
+tooltip_text = "Tracked Mobility Module
+Mobility: Low
+Durability: High"
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -477,6 +515,7 @@ texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
 
 [node name="Label" type="Label" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Threads"]
+layout_mode = 0
 offset_top = 6.0
 offset_right = 24.0
 offset_bottom = 18.0
@@ -489,6 +528,7 @@ offset_left = -121.0
 offset_top = 31.0
 offset_right = -97.0
 offset_bottom = 55.0
+tooltip_text = "Reload the current Scene"
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -496,6 +536,7 @@ texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
 
 [node name="Label" type="Label" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Reset"]
+layout_mode = 0
 offset_left = 3.0
 offset_top = 6.0
 offset_right = 27.0
