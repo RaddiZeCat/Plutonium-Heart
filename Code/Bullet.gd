@@ -24,9 +24,10 @@ func _on_body_entered(body):
 		body.hit(damage)
 	if explosive == false:
 		if !body.is_in_group("enemy"):
-			var i = bulletDecal.instantiate()
-			scene.add_child(i)
-			i.transform = $Marker2D.global_transform
+			if !body.is_in_group("player"):
+				var i = bulletDecal.instantiate()
+				scene.add_child(i)
+				i.transform = $Marker2D.global_transform
 	elif explosive == true:
 		var i = explosiveDecal.instantiate()
 		scene.add_child(i)
