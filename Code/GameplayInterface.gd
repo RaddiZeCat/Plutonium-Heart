@@ -26,11 +26,15 @@ func _input(event):
 
 
 func _on_shield_l_pressed():
-	pass # Replace with function body.
+	mech.setWeapon1(GunState.SHIELD)
+	gun1.texture = load("res://Assets/Player/Guns1.png")
+	gun1.flip_v = false
 
 
 func _on_shield_r_pressed():
-	pass # Replace with function body.
+	mech.setWeapon2(GunState.SHIELD)
+	gun2.texture = load("res://Assets/Player/Guns1.png")
+	gun2.flip_v = true
 
 
 func _on_lmgl_pressed():

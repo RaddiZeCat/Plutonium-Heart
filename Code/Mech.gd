@@ -20,6 +20,7 @@ extends CharacterBody2D
 @export var minibullet:PackedScene
 @export var shotbullet:PackedScene
 @export var rocket:PackedScene
+@export var shieldShot:PackedScene
 @onready var shotL:PackedScene = bullet
 @onready var shotR:PackedScene = rocket
 @onready var timerL = $TimerL
@@ -147,7 +148,8 @@ func game_over():
 func setWeapon1(gunStateL):
 	match gunStateL:
 		GunState.SHIELD:
-			pass
+			shotL = shieldShot
+			waitL = 0.5
 		GunState.LMG:
 			shotL = bullet
 			waitL = 0.2
@@ -165,7 +167,8 @@ func setWeapon1(gunStateL):
 func setWeapon2(gunStateR):
 	match gunStateR:
 		GunState.SHIELD:
-			pass
+			shotR = shieldShot
+			waitR = 0.5
 		GunState.LMG:
 			shotR = bullet
 			waitR = 0.2

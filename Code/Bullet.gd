@@ -7,14 +7,21 @@ extends Area2D
 @export var decal:PackedScene
 @export var explosion:PackedScene
 @export var explosive:bool = false
+@export var shield:bool = false
 @onready var bulletDecal = load("res://Prefabs/bullet_decal.tscn")
 @onready var explosiveDecal = load("res://Prefabs/explosion.tscn")
 
 func _physics_process(delta):
 	position += transform.x * speed * delta
 	if selfkill == true:
-		await get_tree().create_timer(0.2).timeout
+		await get_tree().create_timer(0.4).timeout
 		self.queue_free()
+
+
+func _on_area_entered(area):
+	if area.is_in_group("projectile"):
+		if shield == true:
+			area.queue_free()
 
 
 func _on_body_entered(body):
