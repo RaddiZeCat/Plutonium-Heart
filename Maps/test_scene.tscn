@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://ba8iadakctx7"]
+[gd_scene load_steps=11 format=3 uid="uid://ba8iadakctx7"]
 
 [ext_resource type="Script" path="res://Code/sceneCode.gd" id="1_q74ov"]
 [ext_resource type="PackedScene" uid="uid://du4w5dcflie8w" path="res://Prefabs/mech.tscn" id="1_uq13m"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://b8jddpbvsxc7a" path="res://Prefabs/destructable.tscn" id="6_82ude"]
 [ext_resource type="PackedScene" uid="uid://6nh2pj7txqym" path="res://Prefabs/mapTrigger.tscn" id="7_uuqwc"]
 [ext_resource type="TileSet" uid="uid://dwebt5s375yri" path="res://Assets/Map/City_tile_set.tres" id="8_83e5g"]
+[ext_resource type="PackedScene" uid="uid://dc4567c8fpsvb" path="res://Prefabs/mine.tscn" id="10_xgd8n"]
 [ext_resource type="PackedScene" uid="uid://kgqxw8cfb21d" path="res://Prefabs/enemyLMG.tscn" id="11_7j58o"]
 
 [node name="TestScene" type="Node2D"]
@@ -89,3 +90,16 @@ state = 7
 position = Vector2(-71, -28)
 frame = 15
 state = 8
+
+[node name="Mine" parent="." instance=ExtResource("10_xgd8n")]
+position = Vector2(24, -23)
+
+[node name="Mine2" parent="." instance=ExtResource("10_xgd8n")]
+position = Vector2(95, -5)
+frame = 1
+friendly = true
+
+[node name="Mine3" parent="." instance=ExtResource("10_xgd8n")]
+position = Vector2(84, -5)
+frame = 1
+friendly = true

@@ -1,5 +1,6 @@
 extends Area2D
 
+@onready var friendly = false
 @onready var scene = get_tree().get_root()
 @export var speed = 1000
 @export var damage = 2
@@ -28,7 +29,10 @@ func _on_body_entered(body):
 	if body.is_in_group("enemy"):
 		body.hit(damage)
 	elif body.is_in_group("player"):
-		body.hit(damage)
+		if friendly == false:
+			body.hit(damage)
+		else:
+			return
 	if explosive == false:
 		if !body.is_in_group("enemy"):
 			if !body.is_in_group("player"):

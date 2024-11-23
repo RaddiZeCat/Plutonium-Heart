@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://dc4567c8fpsvb"]
+
+[ext_resource type="Texture2D" uid="uid://dx8f3fgpy16fq" path="res://Assets/Player/Mine.png" id="1_vvei3"]
+[ext_resource type="Script" path="res://Code/mine.gd" id="2_43k0a"]
+[ext_resource type="PackedScene" uid="uid://d37o2b0ojf841" path="res://Prefabs/explosion.tscn" id="3_8quyl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3hb0g"]
+radius = 4.0
+
+[node name="Mine" type="Sprite2D"]
+texture = ExtResource("1_vvei3")
+hframes = 2
+script = ExtResource("2_43k0a")
+explosion = ExtResource("3_8quyl")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_3hb0g")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

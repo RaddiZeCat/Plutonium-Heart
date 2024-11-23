@@ -111,6 +111,7 @@ func _input(event):
 func shoot1():
 	var l = shotL.instantiate()
 	owner.add_child(l)
+	l.friendly = true
 	l.transform = muzzle1.global_transform
 
 func shoot2():
