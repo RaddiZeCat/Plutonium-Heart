@@ -4,7 +4,7 @@ extends Sprite2D
 @onready var image = $"."
 @onready var eyes = $Area2D
 
-enum State{BENCH,REDLIGHT,STREETLIGHTON,STREETLIGHTOFF,BIN,TREE}
+enum State{BENCH,REDLIGHT,STREETLIGHTON,STREETLIGHTOFF,BIN,TREE,RCAR,BCAR,GCAR}
 @export var state = State.BENCH
 
 func _ready():
@@ -21,6 +21,12 @@ func _ready():
 			image.set_frame(7)
 		State.TREE:
 			image.set_frame(9)
+		State.RCAR:
+			image.set_frame(11)
+		State.BCAR:
+			image.set_frame(13)
+		State.GCAR:
+			image.set_frame(15)
 
 func _on_area_2d_body_entered(body):
 	match state:
@@ -36,4 +42,10 @@ func _on_area_2d_body_entered(body):
 			image.set_frame(8)
 		State.TREE:
 			image.set_frame(10)
+		State.RCAR:
+			image.set_frame(12)
+		State.BCAR:
+			image.set_frame(14)
+		State.GCAR:
+			image.set_frame(16)
 	eyes.set_deferred("monitoring",false)

@@ -8,7 +8,7 @@ radius = 5.0
 
 [node name="Destructable" type="Sprite2D"]
 texture = ExtResource("1_clka3")
-hframes = 11
+hframes = 17
 script = ExtResource("2_xusq0")
 
 [node name="Area2D" type="Area2D" parent="."]

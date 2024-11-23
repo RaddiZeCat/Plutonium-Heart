@@ -22,13 +22,13 @@ extends CharacterBody2D
 @export var rocket:PackedScene
 @export var shieldShot:PackedScene
 @onready var shotL:PackedScene = bullet
-@onready var shotR:PackedScene = rocket
+@onready var shotR:PackedScene = shieldShot
 @onready var timerL = $TimerL
 @onready var timerR = $TimerR
 
 enum GunState{SHIELD,LMG,MINIGUN,SHOTGUN,LAUNCHER}
 var gunStateL = GunState.LMG
-var gunStateR = GunState.LAUNCHER
+var gunStateR = GunState.SHIELD
 var waitL = 0.2
 var waitR = 1
 var shootingL:bool
