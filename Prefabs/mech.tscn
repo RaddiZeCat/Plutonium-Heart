@@ -259,10 +259,10 @@ texture = ExtResource("10_4eauj")
 
 [node name="MechImage" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu"]
 layout_mode = 0
-offset_left = 187.0
-offset_top = 47.0
-offset_right = 281.0
-offset_bottom = 134.0
+offset_left = 167.0
+offset_top = 43.0
+offset_right = 261.0
+offset_bottom = 130.0
 texture = ExtResource("12_kqr31")
 
 [node name="ShieldL" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage"]
@@ -527,9 +527,9 @@ text = "Threads"
 
 [node name="Reset" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage"]
 layout_mode = 0
-offset_left = -121.0
+offset_left = -114.0
 offset_top = 31.0
-offset_right = -97.0
+offset_right = -90.0
 offset_bottom = 55.0
 tooltip_text = "Reload the current Scene"
 action_mode = 0

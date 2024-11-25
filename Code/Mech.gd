@@ -117,6 +117,7 @@ func shoot1():
 func shoot2():
 	var r = shotR.instantiate()
 	owner.add_child(r)
+	r.friendly = true
 	r.transform = muzzle2.global_transform
 
 func _process(delta):
