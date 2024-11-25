@@ -26,24 +26,9 @@ layer_0/tile_data = PackedInt32Array(-3, 1, 2, -2, 1, 2, -1, 1, 2, -65536, 1, 2,
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = ExtResource("4_n0des")
 format = 2
-layer_0/tile_data = PackedInt32Array(-65529, 65536, 0, -131063, 0, 3, -196615, 131072, 0, -196616, 131072, 0, -196614, 131072, 1, -196617, 131072, 1, -196602, 131072, 3, -131066, 131072, 3, -65530, 131072, 3, 6, 131072, 3)
+layer_0/tile_data = PackedInt32Array(-65529, 65536, 0, -196602, 131072, 3, -131066, 131072, 3, -65530, 131072, 3, 6, 131072, 3, -65543, 0, 3, -589843, 0, 3, -524295, 65536, 4, -1572883, 0, 2)
 
 [node name="Enemy" type="Node" parent="."]
-
-[node name="EnemyLMG" parent="." instance=ExtResource("11_7j58o")]
-position = Vector2(121, -5)
-
-[node name="EnemyLMG2" parent="." instance=ExtResource("11_7j58o")]
-position = Vector2(17, -139)
-
-[node name="EnemyLMG3" parent="." instance=ExtResource("11_7j58o")]
-position = Vector2(-223, -141)
-
-[node name="EnemyLMG4" parent="." instance=ExtResource("4_5x8mg")]
-position = Vector2(319, -20)
-
-[node name="EnemyLMG5" parent="." instance=ExtResource("5_g8nau")]
-position = Vector2(299, -134)
 
 [node name="Destructable" parent="." instance=ExtResource("6_82ude")]
 position = Vector2(-98, 0)
@@ -103,3 +88,15 @@ friendly = true
 position = Vector2(84, -5)
 frame = 1
 friendly = true
+
+[node name="EnemyLMG4" parent="." instance=ExtResource("4_5x8mg")]
+position = Vector2(475, -8)
+
+[node name="EnemyLMG7" parent="." instance=ExtResource("11_7j58o")]
+position = Vector2(635, 154)
+
+[node name="EnemyLMG2" parent="." instance=ExtResource("5_g8nau")]
+position = Vector2(-241, -145)
+
+[node name="EnemyLMG" parent="." instance=ExtResource("4_5x8mg")]
+position = Vector2(157, 13)

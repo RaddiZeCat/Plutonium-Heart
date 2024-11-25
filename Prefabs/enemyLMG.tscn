@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://kgqxw8cfb21d"]
+[gd_scene load_steps=12 format=3 uid="uid://kgqxw8cfb21d"]
 
 [ext_resource type="Script" path="res://Code/enemy.gd" id="1_bpmp4"]
 [ext_resource type="Texture2D" uid="uid://ckv63fk25nu0l" path="res://Assets/Enemy/EnemyTank.png" id="1_mkoa7"]
@@ -65,6 +65,9 @@ _data = {
 [sub_resource type="CircleShape2D" id="CircleShape2D_thmnf"]
 radius = 83.006
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_pljjg"]
+radius = 187.0
+
 [node name="EnemyLMG" type="CharacterBody2D" groups=["enemy"]]
 z_index = 1
 collision_layer = 2
@@ -102,6 +105,7 @@ autostart = true
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 0
+input_pickable = false
 
 [node name="PlayerInRange" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_thmnf")
@@ -109,6 +113,14 @@ shape = SubResource("CircleShape2D_thmnf")
 [node name="Timer2" type="Timer" parent="."]
 one_shot = true
 
+[node name="Area2DActivator" type="Area2D" parent="."]
+collision_layer = 0
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DActivator"]
+shape = SubResource("CircleShape2D_pljjg")
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Area2DActivator" to="." method="_on_area_2d_activator_body_entered"]

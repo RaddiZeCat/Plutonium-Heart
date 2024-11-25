@@ -1,3 +1,4 @@
+@tool
 extends Sprite2D
 
 @onready var scene = get_tree().get_root()
@@ -9,7 +10,7 @@ func _ready():
 	if friendly == true:
 		mine.set_frame(1)
 	elif friendly == false:
-		return
+		mine.set_frame(0)
 func _on_area_2d_body_entered(body):
 	if body.is_in_group("player"):
 		if friendly == false:

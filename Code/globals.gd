@@ -3,8 +3,9 @@ extends Node
 #TODO gunLeft, gunRight, legs
 
 @export var test_Scene = "res://Maps/test_scene.tscn"
+@export var level_1 = "res://Maps/level_1.tscn"
 #TODO Scene 1 to final
-var currentScene = test_Scene
+var currentScene = level_1
 
 var settings_save = "user://Settings.save"
 var save_1 = "user://Slot1.save"

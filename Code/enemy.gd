@@ -10,14 +10,21 @@ extends CharacterBody2D
 @onready var shotTimer = $Timer2
 @export var shotCooldown:float = 1
 @export var projectile:PackedScene
+@export var proximityActivated = true
+@onready var proximitySensor = $Area2DActivator
 var currentHealth
 var reactionSpeed
 enum TankState{SEARCH,SHOOT}
 var tankState = TankState.SEARCH
 var walk = true
 var shoot = false
+var hunt = false
 
 func _ready():
+	if proximityActivated == false:
+		hunt = true
+		proximitySensor.set_deferred("monitoring",false)
+	
 	player = get_node("%Mech")
 	currentHealth = maxHealth
 	var rng = RandomNumberGenerator.new()
@@ -35,11 +42,12 @@ func _physics_process(delta: float)-> void:
 			walk = false
 			shoot = true
 	
-	if walk == true:
-		velocity = dir * speed
-		move_and_slide()
-	else:
-		velocity = Vector2.ZERO
+	if hunt == true:
+		if walk == true:
+			velocity = dir * speed
+			move_and_slide()
+		else:
+			velocity = Vector2.ZERO
 	
 	if shoot == true:
 		if shotTimer.time_left > 0.0:
@@ -80,3 +88,10 @@ func _on_area_2d_body_entered(body):
 
 func _on_area_2d_body_exited(body):
 	tankState = TankState.SEARCH
+
+
+func _on_area_2d_activator_body_entered(body):
+	print(body,"hunt")
+	if proximityActivated == true:
+		hunt = true
+		proximitySensor.set_deferred("monitoring",false)

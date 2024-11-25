@@ -14,6 +14,7 @@ enum GunState{SHIELD,LMG,MINIGUN,SHOTGUN,LAUNCHER}
 enum LegState{BIPED,QUADRUPED,THREADS}
 @onready var legState = mech.legState
 
+
 func _input(event):
 	if Input.is_action_just_pressed("pause"):
 		if scene.get_tree().paused == false:
@@ -87,4 +88,4 @@ func _on_threads_pressed():
 
 func _on_reset_pressed():
 	scene.unpause()
-	SceneSwitcher.switch_scene(Globals.currentScene)
+	get_tree().reload_current_scene()

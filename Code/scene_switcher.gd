@@ -18,3 +18,4 @@ func _deferred_switch_scene(res_path):
 func reload():
 	var root = get_tree().root
 	current_scene = root.get_child(root.get_child_count()-1)
+	
