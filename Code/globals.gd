@@ -40,8 +40,8 @@ func loadGame():
 func settingsSave():
 	masterVolume = AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Master"))
 	musicVolume = AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Music"))
-	effectsVolume = AudioServer.get_bus_volume_db(AudioServer.get_bus_index("effects"))
-	uiVolume = AudioServer.get_bus_volume_db(AudioServer.get_bus_index("ui"))
+	effectsVolume = AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Effects"))
+	uiVolume = AudioServer.get_bus_volume_db(AudioServer.get_bus_index("UI"))
 	var file = FileAccess.open(settings_save, FileAccess.WRITE)
 	file.store_var(masterVolume)
 	file.store_var(musicVolume)
@@ -56,5 +56,5 @@ func settingsLoad():
 	uiVolume = file.get_var(uiVolume)
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"),masterVolume)
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"),musicVolume)
-	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("effects"),effectsVolume)
-	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("ui"),uiVolume)
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Effects"),effectsVolume)
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("UI"),uiVolume)

@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://kgqxw8cfb21d"]
+[gd_scene load_steps=13 format=3 uid="uid://kgqxw8cfb21d"]
 
 [ext_resource type="Script" path="res://Code/enemy.gd" id="1_bpmp4"]
 [ext_resource type="Texture2D" uid="uid://ckv63fk25nu0l" path="res://Assets/Enemy/EnemyTank.png" id="1_mkoa7"]
 [ext_resource type="Texture2D" uid="uid://bufd6alcwglcw" path="res://Assets/Enemy/EnemyTankTurret1.png" id="2_3es1g"]
 [ext_resource type="PackedScene" uid="uid://bjnxt3imrjojp" path="res://Prefabs/bullet.tscn" id="2_n245k"]
+[ext_resource type="AudioStream" uid="uid://bof6b1mg7ys5e" path="res://Assets/Audio/Effects/Guns/LMG.wav" id="5_nrp3b"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qet7y"]
 
@@ -119,6 +120,13 @@ monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DActivator"]
 shape = SubResource("CircleShape2D_pljjg")
+
+[node name="GunAudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_nrp3b")
+bus = &"Effects"
+
+[node name="TankAudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+bus = &"Effects"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

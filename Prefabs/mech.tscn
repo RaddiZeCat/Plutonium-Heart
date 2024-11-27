@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://du4w5dcflie8w"]
+[gd_scene load_steps=40 format=3 uid="uid://du4w5dcflie8w"]
 
 [ext_resource type="Script" path="res://Code/Mech.gd" id="1_xw55t"]
 [ext_resource type="PackedScene" uid="uid://bjnxt3imrjojp" path="res://Prefabs/bullet.tscn" id="2_gkgy7"]
@@ -9,17 +9,25 @@
 [ext_resource type="PackedScene" uid="uid://4axu0e2so0h1" path="res://Prefabs/shieldShot.tscn" id="6_kd1ft"]
 [ext_resource type="Texture2D" uid="uid://dpd7b5e61n4jf" path="res://Assets/Player/MechTop.png" id="7_yvejw"]
 [ext_resource type="Texture2D" uid="uid://bduqjk2oflmxg" path="res://Assets/Player/Guns2.png" id="8_3pl6o"]
+[ext_resource type="AudioStream" uid="uid://umuhhp020efo" path="res://Assets/Audio/Effects/Guns/Minigun.wav" id="9_1dv2o"]
 [ext_resource type="Texture2D" uid="uid://buhflxmfjl7ki" path="res://Assets/Player/Guns5.png" id="9_h0n55"]
 [ext_resource type="Texture2D" uid="uid://fp60lw3owtmg" path="res://Assets/UI/UIBackground.png" id="10_4eauj"]
 [ext_resource type="Script" path="res://Code/GameplayInterface.gd" id="10_dort6"]
+[ext_resource type="AudioStream" uid="uid://bbiluldmuhpig" path="res://Assets/Audio/Effects/Guns/Rocket.wav" id="10_e2yhj"]
 [ext_resource type="Texture2D" uid="uid://deknjvlhmk4sh" path="res://Assets/UI/HealthBar.png" id="11_clugo"]
+[ext_resource type="AudioStream" uid="uid://c1md7y6mg24g0" path="res://Assets/Audio/UI/Button1.wav" id="11_k1uml"]
+[ext_resource type="AudioStream" uid="uid://kagqe8ac23v6" path="res://Assets/Audio/UI/Hover.wav" id="12_jmcqv"]
 [ext_resource type="Texture2D" uid="uid://ccjmxrytp2tdd" path="res://Assets/UI/EquipRobot.png" id="12_kqr31"]
+[ext_resource type="AudioStream" uid="uid://duayusab3s0ye" path="res://Assets/Audio/UI/Scroll.wav" id="13_fpui2"]
 [ext_resource type="Texture2D" uid="uid://j3ol3ubrq3dp" path="res://Assets/UI/Sammelsorium/EquipmentButton1.png" id="13_nr70g"]
 [ext_resource type="Texture2D" uid="uid://dkfqb5vh7bikv" path="res://Assets/UI/Sammelsorium/EquipmentButton2.png" id="14_17h8v"]
 [ext_resource type="Texture2D" uid="uid://buad20wo8rs70" path="res://Assets/UI/Sammelsorium/EquipmentButton3.png" id="14_puoa7"]
 [ext_resource type="Texture2D" uid="uid://b8byhjrwtbskl" path="res://Assets/UI/Sammelsorium/EquipmentButton4.png" id="15_kc585"]
 [ext_resource type="Texture2D" uid="uid://b0n5m1ewg2cit" path="res://Assets/Player/Guns1.png" id="17_hwa0e"]
+[ext_resource type="AudioStream" uid="uid://ba6wqh8jiormc" path="res://Assets/Audio/UI/Button2.wav" id="17_xt14d"]
 [ext_resource type="Texture2D" uid="uid://be2y7prl4voja" path="res://Assets/Player/Guns3.png" id="18_hib5u"]
+[ext_resource type="AudioStream" uid="uid://bof6b1mg7ys5e" path="res://Assets/Audio/Effects/Guns/LMG.wav" id="21_0oe7c"]
+[ext_resource type="AudioStream" uid="uid://dg2ofus23wrcn" path="res://Assets/Audio/Effects/Guns/Shield.wav" id="22_r38rn"]
 
 [sub_resource type="Curve" id="Curve_sqdtj"]
 _data = [Vector2(0, 0), 0.0, 0.506174, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
@@ -171,6 +179,10 @@ rocket = ExtResource("5_ukvmh")
 shieldShot = ExtResource("6_kd1ft")
 accelerationCurve = SubResource("Curve_sqdtj")
 decelerationCurve = SubResource("Curve_7abh1")
+audioShield = ExtResource("22_r38rn")
+audioLMG = ExtResource("21_0oe7c")
+audioMinigun = ExtResource("9_1dv2o")
+audioRocket = ExtResource("10_e2yhj")
 
 [node name="Body Collision" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ydudx")
@@ -223,6 +235,10 @@ offset_bottom = 90.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("10_dort6")
+audioKlick = ExtResource("11_k1uml")
+audioKlick2 = ExtResource("17_xt14d")
+audioHover = ExtResource("12_jmcqv")
+audioScroll = ExtResource("13_fpui2")
 
 [node name="ReferenceRect" type="ReferenceRect" parent="CameraMarker2D/Camera2D/GameplayInterface"]
 layout_mode = 1
@@ -271,11 +287,18 @@ offset_left = -26.0
 offset_top = -14.0
 offset_right = -2.0
 offset_bottom = 10.0
+tooltip_text = "Shield-Wave-Emitter
+Firerate: 2/s
+Destroys Projectiles"
+focus_neighbor_left = NodePath("../Reset")
+focus_neighbor_right = NodePath("../ShieldR")
+focus_neighbor_bottom = NodePath("../LMGL")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
 texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
+texture_focused = ExtResource("14_puoa7")
 
 [node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/ShieldL"]
 layout_mode = 0
@@ -292,11 +315,17 @@ offset_left = 96.0
 offset_top = -14.0
 offset_right = 120.0
 offset_bottom = 10.0
+tooltip_text = "Shield-Wave-Emitter
+Firerate: 2/s
+Destroys Projectiles"
+focus_neighbor_left = NodePath("../ShieldL")
+focus_neighbor_bottom = NodePath("../LMGR")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
 texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
+texture_focused = ExtResource("14_puoa7")
 
 [node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/ShieldR"]
 layout_mode = 0
@@ -317,11 +346,16 @@ tooltip_text = "Light Machine Gun
 Firerate: 5/s
 Damage: 2
 "
+focus_neighbor_left = NodePath("../Reset")
+focus_neighbor_top = NodePath("../ShieldL")
+focus_neighbor_right = NodePath("../LMGR")
+focus_neighbor_bottom = NodePath("../MinigunL")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
 texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
+texture_focused = ExtResource("14_puoa7")
 
 [node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/LMGL"]
 layout_mode = 0
@@ -341,11 +375,15 @@ offset_bottom = 36.0
 tooltip_text = "Light Machine Gun
 Firerate: 5/s
 Damage: 2"
+focus_neighbor_left = NodePath("../LMGL")
+focus_neighbor_top = NodePath("../ShieldR")
+focus_neighbor_bottom = NodePath("../MinigunR")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
 texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
+texture_focused = ExtResource("14_puoa7")
 
 [node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/LMGR"]
 layout_mode = 0
@@ -365,11 +403,16 @@ offset_bottom = 62.0
 tooltip_text = "Rotary Machine Gun
 Firerate: 10/s
 Damage: 1"
+focus_neighbor_left = NodePath("../Reset")
+focus_neighbor_top = NodePath("../LMGL")
+focus_neighbor_right = NodePath("../MinigunR")
+focus_neighbor_bottom = NodePath("../RocketL")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
 texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
+texture_focused = ExtResource("14_puoa7")
 
 [node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/MinigunL"]
 layout_mode = 0
@@ -389,11 +432,15 @@ offset_bottom = 62.0
 tooltip_text = "Rotary Machine Gun
 Firerate: 10/s
 Damage: 1"
+focus_neighbor_left = NodePath("../MinigunL")
+focus_neighbor_top = NodePath("../LMGR")
+focus_neighbor_bottom = NodePath("../RocketR")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
 texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
+texture_focused = ExtResource("14_puoa7")
 
 [node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/MinigunR"]
 layout_mode = 0
@@ -414,11 +461,16 @@ tooltip_text = "Rocket Launcher
 Firerate: 1/s
 Damage: 10
 Secondary Damage: 5"
+focus_neighbor_left = NodePath("../Reset")
+focus_neighbor_top = NodePath("../MinigunL")
+focus_neighbor_right = NodePath("../RocketR")
+focus_neighbor_bottom = NodePath("../Biped")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
 texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
+texture_focused = ExtResource("14_puoa7")
 
 [node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/RocketL"]
 layout_mode = 0
@@ -439,11 +491,15 @@ tooltip_text = "Rocket Launcher
 Firerate: 1/s
 Damage: 10
 Secondary Damage: 5"
+focus_neighbor_left = NodePath("../RocketL")
+focus_neighbor_top = NodePath("../MinigunR")
+focus_neighbor_bottom = NodePath("../Threads")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
 texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
+texture_focused = ExtResource("14_puoa7")
 
 [node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/RocketR"]
 layout_mode = 0
@@ -462,11 +518,15 @@ offset_right = 25.0
 offset_bottom = 113.0
 tooltip_text = "
 "
+focus_neighbor_left = NodePath("../Reset")
+focus_neighbor_top = NodePath("../RocketL")
+focus_neighbor_right = NodePath("../Quadruped")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
 texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
+texture_focused = ExtResource("14_puoa7")
 
 [node name="Label" type="Label" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Biped"]
 layout_mode = 0
@@ -487,11 +547,15 @@ tooltip_text = "Quadrupal Mobility Module
 Mobility: Medium
 Durability: Medium
 "
+focus_neighbor_left = NodePath("../Biped")
+focus_neighbor_top = NodePath("../RocketL")
+focus_neighbor_right = NodePath("../Threads")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
 texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
+texture_focused = ExtResource("14_puoa7")
 
 [node name="Label" type="Label" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Quadruped"]
 layout_mode = 0
@@ -511,11 +575,14 @@ offset_bottom = 113.0
 tooltip_text = "Tracked Mobility Module
 Mobility: Low
 Durability: High"
+focus_neighbor_left = NodePath("../Quadruped")
+focus_neighbor_top = NodePath("../RocketR")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
 texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
+texture_focused = ExtResource("14_puoa7")
 
 [node name="Label" type="Label" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Threads"]
 layout_mode = 0
@@ -532,11 +599,14 @@ offset_top = 31.0
 offset_right = -90.0
 offset_bottom = 55.0
 tooltip_text = "Reload the current Scene"
+focus_neighbor_right = NodePath("../LMGL")
+focus_neighbor_bottom = NodePath("../Biped")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
 texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
+texture_focused = ExtResource("14_puoa7")
 
 [node name="Label" type="Label" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Reset"]
 layout_mode = 0
@@ -552,6 +622,26 @@ one_shot = true
 
 [node name="TimerR" type="Timer" parent="."]
 one_shot = true
+
+[node name="MechAudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+process_mode = 3
+panning_strength = 3.0
+bus = &"Effects"
+
+[node name="Gun1AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+process_mode = 3
+stream = ExtResource("21_0oe7c")
+panning_strength = 3.0
+bus = &"Effects"
+
+[node name="Gun2AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+process_mode = 3
+stream = ExtResource("22_r38rn")
+panning_strength = 3.0
+bus = &"Effects"
+
+[node name="UIAudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+process_mode = 3
 
 [connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/ShieldL" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_shield_l_pressed"]
 [connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/ShieldR" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_shield_r_pressed"]

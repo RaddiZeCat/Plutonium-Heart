@@ -12,6 +12,8 @@ extends CharacterBody2D
 @export var projectile:PackedScene
 @export var proximityActivated = true
 @onready var proximitySensor = $Area2DActivator
+@onready var audioTank = $TankAudioStreamPlayer2D
+@onready var audioGun = $GunAudioStreamPlayer2D
 var currentHealth
 var reactionSpeed
 enum TankState{SEARCH,SHOOT}
@@ -56,6 +58,7 @@ func _physics_process(delta: float)-> void:
 			var p = projectile.instantiate()
 			owner.add_child(p)
 			p.transform = $Turret/Marker2D.global_transform
+			audioGun.play()
 			shotTimer.start(shotCooldown)
 	
 	legs.look_at($".".position + Vector2($".".velocity.x,$".".velocity.y))

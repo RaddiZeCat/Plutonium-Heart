@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://ba8iadakctx7"]
+[gd_scene load_steps=12 format=3 uid="uid://ba8iadakctx7"]
 
 [ext_resource type="Script" path="res://Code/sceneCode.gd" id="1_q74ov"]
 [ext_resource type="PackedScene" uid="uid://du4w5dcflie8w" path="res://Prefabs/mech.tscn" id="1_uq13m"]
@@ -10,6 +10,7 @@
 [ext_resource type="TileSet" uid="uid://dwebt5s375yri" path="res://Assets/Map/City_tile_set.tres" id="8_83e5g"]
 [ext_resource type="PackedScene" uid="uid://dc4567c8fpsvb" path="res://Prefabs/mine.tscn" id="10_xgd8n"]
 [ext_resource type="PackedScene" uid="uid://kgqxw8cfb21d" path="res://Prefabs/enemyLMG.tscn" id="11_7j58o"]
+[ext_resource type="PackedScene" uid="uid://dyf4uupadyss8" path="res://Prefabs/energy_pack.tscn" id="11_ioo07"]
 
 [node name="TestScene" type="Node2D"]
 process_mode = 1
@@ -100,3 +101,6 @@ position = Vector2(-241, -145)
 
 [node name="EnemyLMG" parent="." instance=ExtResource("4_5x8mg")]
 position = Vector2(157, 13)
+
+[node name="EnergyPack" parent="." instance=ExtResource("11_ioo07")]
+position = Vector2(48, -23)

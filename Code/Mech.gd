@@ -48,6 +48,15 @@ var legIdle:String
 var legWalk:String
 var DamageMultiplyer
 
+@onready var audioMech = $MechAudioStreamPlayer2D
+@onready var audioGun1 = $Gun1AudioStreamPlayer2D
+@onready var audioGun2 = $Gun2AudioStreamPlayer2D
+@export var audioShield:AudioStream
+@export var audioLMG:AudioStream
+@export var audioMinigun:AudioStream
+@export var audioRocket:AudioStream
+
+
 func _ready():
 	setWeapon1(gunStateL) #TODO Globals.gunStateL
 	setWeapon2(gunStateR) #TODO Globals.gunStateR
@@ -113,12 +122,14 @@ func shoot1():
 	owner.add_child(l)
 	l.friendly = true
 	l.transform = muzzle1.global_transform
+	audioGun1.play()
 
 func shoot2():
 	var r = shotR.instantiate()
 	owner.add_child(r)
 	r.friendly = true
 	r.transform = muzzle2.global_transform
+	audioGun2.play()
 
 func _process(delta):
 	if shootingL == true:
@@ -142,6 +153,12 @@ func hit(damage):
 		game_over()
 	pass
 
+func heal(energy):
+	currentHealth += energy
+	if currentHealth > health:
+		currentHealth = health
+	healthBar.frame = currentHealth
+
 func game_over():
 	print("Game Over")
 	SceneSwitcher.switch_scene(Globals.currentScene)
@@ -152,18 +169,22 @@ func setWeapon1(gunStateL):
 		GunState.SHIELD:
 			shotL = shieldShot
 			waitL = 0.5
+			audioGun1.set_stream(audioShield)
 		GunState.LMG:
 			shotL = bullet
 			waitL = 0.2
+			audioGun1.set_stream(audioLMG)
 		GunState.MINIGUN:
 			shotL = minibullet
 			waitL = 0.1
+			audioGun1.set_stream(audioMinigun)
 		GunState.SHOTGUN:
 			shotL = shotbullet
 			waitL = 0.5
 		GunState.LAUNCHER:
 			shotL = rocket
 			waitL = 1
+			audioGun1.set_stream(audioRocket)
 	pass
 
 func setWeapon2(gunStateR):
@@ -171,18 +192,22 @@ func setWeapon2(gunStateR):
 		GunState.SHIELD:
 			shotR = shieldShot
 			waitR = 0.5
+			audioGun2.set_stream(audioShield)
 		GunState.LMG:
 			shotR = bullet
 			waitR = 0.2
+			audioGun2.set_stream(audioLMG)
 		GunState.MINIGUN:
 			shotR = minibullet
 			waitR = 0.07
+			audioGun2.set_stream(audioMinigun)
 		GunState.SHOTGUN:
 			shotR = shotbullet
 			waitR = 0.5
 		GunState.LAUNCHER:
 			shotR = rocket
 			waitR = 2
+			audioGun2.set_stream(audioRocket)
 	pass
 
 func setLegs(legState):
