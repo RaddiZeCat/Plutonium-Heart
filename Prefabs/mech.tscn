@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://du4w5dcflie8w"]
+[gd_scene load_steps=41 format=3 uid="uid://du4w5dcflie8w"]
 
 [ext_resource type="Script" path="res://Code/Mech.gd" id="1_xw55t"]
 [ext_resource type="PackedScene" uid="uid://bjnxt3imrjojp" path="res://Prefabs/bullet.tscn" id="2_gkgy7"]
@@ -28,6 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://be2y7prl4voja" path="res://Assets/Player/Guns3.png" id="18_hib5u"]
 [ext_resource type="AudioStream" uid="uid://bof6b1mg7ys5e" path="res://Assets/Audio/Effects/Guns/LMG.wav" id="21_0oe7c"]
 [ext_resource type="AudioStream" uid="uid://dg2ofus23wrcn" path="res://Assets/Audio/Effects/Guns/Shield.wav" id="22_r38rn"]
+[ext_resource type="Theme" uid="uid://bwr6qis3x4ie" path="res://Assets/UI/main_theme.tres" id="29_oi7t7"]
 
 [sub_resource type="Curve" id="Curve_sqdtj"]
 _data = [Vector2(0, 0), 0.0, 0.506174, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
@@ -241,6 +242,7 @@ audioHover = ExtResource("12_jmcqv")
 audioScroll = ExtResource("13_fpui2")
 
 [node name="ReferenceRect" type="ReferenceRect" parent="CameraMarker2D/Camera2D/GameplayInterface"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -293,6 +295,7 @@ Destroys Projectiles"
 focus_neighbor_left = NodePath("../Reset")
 focus_neighbor_right = NodePath("../ShieldR")
 focus_neighbor_bottom = NodePath("../LMGL")
+theme = ExtResource("29_oi7t7")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -320,6 +323,7 @@ Firerate: 2/s
 Destroys Projectiles"
 focus_neighbor_left = NodePath("../ShieldL")
 focus_neighbor_bottom = NodePath("../LMGR")
+theme = ExtResource("29_oi7t7")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -350,6 +354,7 @@ focus_neighbor_left = NodePath("../Reset")
 focus_neighbor_top = NodePath("../ShieldL")
 focus_neighbor_right = NodePath("../LMGR")
 focus_neighbor_bottom = NodePath("../MinigunL")
+theme = ExtResource("29_oi7t7")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -378,6 +383,7 @@ Damage: 2"
 focus_neighbor_left = NodePath("../LMGL")
 focus_neighbor_top = NodePath("../ShieldR")
 focus_neighbor_bottom = NodePath("../MinigunR")
+theme = ExtResource("29_oi7t7")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -407,6 +413,7 @@ focus_neighbor_left = NodePath("../Reset")
 focus_neighbor_top = NodePath("../LMGL")
 focus_neighbor_right = NodePath("../MinigunR")
 focus_neighbor_bottom = NodePath("../RocketL")
+theme = ExtResource("29_oi7t7")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -435,6 +442,7 @@ Damage: 1"
 focus_neighbor_left = NodePath("../MinigunL")
 focus_neighbor_top = NodePath("../LMGR")
 focus_neighbor_bottom = NodePath("../RocketR")
+theme = ExtResource("29_oi7t7")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -459,12 +467,13 @@ offset_right = -2.0
 offset_bottom = 88.0
 tooltip_text = "Rocket Launcher
 Firerate: 1/s
-Damage: 10
+Damage: 5
 Secondary Damage: 5"
 focus_neighbor_left = NodePath("../Reset")
 focus_neighbor_top = NodePath("../MinigunL")
 focus_neighbor_right = NodePath("../RocketR")
 focus_neighbor_bottom = NodePath("../Biped")
+theme = ExtResource("29_oi7t7")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -489,11 +498,12 @@ offset_right = 120.0
 offset_bottom = 88.0
 tooltip_text = "Rocket Launcher
 Firerate: 1/s
-Damage: 10
+Damage: 5
 Secondary Damage: 5"
 focus_neighbor_left = NodePath("../RocketL")
 focus_neighbor_top = NodePath("../MinigunR")
 focus_neighbor_bottom = NodePath("../Threads")
+theme = ExtResource("29_oi7t7")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -521,6 +531,7 @@ tooltip_text = "
 focus_neighbor_left = NodePath("../Reset")
 focus_neighbor_top = NodePath("../RocketL")
 focus_neighbor_right = NodePath("../Quadruped")
+theme = ExtResource("29_oi7t7")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -550,6 +561,7 @@ Durability: Medium
 focus_neighbor_left = NodePath("../Biped")
 focus_neighbor_top = NodePath("../RocketL")
 focus_neighbor_right = NodePath("../Threads")
+theme = ExtResource("29_oi7t7")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -563,6 +575,7 @@ offset_left = -5.0
 offset_top = 6.0
 offset_right = 29.0
 offset_bottom = 18.0
+theme = ExtResource("29_oi7t7")
 theme_override_font_sizes/font_size = 6
 text = "Quadruped"
 
@@ -577,6 +590,7 @@ Mobility: Low
 Durability: High"
 focus_neighbor_left = NodePath("../Quadruped")
 focus_neighbor_top = NodePath("../RocketR")
+theme = ExtResource("29_oi7t7")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -589,6 +603,7 @@ layout_mode = 0
 offset_top = 6.0
 offset_right = 24.0
 offset_bottom = 18.0
+theme = ExtResource("29_oi7t7")
 theme_override_font_sizes/font_size = 6
 text = "Threads"
 
@@ -601,6 +616,7 @@ offset_bottom = 55.0
 tooltip_text = "Reload the current Scene"
 focus_neighbor_right = NodePath("../LMGL")
 focus_neighbor_bottom = NodePath("../Biped")
+theme = ExtResource("29_oi7t7")
 action_mode = 0
 texture_normal = ExtResource("13_nr70g")
 texture_pressed = ExtResource("14_17h8v")
@@ -614,6 +630,7 @@ offset_left = 3.0
 offset_top = 6.0
 offset_right = 27.0
 offset_bottom = 18.0
+theme = ExtResource("29_oi7t7")
 theme_override_font_sizes/font_size = 6
 text = "Reload"
 

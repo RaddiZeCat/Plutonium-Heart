@@ -27,8 +27,8 @@ extends CharacterBody2D
 @onready var timerR = $TimerR
 
 enum GunState{SHIELD,LMG,MINIGUN,SHOTGUN,LAUNCHER}
-var gunStateL = GunState.LMG
-var gunStateR = GunState.SHIELD
+var gunStateL = Globals.gunLeft
+var gunStateR = Globals.gunRight
 var waitL = 0.2
 var waitR = 1
 var shootingL:bool
@@ -42,7 +42,7 @@ var controllerLook:Vector2
 var accelerationTime:float = 0.0
 var decelerationTime:float = 0.0
 enum LegState{BIPED,QUADRUPED,THREADS}
-var legState = LegState.QUADRUPED
+var legState = Globals.legs
 @onready var legAnimator = $Legs/AnimationPlayer
 var legIdle:String
 var legWalk:String
@@ -170,14 +170,20 @@ func setWeapon1(gunStateL):
 			shotL = shieldShot
 			waitL = 0.5
 			audioGun1.set_stream(audioShield)
+			gun1.texture = load("res://Assets/Player/Guns1.png")
+			gun1.flip_v = false
 		GunState.LMG:
 			shotL = bullet
 			waitL = 0.2
 			audioGun1.set_stream(audioLMG)
+			gun1.texture = load("res://Assets/Player/Guns2.png")
+			gun1.flip_v = false
 		GunState.MINIGUN:
 			shotL = minibullet
 			waitL = 0.1
 			audioGun1.set_stream(audioMinigun)
+			gun1.texture = load("res://Assets/Player/Guns3.png")
+			gun1.flip_v = true
 		GunState.SHOTGUN:
 			shotL = shotbullet
 			waitL = 0.5
@@ -185,6 +191,8 @@ func setWeapon1(gunStateL):
 			shotL = rocket
 			waitL = 1
 			audioGun1.set_stream(audioRocket)
+			gun1.texture = load("res://Assets/Player/Guns5.png")
+			gun1.flip_v = true
 	pass
 
 func setWeapon2(gunStateR):
@@ -193,14 +201,20 @@ func setWeapon2(gunStateR):
 			shotR = shieldShot
 			waitR = 0.5
 			audioGun2.set_stream(audioShield)
+			gun2.texture = load("res://Assets/Player/Guns1.png")
+			gun2.flip_v = true
 		GunState.LMG:
 			shotR = bullet
 			waitR = 0.2
 			audioGun2.set_stream(audioLMG)
+			gun2.texture = load("res://Assets/Player/Guns2.png")
+			gun2.flip_v = true
 		GunState.MINIGUN:
 			shotR = minibullet
 			waitR = 0.07
 			audioGun2.set_stream(audioMinigun)
+			gun2.texture = load("res://Assets/Player/Guns3.png")
+			gun2.flip_v = false
 		GunState.SHOTGUN:
 			shotR = shotbullet
 			waitR = 0.5
@@ -208,6 +222,8 @@ func setWeapon2(gunStateR):
 			shotR = rocket
 			waitR = 2
 			audioGun2.set_stream(audioRocket)
+			gun2.texture = load("res://Assets/Player/Guns5.png")
+			gun2.flip_v = false
 	pass
 
 func setLegs(legState):

@@ -51,72 +51,67 @@ func scroll():
 
 func _on_shield_l_pressed():
 	mech.setWeapon1(GunState.SHIELD)
-	gun1.texture = load("res://Assets/Player/Guns1.png")
-	gun1.flip_v = false
+	Globals.gunLeft = GunState.SHIELD
 	klick()
 
 
 func _on_shield_r_pressed():
 	mech.setWeapon2(GunState.SHIELD)
-	gun2.texture = load("res://Assets/Player/Guns1.png")
-	gun2.flip_v = true
+	Globals.gunRight = GunState.SHIELD
 	klick()
 
 
 func _on_lmgl_pressed():
 	mech.setWeapon1(GunState.LMG)
-	gun1.texture = load("res://Assets/Player/Guns2.png")
-	gun1.flip_v = false
+	Globals.gunLeft = GunState.LMG
 	klick()
 
 
 func _on_lmgr_pressed():
 	mech.setWeapon2(GunState.LMG)
-	gun2.texture = load("res://Assets/Player/Guns2.png")
-	gun2.flip_v = true
+	Globals.gunRight = GunState.LMG
 	klick()
 
 
 func _on_minigun_l_pressed():
 	mech.setWeapon1(GunState.MINIGUN)
-	gun1.texture = load("res://Assets/Player/Guns3.png")
-	gun1.flip_v = true
+	Globals.gunLeft = GunState.MINIGUN
 	klick()
 
 
 func _on_minigun_r_pressed():
 	mech.setWeapon2(GunState.MINIGUN)
-	gun2.texture = load("res://Assets/Player/Guns3.png")
-	gun2.flip_v = false
+	Globals.gunRight = GunState.MINIGUN
 	klick()
 
 
 func _on_rocket_l_pressed():
 	mech.setWeapon1(GunState.LAUNCHER)
-	gun1.texture = load("res://Assets/Player/Guns5.png")
-	gun1.flip_v = true
+	Globals.gunLeft = GunState.LAUNCHER
 	klick()
 
 
 func _on_rocket_r_pressed():
 	mech.setWeapon2(GunState.LAUNCHER)
-	gun2.texture = load("res://Assets/Player/Guns5.png")
-	gun2.flip_v = false
+	Globals.gunRight = GunState.LAUNCHER
 	klick()
 
 
 func _on_biped_pressed():
 	mech.setLegs(LegState.BIPED)
+	Globals.legs = LegState.BIPED
 	klick()
 
 
 func _on_quadruped_pressed():
 	mech.setLegs(LegState.QUADRUPED)
+	Globals.legs = LegState.QUADRUPED
 	klick()
 
 
 func _on_threads_pressed():
 	mech.setLegs(LegState.THREADS)
+	Globals.legs = LegState.THREADS
 	klick()
 
 

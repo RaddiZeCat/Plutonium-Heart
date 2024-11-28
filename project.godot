@@ -26,6 +26,11 @@ window/size/mode=2
 window/stretch/mode="canvas_items"
 window/stretch/aspect="ignore"
 
+[gui]
+
+theme/default_font_antialiasing=0
+theme/default_font_subpixel_positioning=0
+
 [input]
 
 ui_focus_next={
@@ -150,3 +155,5 @@ look_down={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+textures/decals/filter=0
+textures/light_projectors/filter=0

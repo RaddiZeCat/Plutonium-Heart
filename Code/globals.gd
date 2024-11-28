@@ -1,9 +1,8 @@
 extends Node
 
-#TODO gunLeft, gunRight, legs
-
 @export var test_Scene = "res://Maps/test_scene.tscn"
 @export var level_1 = "res://Maps/level_1.tscn"
+@export var mainMenu = "res://Maps/main_menu.tscn"
 #TODO Scene 1 to final
 var currentScene = level_1
 
@@ -12,6 +11,13 @@ var save_1 = "user://Slot1.save"
 var save_2 = "user://Slot2.save"
 var save_3 = "user://Slot3.save"
 var current_save = save_1
+
+#TODO gunLeft, gunRight, legs
+enum GunState{SHIELD,LMG,MINIGUN,SHOTGUN,LAUNCHER}
+var gunLeft = GunState.LMG
+var gunRight = GunState.SHIELD
+enum LegState{BIPED,QUADRUPED,THREADS}
+var legs = LegState.QUADRUPED
 
 var lmg_unlock = true
 var minigun_unlock = true

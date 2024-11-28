@@ -1,0 +1,9 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bwr6qis3x4ie"]
+
+[ext_resource type="FontFile" uid="uid://bsca8t2w7e46r" path="res://Assets/UI/slkscre.ttf" id="1_fdr7o"]
+
+[resource]
+default_font = ExtResource("1_fdr7o")
+Fonts/base_type = &"Fonts"
+Fonts/font_sizes/font_size = 16
+Fonts/fonts/normal = ExtResource("1_fdr7o")
