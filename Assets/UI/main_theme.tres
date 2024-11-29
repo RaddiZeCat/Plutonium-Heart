@@ -4,6 +4,8 @@
 
 [resource]
 default_font = ExtResource("1_fdr7o")
-Fonts/base_type = &"Fonts"
+default_font_size = 16
+Fonts/base_type = &"RichTextLabel"
+Fonts/colors/font_color = Color(0.141176, 0.141176, 0.211765, 1)
 Fonts/font_sizes/font_size = 16
 Fonts/fonts/normal = ExtResource("1_fdr7o")
