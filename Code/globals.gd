@@ -6,6 +6,7 @@ extends Node
 @export var level_3:String
 @export var level_4:String
 @export var mainMenu = "res://Maps/main_menu.tscn"
+@export var end_scene = "res://Maps/end_scene.tscn"
 #TODO Scene 1 to final
 var currentScene = level_1
 
@@ -14,6 +15,8 @@ var save_1 = "user://Slot1.save"
 var save_2 = "user://Slot2.save"
 var save_3 = "user://Slot3.save"
 var current_save = save_1
+
+var victorious = false
 
 #TODO gunLeft, gunRight, legs
 enum GunState{SHIELD,LMG,MINIGUN,SHOTGUN,LAUNCHER}

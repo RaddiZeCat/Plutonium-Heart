@@ -5,6 +5,7 @@ extends Node
 
 @onready var mech = $"../../.."
 @onready var pauseMenu = $EquipmentMenu
+@onready var optionsMenu = $OptionsMenu
 @onready var root = get_tree().root
 @onready var scene = root.get_child(root.get_child_count()-1)
 
@@ -26,7 +27,7 @@ func _input(event):
 			klick2()
 			scene.pause()
 			pauseMenu.visible = true
-			$EquipmentMenu/MechImage/ShieldL.grab_focus()
+			$EquipmentMenu/MechImage/ShieldL.grab_focus() #TODO change to optionsMenu
 		elif scene.get_tree().paused == true:
 			scene.unpause()
 			klick2()
@@ -48,6 +49,10 @@ func hover():
 func scroll():
 	audioUI.set_stream(audioScroll)
 	audioUI.play()
+
+
+#region EquipmentUI
+
 
 func _on_shield_l_pressed():
 	mech.setWeapon1(GunState.SHIELD)
@@ -118,3 +123,148 @@ func _on_threads_pressed():
 func _on_reset_pressed(): #TODO Replace with better Options
 	scene.unpause()
 	get_tree().reload_current_scene()
+	klick()
+
+
+func _on_menu_pressed():
+	klick()
+	scene.unpause()
+	SceneSwitcher.switch_scene(Globals.mainMenu)
+
+
+func _on_back_pressed():
+	klick()
+	scene.unpause()
+	pauseMenu.visible = false
+
+
+func _on_quit_pressed():
+	get_tree().quit()
+#endregion
+
+#region Hovers
+
+func _on_shield_l_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+
+
+func _on_shield_r_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+
+
+func _on_lmgl_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+
+
+func _on_lmgr_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+
+
+func _on_minigun_l_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+
+
+func _on_minigun_r_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+
+
+func _on_rocket_l_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+
+
+func _on_rocket_r_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+
+
+func _on_biped_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+
+
+func _on_quadruped_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+
+
+func _on_threads_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+
+
+func _on_reset_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+
+
+func _on_menu_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+
+
+func _on_back_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+
+
+func _on_quit_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+
+
+func _on_texture_button_back_2_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+
+
+func _on_h_slider_main_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+
+
+func _on_h_slider_music_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+
+
+func _on_h_slider_effects_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+
+
+func _on_h_slider_ui_mouse_entered():
+	if audioUI.playing == false:
+		audioUI.set_stream(hover)
+		audioUI.play()
+#endregion
+
+func _on_texture_button_back_2_pressed():
+	scene.unpause()
+	klick2()
+	optionsMenu.visible = false

@@ -161,7 +161,8 @@ func heal(energy):
 
 func game_over():
 	print("Game Over")
-	SceneSwitcher.switch_scene(Globals.currentScene)
+	Globals.victorious = false
+	SceneSwitcher.switch_scene(Globals.end_scene)
 	pass
 
 func setWeapon1(gunStateL):
@@ -236,13 +237,13 @@ func setLegs(legState):
 			DamageMultiplyer = 2
 		LegState.QUADRUPED:
 			accelerationDuration = 1
-			speed = 30
+			speed = 35
 			legIdle = "QuadIdle"
 			legWalk = "QuadWalk"
 			DamageMultiplyer = 1
 		LegState.THREADS:
 			accelerationDuration = 0.7
-			speed = 20
+			speed = 25
 			legIdle = "TrakIdle"
 			legWalk = "TrakWalk"
 			DamageMultiplyer = 0.5

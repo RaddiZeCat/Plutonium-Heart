@@ -19,6 +19,8 @@ func _ready():
 	$OptionsMenu/HBoxContainer/VBoxContainer/HSliderEffects.set("value",AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Effects")))
 	$OptionsMenu/HBoxContainer/VBoxContainer/HSliderUI.set("value",AudioServer.get_bus_volume_db(AudioServer.get_bus_index("UI")))
 	$MainMenu/VBoxContainer/TextureButtonPlay.grab_focus()
+	#TODO unlock levels based on Globals.level_unlock
+	audioMusic.play()
 
 func _input(event):
 	if Input.is_action_just_pressed("ui_left"):
@@ -257,3 +259,7 @@ func _on_texture_button_back_3_mouse_entered():
 		audioUI.play()
 
 #endregion
+
+
+func _on_music_audio_stream_player_finished():
+	audioMusic.play()
