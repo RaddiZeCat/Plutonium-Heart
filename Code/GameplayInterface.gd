@@ -21,17 +21,24 @@ enum GunState{SHIELD,LMG,MINIGUN,SHOTGUN,LAUNCHER}
 enum LegState{BIPED,QUADRUPED,THREADS}
 @onready var legState = mech.legState
 
+func _ready():
+	$OptionsMenu/HBoxContainer/VBoxContainer/HSliderMain.set("value",AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Master")))
+	$OptionsMenu/HBoxContainer/VBoxContainer/HSliderMusic.set("value",AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Music")))
+	$OptionsMenu/HBoxContainer/VBoxContainer/HSliderEffects.set("value",AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Effects")))
+	$OptionsMenu/HBoxContainer/VBoxContainer/HSliderUI.set("value",AudioServer.get_bus_volume_db(AudioServer.get_bus_index("UI")))
+
 func _input(event):
 	if Input.is_action_just_pressed("pause"):
 		if scene.get_tree().paused == false:
 			klick2()
 			scene.pause()
-			pauseMenu.visible = true
-			$EquipmentMenu/MechImage/ShieldL.grab_focus() #TODO change to optionsMenu
+			pauseMenu.visible = true #change to optionsMenu insted of pauseMenu
+			$EquipmentMenu/MechImage/ShieldL.grab_focus()
+			#$OptionsMenu/HBoxContainer/VBoxContainer3/TextureButtonBack2.grab_focus()
 		elif scene.get_tree().paused == true:
 			scene.unpause()
 			klick2()
-			pauseMenu.visible = false
+			pauseMenu.visible = false #change it here too
 		#attach sceneCode to every Scene Root
 
 func klick():
@@ -146,121 +153,121 @@ func _on_quit_pressed():
 
 func _on_shield_l_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 
 
 func _on_shield_r_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 
 
 func _on_lmgl_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 
 
 func _on_lmgr_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 
 
 func _on_minigun_l_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 
 
 func _on_minigun_r_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 
 
 func _on_rocket_l_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 
 
 func _on_rocket_r_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 
 
 func _on_biped_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 
 
 func _on_quadruped_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 
 
 func _on_threads_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 
 
 func _on_reset_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 
 
 func _on_menu_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 
 
 func _on_back_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 
 
 func _on_quit_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 
 
 func _on_texture_button_back_2_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 
 
 func _on_h_slider_main_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 
 
 func _on_h_slider_music_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 
 
 func _on_h_slider_effects_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 
 
 func _on_h_slider_ui_mouse_entered():
 	if audioUI.playing == false:
-		audioUI.set_stream(hover)
+		audioUI.set_stream(audioHover)
 		audioUI.play()
 #endregion
 
@@ -268,3 +275,27 @@ func _on_texture_button_back_2_pressed():
 	scene.unpause()
 	klick2()
 	optionsMenu.visible = false
+
+
+func _on_h_slider_main_value_changed(value):
+	audioUI.set_stream(audioScroll)
+	audioUI.play()
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"),value)
+
+
+func _on_h_slider_music_value_changed(value):
+	audioUI.set_stream(audioScroll)
+	audioUI.play()
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"),value)
+
+
+func _on_h_slider_effects_value_changed(value):
+	audioUI.set_stream(audioScroll)
+	audioUI.play()
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Effects"),value)
+
+
+func _on_h_slider_ui_value_changed(value):
+	audioUI.set_stream(audioScroll)
+	audioUI.play()
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("UI"),value)

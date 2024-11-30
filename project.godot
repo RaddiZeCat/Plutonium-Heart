@@ -14,6 +14,7 @@ config/name="Plutonium Heart"
 run/main_scene="res://Maps/main_menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+config/windows_native_icon="res://Assets/UI/Icon1.ico"
 
 [autoload]
 

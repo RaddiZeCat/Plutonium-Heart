@@ -752,10 +752,13 @@ offset_bottom = 170.0
 
 [node name="VBoxContainer3" type="VBoxContainer" parent="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer"]
 layout_mode = 2
-size_flags_vertical = 4
+focus_neighbor_right = NodePath("../VBoxContainer/HSliderMain")
+focus_neighbor_bottom = NodePath("../VBoxContainer/HSliderUI")
 
 [node name="TextureButtonBack2" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer3"]
 layout_mode = 2
+focus_neighbor_right = NodePath("../../VBoxContainer/HSliderMain")
+focus_neighbor_bottom = NodePath("../../VBoxContainer/HSliderUI")
 texture_normal = ExtResource("30_1htl8")
 texture_hover = ExtResource("31_mkvnl")
 texture_focused = ExtResource("31_mkvnl")
@@ -785,6 +788,8 @@ text = "Master"
 
 [node name="HSliderMain" type="HSlider" parent="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer"]
 layout_mode = 2
+focus_neighbor_left = NodePath("../../VBoxContainer3/TextureButtonBack2")
+focus_neighbor_bottom = NodePath("../HSliderMusic")
 theme_override_icons/grabber = ExtResource("33_yn7q3")
 theme_override_icons/grabber_highlight = ExtResource("34_ohxrh")
 theme_override_styles/slider = SubResource("StyleBoxTexture_jk7a7")
@@ -805,6 +810,9 @@ text = "Music"
 
 [node name="HSliderMusic" type="HSlider" parent="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer"]
 layout_mode = 2
+focus_neighbor_left = NodePath("../../VBoxContainer3/TextureButtonBack2")
+focus_neighbor_top = NodePath("../HSliderMain")
+focus_neighbor_bottom = NodePath("../HSliderEffects")
 theme_override_icons/grabber = ExtResource("33_yn7q3")
 theme_override_icons/grabber_highlight = ExtResource("34_ohxrh")
 theme_override_styles/slider = SubResource("StyleBoxTexture_jk7a7")
@@ -825,6 +833,9 @@ text = "SFX"
 
 [node name="HSliderEffects" type="HSlider" parent="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer"]
 layout_mode = 2
+focus_neighbor_left = NodePath("../../VBoxContainer3/TextureButtonBack2")
+focus_neighbor_top = NodePath("../HSliderMusic")
+focus_neighbor_bottom = NodePath("../HSliderUI")
 theme_override_icons/grabber = ExtResource("33_yn7q3")
 theme_override_icons/grabber_highlight = ExtResource("34_ohxrh")
 theme_override_styles/slider = SubResource("StyleBoxTexture_jk7a7")
@@ -845,6 +856,8 @@ text = "UI"
 
 [node name="HSliderUI" type="HSlider" parent="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer"]
 layout_mode = 2
+focus_neighbor_left = NodePath("../../VBoxContainer3/TextureButtonBack2")
+focus_neighbor_top = NodePath("../HSliderEffects")
 theme_override_icons/grabber = ExtResource("33_yn7q3")
 theme_override_icons/grabber_highlight = ExtResource("34_ohxrh")
 theme_override_styles/slider = SubResource("StyleBoxTexture_jk7a7")
@@ -910,6 +923,10 @@ process_mode = 3
 [connection signal="mouse_entered" from="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer3/TextureButtonBack2" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_texture_button_back_2_mouse_entered"]
 [connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer3/TextureButtonBack2" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_texture_button_back_2_pressed"]
 [connection signal="mouse_entered" from="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer/HSliderMain" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_h_slider_main_mouse_entered"]
+[connection signal="value_changed" from="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer/HSliderMain" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_h_slider_main_value_changed"]
 [connection signal="mouse_entered" from="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer/HSliderMusic" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_h_slider_music_mouse_entered"]
+[connection signal="value_changed" from="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer/HSliderMusic" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_h_slider_music_value_changed"]
 [connection signal="mouse_entered" from="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer/HSliderEffects" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_h_slider_effects_mouse_entered"]
+[connection signal="value_changed" from="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer/HSliderEffects" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_h_slider_effects_value_changed"]
 [connection signal="mouse_entered" from="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer/HSliderUI" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_h_slider_ui_mouse_entered"]
+[connection signal="value_changed" from="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer/HSliderUI" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_h_slider_ui_value_changed"]
