@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cke4aq01af15p"
+path="res://.godot/imported/ES_Suffocation - Sven Karlsson.wav-db962be746f3bb88035f6b85655715de.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/ES_Suffocation - Sven Karlsson.wav"
+dest_files=["res://.godot/imported/ES_Suffocation - Sven Karlsson.wav-db962be746f3bb88035f6b85655715de.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

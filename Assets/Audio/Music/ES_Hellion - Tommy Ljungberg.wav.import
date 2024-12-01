@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b2njyacd646eg"
+path="res://.godot/imported/ES_Hellion - Tommy Ljungberg.wav-890c6354f1453bc5cf6a5d8c706c42d3.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/ES_Hellion - Tommy Ljungberg.wav"
+dest_files=["res://.godot/imported/ES_Hellion - Tommy Ljungberg.wav-890c6354f1453bc5cf6a5d8c706c42d3.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

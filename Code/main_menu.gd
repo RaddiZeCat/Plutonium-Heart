@@ -227,6 +227,7 @@ func _on_texture_button_back_2_mouse_entered():
 	if audioUI.playing == false:
 		audioUI.set_stream(hover)
 		audioUI.play()
+	Globals.settingsSave()
 
 
 func _on_h_slider_main_mouse_entered():

@@ -51,10 +51,12 @@ var DamageMultiplyer
 @onready var audioMech = $MechAudioStreamPlayer2D
 @onready var audioGun1 = $Gun1AudioStreamPlayer2D
 @onready var audioGun2 = $Gun2AudioStreamPlayer2D
+@onready var audioPickup = $PickupAudioStreamPlayer2D
 @export var audioShield:AudioStream
 @export var audioLMG:AudioStream
 @export var audioMinigun:AudioStream
 @export var audioRocket:AudioStream
+@export var charge:AudioStream
 
 
 func _ready():
@@ -158,6 +160,8 @@ func heal(energy):
 	if currentHealth > health:
 		currentHealth = health
 	healthBar.frame = currentHealth
+	audioPickup.set_stream(charge)
+	audioPickup.play()
 
 func game_over():
 	print("Game Over")

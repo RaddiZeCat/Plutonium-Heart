@@ -129,6 +129,7 @@ func _on_threads_pressed():
 
 func _on_reset_pressed(): #TODO Replace with better Options
 	scene.unpause()
+	Globals.settingsSave()
 	get_tree().reload_current_scene()
 	klick()
 
@@ -136,12 +137,14 @@ func _on_reset_pressed(): #TODO Replace with better Options
 func _on_menu_pressed():
 	klick()
 	scene.unpause()
+	Globals.settingsSave()
 	SceneSwitcher.switch_scene(Globals.mainMenu)
 
 
 func _on_back_pressed():
 	klick()
 	scene.unpause()
+	Globals.settingsSave()
 	pauseMenu.visible = false
 
 

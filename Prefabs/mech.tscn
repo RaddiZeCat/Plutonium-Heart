@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://du4w5dcflie8w"]
+[gd_scene load_steps=51 format=3 uid="uid://du4w5dcflie8w"]
 
 [ext_resource type="Script" path="res://Code/Mech.gd" id="1_xw55t"]
 [ext_resource type="PackedScene" uid="uid://bjnxt3imrjojp" path="res://Prefabs/bullet.tscn" id="2_gkgy7"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://fp60lw3owtmg" path="res://Assets/UI/UIBackground.png" id="10_4eauj"]
 [ext_resource type="Script" path="res://Code/GameplayInterface.gd" id="10_dort6"]
 [ext_resource type="AudioStream" uid="uid://bbiluldmuhpig" path="res://Assets/Audio/Effects/Guns/Rocket.wav" id="10_e2yhj"]
+[ext_resource type="AudioStream" uid="uid://mjpnvc2ucm5i" path="res://Assets/Audio/Effects/Guns/EnergyCell.wav" id="11_b5k1p"]
 [ext_resource type="Texture2D" uid="uid://deknjvlhmk4sh" path="res://Assets/UI/HealthBar.png" id="11_clugo"]
 [ext_resource type="AudioStream" uid="uid://c1md7y6mg24g0" path="res://Assets/Audio/UI/Button1.wav" id="11_k1uml"]
 [ext_resource type="AudioStream" uid="uid://kagqe8ac23v6" path="res://Assets/Audio/UI/Hover.wav" id="12_jmcqv"]
@@ -196,6 +197,7 @@ audioShield = ExtResource("22_r38rn")
 audioLMG = ExtResource("21_0oe7c")
 audioMinigun = ExtResource("9_1dv2o")
 audioRocket = ExtResource("10_e2yhj")
+charge = ExtResource("11_b5k1p")
 
 [node name="Body Collision" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ydudx")
@@ -745,6 +747,7 @@ theme = ExtResource("29_oi7t7")
 text = "Options"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu"]
+layout_mode = 0
 offset_left = 44.0
 offset_top = 30.0
 offset_right = 240.0
@@ -871,6 +874,11 @@ one_shot = true
 one_shot = true
 
 [node name="MechAudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+process_mode = 3
+panning_strength = 3.0
+bus = &"Effects"
+
+[node name="PickupAudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 process_mode = 3
 panning_strength = 3.0
 bus = &"Effects"
