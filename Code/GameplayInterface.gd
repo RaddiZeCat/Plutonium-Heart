@@ -32,14 +32,24 @@ func _input(event):
 		if scene.get_tree().paused == false:
 			klick2()
 			scene.pause()
-			pauseMenu.visible = true #change to optionsMenu insted of pauseMenu
+			optionsMenu.visible = true #change to optionsMenu insted of pauseMenu
 			$EquipmentMenu/MechImage/ShieldL.grab_focus()
-			#$OptionsMenu/HBoxContainer/VBoxContainer3/TextureButtonBack2.grab_focus()
 		elif scene.get_tree().paused == true:
 			scene.unpause()
 			klick2()
-			pauseMenu.visible = false #change it here too
+			optionsMenu.visible = false #change it here too
 		#attach sceneCode to every Scene Root
+
+func openMechanic():
+	pauseMenu.visible = true
+	scene.pause()
+	klick2()
+	$OptionsMenu/HBoxContainer/VBoxContainer3/TextureButtonBack2.grab_focus()
+
+func closeMechanic():
+	pauseMenu.visible = false
+	scene.unpause()
+	klick2()
 
 func klick():
 	audioUI.set_stream(audioKlick)
@@ -146,6 +156,7 @@ func _on_back_pressed():
 	scene.unpause()
 	Globals.settingsSave()
 	pauseMenu.visible = false
+	mech.mechanicOpen = false
 
 
 func _on_quit_pressed():

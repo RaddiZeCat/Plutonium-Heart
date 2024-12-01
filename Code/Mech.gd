@@ -15,6 +15,7 @@ extends CharacterBody2D
 @export var health:int = 20
 @onready var currentHealth:int = health
 @onready var healthBar = $CameraMarker2D/Camera2D/GameplayInterface/Healthbar
+@onready var gameplayInterface = $CameraMarker2D/Camera2D/GameplayInterface
 
 @export var bullet:PackedScene
 @export var minibullet:PackedScene
@@ -25,6 +26,8 @@ extends CharacterBody2D
 @onready var shotR:PackedScene = shieldShot
 @onready var timerL = $TimerL
 @onready var timerR = $TimerR
+@onready var atMechanic = false
+@onready var mechanicOpen = false
 
 enum GunState{SHIELD,LMG,MINIGUN,SHOTGUN,LAUNCHER}
 var gunStateL = Globals.gunLeft
@@ -114,6 +117,12 @@ func _input(event):
 	if Input.is_action_just_released("shoot_2"):
 		shootingR = false
 		
+	if Input.is_action_just_pressed("interact"):
+		if atMechanic == true:
+			if mechanicOpen == false:
+				gameplayInterface.openMechanic()
+				mechanicOpen = true
+	
 	if controllerLook != Vector2(0,0):
 		usingController = true
 	if event is InputEventMouseMotion:

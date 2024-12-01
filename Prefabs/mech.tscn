@@ -633,7 +633,8 @@ offset_bottom = 98.0
 
 [node name="Reset" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer"]
 layout_mode = 2
-tooltip_text = "Reload the current Scene"
+tooltip_text = "Reload the current Scene
+(Only for Debugging)"
 focus_neighbor_right = NodePath("../../MechImage/LMGL")
 focus_neighbor_bottom = NodePath("../../MechImage/Biped")
 theme = ExtResource("29_oi7t7")
@@ -654,7 +655,7 @@ text = "Reload"
 
 [node name="Menu" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer"]
 layout_mode = 2
-tooltip_text = "Reload the current Scene"
+tooltip_text = "Return to main menu"
 focus_neighbor_right = NodePath("../../MechImage/LMGL")
 focus_neighbor_bottom = NodePath("../../MechImage/Biped")
 theme = ExtResource("29_oi7t7")
@@ -675,7 +676,7 @@ text = "to menu"
 
 [node name="Back" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer"]
 layout_mode = 2
-tooltip_text = "Reload the current Scene"
+tooltip_text = "Reload the current Sceneback to game"
 focus_neighbor_right = NodePath("../../MechImage/LMGL")
 focus_neighbor_bottom = NodePath("../../MechImage/Biped")
 theme = ExtResource("29_oi7t7")
@@ -696,7 +697,7 @@ text = "Close"
 
 [node name="Quit" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer"]
 layout_mode = 2
-tooltip_text = "Reload the current Scene"
+tooltip_text = "quit the game"
 focus_neighbor_right = NodePath("../../MechImage/LMGL")
 focus_neighbor_bottom = NodePath("../../MechImage/Biped")
 theme = ExtResource("29_oi7t7")
@@ -796,8 +797,8 @@ focus_neighbor_bottom = NodePath("../HSliderMusic")
 theme_override_icons/grabber = ExtResource("33_yn7q3")
 theme_override_icons/grabber_highlight = ExtResource("34_ohxrh")
 theme_override_styles/slider = SubResource("StyleBoxTexture_jk7a7")
-min_value = -72.0
-max_value = 28.0
+min_value = -50.0
+max_value = 6.0
 
 [node name="TextureRect2" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -819,8 +820,8 @@ focus_neighbor_bottom = NodePath("../HSliderEffects")
 theme_override_icons/grabber = ExtResource("33_yn7q3")
 theme_override_icons/grabber_highlight = ExtResource("34_ohxrh")
 theme_override_styles/slider = SubResource("StyleBoxTexture_jk7a7")
-min_value = -72.0
-max_value = 28.0
+min_value = -50.0
+max_value = 6.0
 
 [node name="TextureRect3" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -842,8 +843,8 @@ focus_neighbor_bottom = NodePath("../HSliderUI")
 theme_override_icons/grabber = ExtResource("33_yn7q3")
 theme_override_icons/grabber_highlight = ExtResource("34_ohxrh")
 theme_override_styles/slider = SubResource("StyleBoxTexture_jk7a7")
-min_value = -72.0
-max_value = 28.0
+min_value = -50.0
+max_value = 6.0
 
 [node name="TextureRect4" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -864,8 +865,8 @@ focus_neighbor_top = NodePath("../HSliderEffects")
 theme_override_icons/grabber = ExtResource("33_yn7q3")
 theme_override_icons/grabber_highlight = ExtResource("34_ohxrh")
 theme_override_styles/slider = SubResource("StyleBoxTexture_jk7a7")
-min_value = -72.0
-max_value = 28.0
+min_value = -50.0
+max_value = 6.0
 
 [node name="TimerL" type="Timer" parent="."]
 one_shot = true
