@@ -28,6 +28,7 @@ extends CharacterBody2D
 @onready var timerR = $TimerR
 @onready var atMechanic = false
 @onready var mechanicOpen = false
+var uiOpen = true
 
 enum GunState{SHIELD,LMG,MINIGUN,SHOTGUN,LAUNCHER}
 var gunStateL = Globals.gunLeft
@@ -116,6 +117,14 @@ func _input(event):
 		shootingR = true
 	if Input.is_action_just_released("shoot_2"):
 		shootingR = false
+		
+	if Input.is_action_just_pressed("toggleui"):
+		if uiOpen == true:
+			$CameraMarker2D/Camera2D/GameplayInterface.visible = false
+			uiOpen = false
+		elif uiOpen == false:
+			$CameraMarker2D/Camera2D/GameplayInterface.visible = true
+			uiOpen = true
 		
 	if Input.is_action_just_pressed("interact"):
 		if atMechanic == true:

@@ -12,6 +12,7 @@ extends Control
 @export var scroll:AudioStream
 
 func _ready():
+	audioMusic.play()
 	if Globals.victorious == true:
 		victoryScreen.visible = true
 		lossScreen.visible = false
@@ -35,3 +36,7 @@ func _on_texture_button_main_menu_pressed():
 
 func _on_texture_button_quit_pressed():
 	get_tree().quit()
+
+
+func _on_music_audio_stream_player_finished():
+	audioMusic.play()

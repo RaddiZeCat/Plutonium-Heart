@@ -17,6 +17,9 @@ func _physics_process(delta):
 	if selfkill == true:
 		await get_tree().create_timer(0.4).timeout
 		self.queue_free()
+	elif selfkill == false:
+		await get_tree().create_timer(1.5).timeout
+		self.queue_free()
 
 
 func _on_area_entered(area):

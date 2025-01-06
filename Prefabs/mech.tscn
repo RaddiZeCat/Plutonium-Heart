@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://du4w5dcflie8w"]
+[gd_scene load_steps=54 format=3 uid="uid://du4w5dcflie8w"]
 
 [ext_resource type="Script" path="res://Code/Mech.gd" id="1_xw55t"]
 [ext_resource type="PackedScene" uid="uid://bjnxt3imrjojp" path="res://Prefabs/bullet.tscn" id="2_gkgy7"]
@@ -34,7 +34,10 @@
 [ext_resource type="Texture2D" uid="uid://cbqeu8rgecnwu" path="res://Assets/UI/Sammelsorium/Button5.png" id="30_2mda5"]
 [ext_resource type="Texture2D" uid="uid://c2yen72c0u1hf" path="res://Assets/UI/Sammelsorium/Button6.png" id="31_e3hys"]
 [ext_resource type="Texture2D" uid="uid://f5ebigjkpthw" path="res://Assets/UI/Sammelsorium/Button4.png" id="31_mkvnl"]
+[ext_resource type="Texture2D" uid="uid://chirgrgyujhr7" path="res://Assets/Player/Guns6.png" id="31_q0432"]
+[ext_resource type="Texture2D" uid="uid://cxfit0iw4pinm" path="res://Assets/Player/Guns7.png" id="32_01vwr"]
 [ext_resource type="Texture2D" uid="uid://dm2a30ua07efo" path="res://Assets/UI/Sammelsorium/Button13.png" id="32_q3soo"]
+[ext_resource type="Texture2D" uid="uid://cwh74oi47j16w" path="res://Assets/Player/Guns8.png" id="33_6iqtq"]
 [ext_resource type="Texture2D" uid="uid://cxgiast4wh8a1" path="res://Assets/UI/Sammelsorium/DragButton1.png" id="33_yn7q3"]
 [ext_resource type="Texture2D" uid="uid://0rvtc4c0f8co" path="res://Assets/UI/Sammelsorium/DragButton2.png" id="34_ohxrh"]
 [ext_resource type="Texture2D" uid="uid://bgux2q8hpkbhv" path="res://Assets/UI/DragBar.png" id="35_55ww5"]
@@ -554,14 +557,14 @@ texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
 texture_focused = ExtResource("14_puoa7")
 
-[node name="Label" type="Label" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Biped"]
+[node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Biped"]
 layout_mode = 0
-offset_left = -3.0
+offset_left = 4.0
 offset_top = 4.0
-offset_right = 28.0
-offset_bottom = 16.0
-theme_override_font_sizes/font_size = 8
-text = "Biped"
+offset_right = 20.0
+offset_bottom = 20.0
+texture = ExtResource("31_q0432")
+stretch_mode = 2
 
 [node name="Quadruped" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage"]
 layout_mode = 0
@@ -584,16 +587,14 @@ texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
 texture_focused = ExtResource("14_puoa7")
 
-[node name="Label" type="Label" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Quadruped"]
-z_index = 1
+[node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Quadruped"]
 layout_mode = 0
-offset_left = -18.0
-offset_top = 13.0
-offset_right = 44.0
-offset_bottom = 25.0
-theme = ExtResource("29_oi7t7")
-theme_override_font_sizes/font_size = 8
-text = "Quadruped"
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 20.0
+offset_bottom = 20.0
+texture = ExtResource("32_01vwr")
+stretch_mode = 2
 
 [node name="Threads" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage"]
 layout_mode = 0
@@ -614,15 +615,14 @@ texture_hover = ExtResource("14_puoa7")
 texture_disabled = ExtResource("15_kc585")
 texture_focused = ExtResource("14_puoa7")
 
-[node name="Label" type="Label" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Threads"]
+[node name="TextureRect" type="TextureRect" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Threads"]
 layout_mode = 0
-offset_left = -10.0
-offset_top = 2.0
-offset_right = 37.0
-offset_bottom = 14.0
-theme = ExtResource("29_oi7t7")
-theme_override_font_sizes/font_size = 8
-text = "Threads"
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 20.0
+offset_bottom = 20.0
+texture = ExtResource("33_6iqtq")
+stretch_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu"]
 layout_mode = 0
@@ -632,6 +632,7 @@ offset_right = 118.0
 offset_bottom = 98.0
 
 [node name="Reset" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer"]
+visible = false
 layout_mode = 2
 tooltip_text = "Reload the current Scene
 (Only for Debugging)"
@@ -653,6 +654,27 @@ theme = ExtResource("29_oi7t7")
 theme_override_font_sizes/font_size = 8
 text = "Reload"
 
+[node name="Back" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "Return to game"
+focus_neighbor_right = NodePath("../../MechImage/LMGL")
+focus_neighbor_bottom = NodePath("../../MechImage/Biped")
+theme = ExtResource("29_oi7t7")
+action_mode = 0
+texture_normal = ExtResource("30_2mda5")
+texture_hover = ExtResource("31_e3hys")
+texture_focused = ExtResource("31_e3hys")
+
+[node name="Label" type="Label" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer/Back"]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 4.0
+offset_right = 70.0
+offset_bottom = 16.0
+theme = ExtResource("29_oi7t7")
+theme_override_font_sizes/font_size = 8
+text = "Return"
+
 [node name="Menu" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer"]
 layout_mode = 2
 tooltip_text = "Return to main menu"
@@ -673,27 +695,6 @@ offset_bottom = 16.0
 theme = ExtResource("29_oi7t7")
 theme_override_font_sizes/font_size = 8
 text = "to menu"
-
-[node name="Back" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer"]
-layout_mode = 2
-tooltip_text = "Reload the current Sceneback to game"
-focus_neighbor_right = NodePath("../../MechImage/LMGL")
-focus_neighbor_bottom = NodePath("../../MechImage/Biped")
-theme = ExtResource("29_oi7t7")
-action_mode = 0
-texture_normal = ExtResource("30_2mda5")
-texture_hover = ExtResource("31_e3hys")
-texture_focused = ExtResource("31_e3hys")
-
-[node name="Label" type="Label" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer/Back"]
-layout_mode = 0
-offset_left = 32.0
-offset_top = 4.0
-offset_right = 72.0
-offset_bottom = 16.0
-theme = ExtResource("29_oi7t7")
-theme_override_font_sizes/font_size = 8
-text = "Close"
 
 [node name="Quit" type="TextureButton" parent="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer"]
 layout_mode = 2
@@ -923,10 +924,10 @@ process_mode = 3
 [connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/MechImage/Threads" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_threads_pressed"]
 [connection signal="mouse_entered" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer/Reset" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_reset_mouse_entered"]
 [connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer/Reset" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_reset_pressed"]
-[connection signal="mouse_entered" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer/Menu" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_menu_mouse_entered"]
-[connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer/Menu" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_menu_pressed"]
 [connection signal="mouse_entered" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer/Back" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_back_mouse_entered"]
 [connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer/Back" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_back_pressed"]
+[connection signal="mouse_entered" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer/Menu" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_menu_mouse_entered"]
+[connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer/Menu" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_menu_pressed"]
 [connection signal="mouse_entered" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer/Quit" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_quit_mouse_entered"]
 [connection signal="pressed" from="CameraMarker2D/Camera2D/GameplayInterface/EquipmentMenu/VBoxContainer/Quit" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_quit_pressed"]
 [connection signal="mouse_entered" from="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer3/TextureButtonBack2" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_texture_button_back_2_mouse_entered"]
