@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://penaglwgsfy4"]
+[gd_scene load_steps=13 format=3 uid="uid://penaglwgsfy4"]
 
 [ext_resource type="Script" path="res://Code/sceneCode.gd" id="1_6mpgh"]
 [ext_resource type="PackedScene" uid="uid://du4w5dcflie8w" path="res://Prefabs/mech.tscn" id="2_863rm"]
@@ -7,7 +7,11 @@
 [ext_resource type="AudioStream" uid="uid://7beeh8rxxvl7" path="res://Assets/Audio/Music/ES_1000 Watts - Hampus Naeselius.wav" id="5_ea7wx"]
 [ext_resource type="PackedScene" uid="uid://6nh2pj7txqym" path="res://Prefabs/mapTrigger.tscn" id="6_pt3i1"]
 [ext_resource type="Texture2D" uid="uid://d3vrv2sdvojdj" path="res://Assets/Map/Workshop.png" id="7_uqpj7"]
+[ext_resource type="PackedScene" uid="uid://kgqxw8cfb21d" path="res://Prefabs/enemyLMG.tscn" id="8_hrxlp"]
 [ext_resource type="PackedScene" uid="uid://dyf4uupadyss8" path="res://Prefabs/energy_pack.tscn" id="8_i0o46"]
+[ext_resource type="PackedScene" uid="uid://dwf1fhpajhp5i" path="res://Prefabs/enemyMinigun.tscn" id="9_jui2i"]
+[ext_resource type="PackedScene" uid="uid://dc4567c8fpsvb" path="res://Prefabs/mine.tscn" id="11_fib4k"]
+[ext_resource type="PackedScene" uid="uid://b8jddpbvsxc7a" path="res://Prefabs/destructable.tscn" id="12_wp3et"]
 
 [node name="Level2" type="Node2D"]
 script = ExtResource("1_6mpgh")
@@ -49,16 +53,476 @@ position = Vector2(1136, -207)
 texture = ExtResource("7_uqpj7")
 
 [node name="Tanks" type="Node2D" parent="."]
+visible = false
+
+[node name="EnemyLMG" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(301, 110)
+
+[node name="EnemyLMG2" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(437, 114)
+
+[node name="EnemyLMG3" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(320, -101)
+
+[node name="EnemyLMG4" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(397, -106)
+
+[node name="EnemyLMG5" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(606, 187)
+
+[node name="EnemyLMG6" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(470, -18)
+
+[node name="EnemyLMG7" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(317, 295)
+
+[node name="EnemyLMG8" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(186, 368)
+
+[node name="EnemyLMG9" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(262, 462)
+
+[node name="EnemyLMG10" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(378, 462)
+
+[node name="EnemyLMG11" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(515, 463)
+
+[node name="EnemyLMG12" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(566, 387)
+
+[node name="EnemyLMG13" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(676, 334)
+
+[node name="EnemyLMG14" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(826, 333)
+
+[node name="EnemyLMG15" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(723, 144)
+
+[node name="EnemyLMG16" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(748, -8)
+
+[node name="EnemyLMG17" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(626, -219)
+
+[node name="EnemyLMG18" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(622, -123)
+
+[node name="EnemyLMG19" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(405, -247)
+
+[node name="EnemyLMG20" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(87, -211)
+
+[node name="EnemyLMG21" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(-76, -246)
+
+[node name="EnemyLMG22" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(-81, -344)
+
+[node name="EnemyLMG23" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(83, -371)
+
+[node name="EnemyLMG24" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(20, -434)
+
+[node name="EnemyLMG25" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(-169, -490)
+
+[node name="EnemyLMG26" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(-177, -618)
+
+[node name="EnemyLMG27" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(-304, -704)
+
+[node name="EnemyLMG28" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(-22, -710)
+
+[node name="EnemyLMG29" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(31, -609)
+
+[node name="EnemyLMG30" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(-301, -869)
+
+[node name="EnemyLMG31" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(-175, -905)
+
+[node name="EnemyLMG32" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(-41, -907)
+
+[node name="EnemyLMG33" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(79, -815)
+
+[node name="EnemyLMG34" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(162, -913)
+
+[node name="EnemyLMG35" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(310, -915)
+
+[node name="EnemyLMG36" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(400, -841)
+
+[node name="EnemyLMG37" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(521, -777)
+
+[node name="EnemyLMG38" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(405, -686)
+
+[node name="EnemyLMG39" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(226, -589)
+
+[node name="EnemyLMG40" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(244, -439)
+
+[node name="EnemyLMG41" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(483, -582)
+
+[node name="EnemyLMG42" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(504, -447)
+
+[node name="EnemyLMG43" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(694, -427)
+
+[node name="EnemyLMG44" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(722, -568)
+
+[node name="EnemyLMG45" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(727, -705)
+
+[node name="EnemyLMG46" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(832, -790)
+
+[node name="EnemyLMG47" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(1054, -785)
+
+[node name="EnemyLMG48" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(1099, -611)
+
+[node name="EnemyLMG49" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(1092, -404)
+
+[node name="EnemyLMG50" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(884, -357)
+
+[node name="EnemyLMG51" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(750, -237)
+
+[node name="EnemyLMG52" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(880, -89)
+
+[node name="EnemyLMG53" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(1035, -139)
+
+[node name="EnemyLMG54" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(893, 67)
+
+[node name="EnemyLMG55" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(991, 332)
+
+[node name="EnemyLMG56" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(1040, 158)
+
+[node name="EnemyLMG57" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(1234, 359)
+
+[node name="EnemyLMG58" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(845, 489)
+
+[node name="EnemyLMG59" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(1000, 530)
+
+[node name="EnemyLMG60" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(1185, 526)
+
+[node name="EnemyLMG61" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(1392, 529)
+
+[node name="EnemyLMG62" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(1451, 380)
+
+[node name="EnemyLMG63" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(1447, 201)
+
+[node name="EnemyLMG64" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(1228, 182)
+
+[node name="EnemyLMG65" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(1364, 36)
+
+[node name="EnemyLMG66" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(1303, -114)
+
+[node name="EnemyLMG67" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(1480, -66)
+
+[node name="EnemyLMG68" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(1546, -185)
+
+[node name="EnemyLMG69" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(1643, -382)
+
+[node name="EnemyLMG70" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(1443, -496)
+
+[node name="EnemyLMG71" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(1295, -328)
+
+[node name="EnemyLMG72" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(1266, -842)
+
+[node name="EnemyLMG73" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(1464, -840)
+
+[node name="EnemyLMG74" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(1548, -686)
+
+[node name="EnemyLMG75" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(1551, -496)
+
+[node name="EnemyLMG76" parent="Tanks" instance=ExtResource("9_jui2i")]
+position = Vector2(1395, -46)
+
+[node name="EnemyLMG77" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(1133, -502)
+
+[node name="EnemyLMG78" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(877, -493)
+
+[node name="EnemyLMG79" parent="Tanks" instance=ExtResource("8_hrxlp")]
+position = Vector2(1005, -401)
 
 [node name="Mines" type="Node2D" parent="."]
 
+[node name="Mine26" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1321, -725)
+
+[node name="Mine27" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1331, -667)
+
+[node name="Mine28" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(872, -518)
+
+[node name="Mine29" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(633, -396)
+
+[node name="Mine30" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(426, -584)
+
+[node name="Mine31" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(32, -736)
+
+[node name="Mine33" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(32, -704)
+
+[node name="Mine35" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(32, -672)
+
+[node name="Mine37" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(32, -640)
+
+[node name="Mine39" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(32, -608)
+
+[node name="Mine41" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(32, -576)
+
+[node name="Mine32" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(85, -282)
+
+[node name="Mine34" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(-93, -258)
+
+[node name="Mine36" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(219, 8)
+
+[node name="Mine38" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(211, 29)
+
+[node name="Mine40" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(299, 308)
+
+[node name="Mine42" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(631, 339)
+
+[node name="Mine43" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(850, 459)
+
+[node name="Mine44" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1060, 361)
+
+[node name="Mine45" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1202, 344)
+
+[node name="Mine46" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1430, 506)
+
+[node name="Mine47" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1386, 151)
+
+[node name="Mine48" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1072, -16)
+
+[node name="Mine49" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1104, -16)
+
+[node name="Mine50" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1136, -16)
+
+[node name="Mine51" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1168, -16)
+
+[node name="Mine52" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1200, -16)
+
+[node name="Mine53" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1232, -16)
+
+[node name="Mine54" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1264, -16)
+
+[node name="Mine55" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1296, -16)
+
+[node name="Mine56" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1328, -16)
+
+[node name="Mine57" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(635, -204)
+
+[node name="Mine58" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(375, -354)
+
+[node name="Mine59" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1321, -475)
+
+[node name="Mine60" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1578, -525)
+
+[node name="Mine61" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(743, -775)
+
+[node name="Mine" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(90, 71)
+frame = 1
+friendly = true
+
+[node name="Mine3" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(97, 59)
+frame = 1
+friendly = true
+
+[node name="Mine4" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(102, 45)
+frame = 1
+friendly = true
+
+[node name="Mine5" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(106, 31)
+frame = 1
+friendly = true
+
+[node name="Mine6" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(109, 17)
+frame = 1
+friendly = true
+
+[node name="Mine7" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(109, 1)
+frame = 1
+friendly = true
+
+[node name="Mine8" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(106, -14)
+frame = 1
+friendly = true
+
+[node name="Mine9" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(103, -28)
+frame = 1
+friendly = true
+
+[node name="Mine2" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(99, -40)
+frame = 1
+friendly = true
+
+[node name="Mine10" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1094, -167)
+frame = 1
+friendly = true
+
+[node name="Mine11" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1103, -154)
+frame = 1
+friendly = true
+
+[node name="Mine12" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1117, -147)
+frame = 1
+friendly = true
+
+[node name="Mine13" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1132, -143)
+frame = 1
+friendly = true
+
+[node name="Mine14" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1147, -141)
+frame = 1
+friendly = true
+
+[node name="Mine15" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(1162, -140)
+frame = 1
+friendly = true
+
+[node name="Mine16" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(566, 212)
+
+[node name="Mine17" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(577, 223)
+
+[node name="Mine18" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(588, 235)
+
+[node name="Mine19" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(651, 171)
+
+[node name="Mine20" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(640, 158)
+
+[node name="Mine21" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(635, 145)
+
+[node name="Mine22" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(632, 132)
+
+[node name="Mine23" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(632, 119)
+
+[node name="Mine24" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(545, 120)
+
+[node name="Mine25" parent="Mines" instance=ExtResource("11_fib4k")]
+position = Vector2(544, 136)
+
 [node name="Pickups" type="Node2D" parent="."]
+
+[node name="EnergyPack2" parent="Pickups" instance=ExtResource("8_i0o46")]
+position = Vector2(589, 168)
+
+[node name="EnergyPack5" parent="Pickups" instance=ExtResource("8_i0o46")]
+position = Vector2(593, 192)
+
+[node name="EnergyPack13" parent="Pickups" instance=ExtResource("8_i0o46")]
+position = Vector2(616, 176)
+
+[node name="EnergyPack14" parent="Pickups" instance=ExtResource("8_i0o46")]
+position = Vector2(621, 204)
 
 [node name="EnergyPack" parent="Pickups" instance=ExtResource("8_i0o46")]
 position = Vector2(202, 464)
-
-[node name="EnergyPack2" parent="Pickups" instance=ExtResource("8_i0o46")]
-position = Vector2(561, 338)
 
 [node name="EnergyPack3" parent="Pickups" instance=ExtResource("8_i0o46")]
 position = Vector2(1114, -317)
@@ -70,7 +534,7 @@ position = Vector2(1129, -317)
 position = Vector2(1136, 351)
 
 [node name="EnergyPack7" parent="Pickups" instance=ExtResource("8_i0o46")]
-position = Vector2(772, -38)
+position = Vector2(874, 19)
 
 [node name="EnergyPack8" parent="Pickups" instance=ExtResource("8_i0o46")]
 position = Vector2(467, -431)
@@ -88,3 +552,843 @@ position = Vector2(1313, -672)
 position = Vector2(1344, -672)
 
 [node name="Destructables" type="Node2D" parent="."]
+
+[node name="Destructable2" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(222, 34)
+frame = 2
+state = 1
+
+[node name="Destructable3" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(222, -2)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable4" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(258, 34)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable5" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(734, 162)
+frame = 2
+state = 1
+
+[node name="Destructable8" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(770, 126)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable6" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(734, 126)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable7" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(770, 162)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable101" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(606, -222)
+frame = 2
+state = 1
+
+[node name="Destructable102" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(642, -258)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable103" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(606, -258)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable104" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(642, -222)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable79" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(862, -222)
+frame = 2
+state = 1
+
+[node name="Destructable80" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(898, -258)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable81" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(862, -258)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable82" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1086, -766)
+frame = 2
+state = 1
+
+[node name="Destructable96" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1122, -802)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable97" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1086, -802)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable144" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(-194, -606)
+frame = 2
+state = 1
+
+[node name="Destructable145" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(-158, -642)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable146" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(-194, -642)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable92" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(702, -766)
+frame = 2
+state = 1
+
+[node name="Destructable93" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(738, -802)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable94" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(702, -802)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable95" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(738, -766)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable61" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1342, -30)
+frame = 2
+state = 1
+
+[node name="Destructable62" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1378, -66)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable64" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1378, -30)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable63" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1278, -478)
+frame = 2
+state = 1
+
+[node name="Destructable65" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1314, -514)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable66" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1314, -478)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable49" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1278, -30)
+frame = 2
+state = 1
+
+[node name="Destructable53" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1314, -66)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable54" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1278, -66)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable67" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1534, -478)
+frame = 2
+state = 1
+
+[node name="Destructable68" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1570, -514)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable69" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1534, -514)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable76" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1310, -830)
+frame = 2
+state = 1
+
+[node name="Destructable77" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1346, -866)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable78" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1310, -866)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable50" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(482, -34)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable51" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(446, -34)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable52" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(482, 2)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable40" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(606, 2)
+frame = 2
+state = 1
+
+[node name="Destructable47" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(642, -34)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable48" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(606, -34)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable105" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(382, -94)
+frame = 2
+state = 1
+
+[node name="Destructable106" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(418, -130)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable107" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(382, -130)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable120" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(62, -190)
+frame = 2
+state = 1
+
+[node name="Destructable121" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(98, -226)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable122" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(62, -226)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable123" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(222, -350)
+frame = 2
+state = 1
+
+[node name="Destructable124" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(258, -386)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable125" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(222, -386)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable126" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(382, -574)
+frame = 2
+state = 1
+
+[node name="Destructable127" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(418, -610)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable128" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(382, -610)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable129" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(510, -414)
+frame = 2
+state = 1
+
+[node name="Destructable130" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(546, -450)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable131" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(510, -450)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable44" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(898, 30)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable45" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(862, 30)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable46" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(898, 66)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable83" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(898, -162)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable84" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(862, -162)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable85" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(898, -126)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable86" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(898, -418)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable87" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(862, -418)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable88" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(898, -382)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable108" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(418, -258)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable109" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(382, -258)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable110" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(418, -222)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable117" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(258, -130)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable118" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(222, -130)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable119" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(258, -94)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable111" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(98, -386)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable112" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(62, -386)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable113" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(98, -350)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable114" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(-286, -930)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable115" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(-322, -930)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable116" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(-286, -894)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable98" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(418, -802)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable99" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(382, -802)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable100" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(418, -766)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable89" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(738, -546)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable90" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(702, -546)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable91" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(738, -510)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable33" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1438, 386)
+frame = 2
+state = 1
+
+[node name="Destructable34" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1474, 350)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable35" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1438, 350)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable36" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1474, 386)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable41" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1058, 158)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable42" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1022, 158)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable43" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1058, 194)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable55" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1506, -194)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable56" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1470, -194)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable57" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1506, -158)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable58" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1314, -290)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable59" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1278, -290)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable60" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1314, -254)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable70" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1122, -514)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable71" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1086, -514)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable72" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1122, -478)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable73" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1570, -738)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable74" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1534, -738)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable75" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1570, -702)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable37" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1342, 194)
+frame = 2
+state = 1
+
+[node name="Destructable38" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1378, 158)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable39" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1342, 158)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable29" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1214, 546)
+frame = 2
+state = 1
+
+[node name="Destructable31" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1250, 510)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable32" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(1214, 510)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable27" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(830, 354)
+frame = 2
+state = 1
+
+[node name="Destructable28" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(866, 318)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable30" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(866, 354)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable19" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(734, 354)
+frame = 2
+state = 1
+
+[node name="Destructable25" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(770, 318)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable26" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(734, 318)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable22" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(578, 318)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable23" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(542, 318)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable24" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(578, 354)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable13" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(542, 482)
+frame = 2
+state = 1
+
+[node name="Destructable20" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(542, 446)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable21" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(578, 482)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable11" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(158, 418)
+frame = 2
+state = 1
+
+[node name="Destructable17" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(158, 382)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable18" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(194, 418)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable9" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(318, 130)
+frame = 2
+state = 1
+
+[node name="Destructable10" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(354, 94)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable12" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(354, 130)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable132" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(606, -414)
+frame = 2
+state = 1
+
+[node name="Destructable133" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(642, -450)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable134" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(642, -414)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable135" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(222, -574)
+frame = 2
+state = 1
+
+[node name="Destructable136" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(258, -610)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable137" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(258, -574)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable141" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(-98, -414)
+frame = 2
+state = 1
+
+[node name="Destructable142" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(-62, -450)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable143" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(-62, -414)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable138" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(62, -894)
+frame = 2
+state = 1
+
+[node name="Destructable139" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(98, -930)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable140" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(98, -894)
+rotation = -1.5708
+frame = 2
+state = 1
+
+[node name="Destructable14" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(354, 222)
+rotation = 3.14159
+frame = 2
+state = 1
+
+[node name="Destructable15" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(318, 222)
+rotation = 1.5708
+frame = 2
+state = 1
+
+[node name="Destructable16" parent="." instance=ExtResource("12_wp3et")]
+position = Vector2(354, 258)
+rotation = -1.5708
+frame = 2
+state = 1
