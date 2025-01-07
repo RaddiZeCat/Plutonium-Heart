@@ -150,7 +150,6 @@ func _on_menu_pressed():
 	Globals.settingsSave()
 	SceneSwitcher.switch_scene(Globals.mainMenu)
 
-
 func _on_back_pressed():
 	klick()
 	scene.unpause()
@@ -288,7 +287,14 @@ func _on_h_slider_ui_mouse_entered():
 func _on_texture_button_back_2_pressed():
 	scene.unpause()
 	klick2()
+	Globals.settingsSave()
 	optionsMenu.visible = false
+
+func _on_texture_button_menu_pressed():
+	klick()
+	scene.unpause()
+	Globals.settingsSave()
+	SceneSwitcher.switch_scene(Globals.mainMenu)
 
 
 func _on_h_slider_main_value_changed(value):
@@ -313,3 +319,6 @@ func _on_h_slider_ui_value_changed(value):
 	audioUI.set_stream(audioScroll)
 	audioUI.play()
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("UI"),value)
+
+
+

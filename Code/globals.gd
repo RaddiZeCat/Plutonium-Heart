@@ -7,6 +7,8 @@ extends Node
 @export var level_4:String
 @export var mainMenu = "res://Maps/main_menu.tscn"
 @export var end_scene = "res://Maps/end_scene.tscn"
+var level1 = "res://Maps/level_1.tscn"
+var level2 = "res://Maps/level_2.tscn"
 #TODO Scene 1 to final
 var currentScene = level_1
 
