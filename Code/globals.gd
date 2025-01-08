@@ -9,6 +9,7 @@ extends Node
 @export var end_scene = "res://Maps/end_scene.tscn"
 var level1 = "res://Maps/level_1.tscn"
 var level2 = "res://Maps/level_2.tscn"
+var level3 = "res://Maps/level_3.tscn"
 #TODO Scene 1 to final
 var currentScene = level_1
 

@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://bw7q1evmn8i8c"]
+
+[ext_resource type="Script" path="res://Code/sceneCode.gd" id="1_wrog0"]
+[ext_resource type="PackedScene" uid="uid://du4w5dcflie8w" path="res://Prefabs/mech.tscn" id="2_cogyn"]
+[ext_resource type="TileSet" uid="uid://dwebt5s375yri" path="res://Assets/Map/City_tile_set.tres" id="3_aqj2h"]
+[ext_resource type="TileSet" uid="uid://b7fhjr2i4r3xh" path="res://Assets/Map/Decal_tile_set.tres" id="4_2qauv"]
+[ext_resource type="AudioStream" uid="uid://7beeh8rxxvl7" path="res://Assets/Audio/Music/ES_1000 Watts - Hampus Naeselius.wav" id="5_rhs0v"]
+
+[node name="Level3" type="Node2D"]
+script = ExtResource("1_wrog0")
+
+[node name="Mech" parent="." instance=ExtResource("2_cogyn")]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("3_aqj2h")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 1, 2, 1, 1, 2, -65535, 655361, 2, -65536, 655361, 2, -1, 655361, 2, -2, 655361, 2, -3, 655361, 2, -4, 655361, 2, -5, 655361, 2, -6, 655361, 2, -7, 655361, 2, -8, 655361, 2, 131064, 655361, 2, 131065, 655361, 2, 131066, 655361, 2, 131067, 655361, 2, 131068, 655361, 2, 131069, 655361, 2, 131070, 655361, 2, 65535, 1, 2, 65534, 1, 2, 65533, 1, 2, 65532, 1, 2, 65531, 1, 2, 65530, 1, 2, 65529, 1, 2, 65528, 1, 2, -9, 131073, 6, 65527, 131073, 6, 131063, 131073, 6, -65545, 131073, 6, 196599, 131073, 6, 196600, 131073, 4, 196601, 131073, 4, 196602, 131073, 4, 196603, 131073, 4, 196604, 131073, 4, 196605, 131073, 4, 196606, 131073, 4, 196607, 131073, 4, 131072, 131073, 4, 131073, 131073, 4, -65544, 131073, 8, -65543, 131073, 8, -65542, 131073, 8, -65541, 131073, 8, -65540, 131073, 8, -65539, 131073, 8, -65538, 131073, 8, -65537, 131073, 8, -131072, 131073, 8, -131071, 131073, 8, 131071, 655361, 2, 65536, 655361, 2, 65537, 655361, 2)
+
+[node name="TileMap2" type="TileMap" parent="."]
+tile_set = ExtResource("4_2qauv")
+format = 2
+layer_0/tile_data = PackedInt32Array(-131074, 131072, 3, -65538, 131072, 3, -2, 131072, 3, 65534, 131072, 3, 131070, 131072, 3, 196606, 131072, 3, 262142, 131072, 3, 327678, 131072, 3)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("5_rhs0v")
+bus = &"Music"
