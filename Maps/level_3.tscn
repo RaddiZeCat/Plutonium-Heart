@@ -62,7 +62,6 @@ rotation = 3.14159
 texture = ExtResource("7_so451")
 
 [node name="Tanks" type="Node2D" parent="."]
-visible = false
 
 [node name="EnemyLMG" parent="Tanks" instance=ExtResource("8_vsvwc")]
 position = Vector2(658, 370)
@@ -320,16 +319,16 @@ position = Vector2(1007, 460)
 position = Vector2(1622, -246)
 
 [node name="EnemyLMG86" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(623, -654)
+position = Vector2(625, -660)
 
 [node name="EnemyLMG87" parent="Tanks" instance=ExtResource("10_0pgvx")]
 position = Vector2(1102, -607)
 
 [node name="Mines" type="Node2D" parent="."]
-visible = false
 
 [node name="Mine" parent="Mines" instance=ExtResource("11_g52no")]
 position = Vector2(100, -42)
+frame = 1
 friendly = true
 
 [node name="Mine2" parent="Mines" instance=ExtResource("11_g52no")]
@@ -376,7 +375,7 @@ friendly = true
 position = Vector2(148, -113)
 
 [node name="Mine11" parent="Mines" instance=ExtResource("11_g52no")]
-position = Vector2(56, -329)
+position = Vector2(42, -370)
 
 [node name="Mine12" parent="Mines" instance=ExtResource("11_g52no")]
 position = Vector2(333, -471)
@@ -395,18 +394,21 @@ position = Vector2(1255, -264)
 
 [node name="Mine17" parent="Mines" instance=ExtResource("11_g52no")]
 position = Vector2(1081, -232)
+frame = 1
 friendly = true
 
 [node name="Mine18" parent="Mines" instance=ExtResource("11_g52no")]
 position = Vector2(1103, -236)
+frame = 1
 friendly = true
 
 [node name="Mine19" parent="Mines" instance=ExtResource("11_g52no")]
 position = Vector2(1127, -231)
+frame = 1
 friendly = true
 
 [node name="Mine20" parent="Mines" instance=ExtResource("11_g52no")]
-position = Vector2(1629, -231)
+position = Vector2(1639, -249)
 
 [node name="Mine21" parent="Mines" instance=ExtResource("11_g52no")]
 position = Vector2(1879, -66)
@@ -440,6 +442,7 @@ position = Vector2(1171, 39)
 
 [node name="Mine31" parent="Mines" instance=ExtResource("11_g52no")]
 position = Vector2(343, -695)
+frame = 1
 friendly = true
 
 [node name="Mine32" parent="Mines" instance=ExtResource("11_g52no")]
@@ -483,7 +486,6 @@ frame = 1
 friendly = true
 
 [node name="Pickups" type="Node2D" parent="."]
-visible = false
 
 [node name="EnergyPack" parent="Pickups" instance=ExtResource("12_ngklq")]
 position = Vector2(442, 376)
@@ -1205,3 +1207,5687 @@ position = Vector2(1534, 222)
 rotation = 1.5708
 frame = 2
 state = 1
+
+[node name="Destructable119" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(712, -521)
+frame = 9
+state = 5
+
+[node name="Destructable120" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(727, -520)
+frame = 9
+state = 5
+
+[node name="Destructable121" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-247, -16)
+frame = 9
+state = 5
+
+[node name="Destructable122" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-232, -16)
+frame = 9
+state = 5
+
+[node name="Destructable123" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-215, -16)
+frame = 9
+state = 5
+
+[node name="Destructable124" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-200, -16)
+frame = 9
+state = 5
+
+[node name="Destructable125" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-183, -16)
+frame = 9
+state = 5
+
+[node name="Destructable126" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-168, -16)
+frame = 9
+state = 5
+
+[node name="Destructable127" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-151, -16)
+frame = 9
+state = 5
+
+[node name="Destructable128" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-136, -16)
+frame = 9
+state = 5
+
+[node name="Destructable129" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-119, -16)
+frame = 9
+state = 5
+
+[node name="Destructable130" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-104, -16)
+frame = 9
+state = 5
+
+[node name="Destructable131" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-87, -16)
+frame = 9
+state = 5
+
+[node name="Destructable132" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-72, -16)
+frame = 9
+state = 5
+
+[node name="Destructable133" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-55, -16)
+frame = 9
+state = 5
+
+[node name="Destructable134" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-40, -16)
+frame = 9
+state = 5
+
+[node name="Destructable135" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-247, -33)
+frame = 9
+state = 5
+
+[node name="Destructable136" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-232, -33)
+frame = 9
+state = 5
+
+[node name="Destructable137" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-215, -33)
+frame = 9
+state = 5
+
+[node name="Destructable138" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-200, -33)
+frame = 9
+state = 5
+
+[node name="Destructable139" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-183, -33)
+frame = 9
+state = 5
+
+[node name="Destructable140" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-168, -33)
+frame = 9
+state = 5
+
+[node name="Destructable141" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-151, -33)
+frame = 9
+state = 5
+
+[node name="Destructable142" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-136, -33)
+frame = 9
+state = 5
+
+[node name="Destructable143" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-119, -33)
+frame = 9
+state = 5
+
+[node name="Destructable144" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-104, -33)
+frame = 9
+state = 5
+
+[node name="Destructable145" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-87, -33)
+frame = 9
+state = 5
+
+[node name="Destructable146" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-72, -33)
+frame = 9
+state = 5
+
+[node name="Destructable147" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-55, -33)
+frame = 9
+state = 5
+
+[node name="Destructable148" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-40, -33)
+frame = 9
+state = 5
+
+[node name="Destructable149" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-247, 65)
+frame = 9
+state = 5
+
+[node name="Destructable150" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-232, 65)
+frame = 9
+state = 5
+
+[node name="Destructable151" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-215, 65)
+frame = 9
+state = 5
+
+[node name="Destructable152" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-200, 65)
+frame = 9
+state = 5
+
+[node name="Destructable153" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-183, 65)
+frame = 9
+state = 5
+
+[node name="Destructable154" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-168, 65)
+frame = 9
+state = 5
+
+[node name="Destructable155" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-151, 65)
+frame = 9
+state = 5
+
+[node name="Destructable156" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-136, 65)
+frame = 9
+state = 5
+
+[node name="Destructable157" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-119, 65)
+frame = 9
+state = 5
+
+[node name="Destructable158" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-104, 65)
+frame = 9
+state = 5
+
+[node name="Destructable159" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-87, 65)
+frame = 9
+state = 5
+
+[node name="Destructable160" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-72, 65)
+frame = 9
+state = 5
+
+[node name="Destructable161" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-55, 65)
+frame = 9
+state = 5
+
+[node name="Destructable162" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-40, 65)
+frame = 9
+state = 5
+
+[node name="Destructable163" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-247, 48)
+frame = 9
+state = 5
+
+[node name="Destructable164" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-232, 48)
+frame = 9
+state = 5
+
+[node name="Destructable165" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-215, 48)
+frame = 9
+state = 5
+
+[node name="Destructable166" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-200, 48)
+frame = 9
+state = 5
+
+[node name="Destructable167" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-183, 48)
+frame = 9
+state = 5
+
+[node name="Destructable168" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-168, 48)
+frame = 9
+state = 5
+
+[node name="Destructable169" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-151, 48)
+frame = 9
+state = 5
+
+[node name="Destructable170" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-136, 48)
+frame = 9
+state = 5
+
+[node name="Destructable171" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-119, 48)
+frame = 9
+state = 5
+
+[node name="Destructable172" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-104, 48)
+frame = 9
+state = 5
+
+[node name="Destructable173" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-87, 48)
+frame = 9
+state = 5
+
+[node name="Destructable174" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-72, 48)
+frame = 9
+state = 5
+
+[node name="Destructable175" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-55, 48)
+frame = 9
+state = 5
+
+[node name="Destructable176" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-40, 48)
+frame = 9
+state = 5
+
+[node name="Destructable177" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-23, 65)
+frame = 9
+state = 5
+
+[node name="Destructable178" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-8, 65)
+frame = 9
+state = 5
+
+[node name="Destructable179" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(9, 65)
+frame = 9
+state = 5
+
+[node name="Destructable180" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(24, 65)
+frame = 9
+state = 5
+
+[node name="Destructable181" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(41, 65)
+frame = 9
+state = 5
+
+[node name="Destructable182" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(56, 65)
+frame = 9
+state = 5
+
+[node name="Destructable183" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-23, 48)
+frame = 9
+state = 5
+
+[node name="Destructable184" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-8, 48)
+frame = 9
+state = 5
+
+[node name="Destructable185" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(9, 48)
+frame = 9
+state = 5
+
+[node name="Destructable186" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(24, 48)
+frame = 9
+state = 5
+
+[node name="Destructable187" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(41, 48)
+frame = 9
+state = 5
+
+[node name="Destructable188" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(56, 48)
+frame = 9
+state = 5
+
+[node name="Destructable189" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(73, 65)
+frame = 9
+state = 5
+
+[node name="Destructable190" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(88, 65)
+frame = 9
+state = 5
+
+[node name="Destructable191" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(73, 48)
+frame = 9
+state = 5
+
+[node name="Destructable192" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(88, 48)
+frame = 9
+state = 5
+
+[node name="Destructable193" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(744, -521)
+frame = 9
+state = 5
+
+[node name="Destructable194" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(759, -520)
+frame = 9
+state = 5
+
+[node name="Destructable195" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1080, -192)
+frame = 9
+state = 5
+
+[node name="Destructable196" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1080, -160)
+frame = 9
+state = 5
+
+[node name="Destructable197" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1128, -160)
+frame = 9
+state = 5
+
+[node name="Destructable198" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1080, -144)
+frame = 9
+state = 5
+
+[node name="Destructable199" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1128, -144)
+frame = 9
+state = 5
+
+[node name="Destructable200" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1128, -192)
+frame = 9
+state = 5
+
+[node name="Destructable201" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1080, -176)
+frame = 9
+state = 5
+
+[node name="Destructable202" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1128, -176)
+frame = 9
+state = 5
+
+[node name="Destructable203" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1080, -208)
+frame = 9
+state = 5
+
+[node name="Destructable204" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1128, -208)
+frame = 9
+state = 5
+
+[node name="Destructable205" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1080, -224)
+frame = 9
+state = 5
+
+[node name="Destructable206" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1128, -224)
+frame = 9
+state = 5
+
+[node name="Destructable207" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(713, -536)
+frame = 9
+state = 5
+
+[node name="Destructable208" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(728, -535)
+frame = 9
+state = 5
+
+[node name="Destructable209" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(745, -536)
+frame = 9
+state = 5
+
+[node name="Destructable210" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(760, -535)
+frame = 9
+state = 5
+
+[node name="Destructable211" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(712, -553)
+frame = 9
+state = 5
+
+[node name="Destructable212" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(727, -552)
+frame = 9
+state = 5
+
+[node name="Destructable213" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(744, -553)
+frame = 9
+state = 5
+
+[node name="Destructable214" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(759, -552)
+frame = 9
+state = 5
+
+[node name="Destructable215" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(713, -568)
+frame = 9
+state = 5
+
+[node name="Destructable216" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(728, -567)
+frame = 9
+state = 5
+
+[node name="Destructable217" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(745, -568)
+frame = 9
+state = 5
+
+[node name="Destructable218" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(760, -567)
+frame = 9
+state = 5
+
+[node name="Destructable219" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(712, -585)
+frame = 9
+state = 5
+
+[node name="Destructable220" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(727, -584)
+frame = 9
+state = 5
+
+[node name="Destructable221" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(744, -585)
+frame = 9
+state = 5
+
+[node name="Destructable222" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(759, -584)
+frame = 9
+state = 5
+
+[node name="Destructable223" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(713, -600)
+frame = 9
+state = 5
+
+[node name="Destructable224" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(701, -592)
+frame = 9
+state = 5
+
+[node name="Destructable225" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(701, -576)
+frame = 9
+state = 5
+
+[node name="Destructable226" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(701, -560)
+frame = 9
+state = 5
+
+[node name="Destructable227" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(701, -544)
+frame = 9
+state = 5
+
+[node name="Destructable228" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(701, -528)
+frame = 9
+state = 5
+
+[node name="Destructable229" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(772, -593)
+frame = 9
+state = 5
+
+[node name="Destructable230" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(772, -577)
+frame = 9
+state = 5
+
+[node name="Destructable231" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(772, -561)
+frame = 9
+state = 5
+
+[node name="Destructable232" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(772, -545)
+frame = 9
+state = 5
+
+[node name="Destructable233" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(772, -529)
+frame = 9
+state = 5
+
+[node name="Destructable234" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(728, -599)
+frame = 9
+state = 5
+
+[node name="Destructable235" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(745, -600)
+frame = 9
+state = 5
+
+[node name="Destructable236" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(760, -599)
+frame = 9
+state = 5
+
+[node name="Destructable" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(711, -577)
+rotation = 1.5708
+
+[node name="Destructable237" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(710, -544)
+rotation = 1.5708
+
+[node name="Destructable238" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(762, -577)
+rotation = -1.5708
+
+[node name="Destructable239" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(761, -544)
+rotation = -1.5708
+
+[node name="Destructable240" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(762, -550)
+frame = 7
+state = 4
+
+[node name="Destructable241" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(710, -571)
+frame = 7
+state = 4
+
+[node name="Destructable242" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-240, 31)
+frame = 5
+state = 3
+
+[node name="Destructable243" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-208, 1)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable244" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-176, 31)
+frame = 5
+state = 3
+
+[node name="Destructable245" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-144, 1)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable246" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-112, 31)
+frame = 5
+state = 3
+
+[node name="Destructable247" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-80, 1)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable248" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-48, 31)
+frame = 5
+state = 3
+
+[node name="Destructable249" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-16, 1)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable250" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(176, 191)
+frame = 5
+state = 3
+
+[node name="Destructable251" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(208, 161)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable252" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(240, 191)
+frame = 5
+state = 3
+
+[node name="Destructable253" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(272, 161)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable254" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(304, 191)
+frame = 5
+state = 3
+
+[node name="Destructable255" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(336, 161)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable256" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(368, 191)
+frame = 5
+state = 3
+
+[node name="Destructable563" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(176, -97)
+frame = 5
+state = 3
+
+[node name="Destructable564" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(208, -127)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable565" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(240, -97)
+frame = 5
+state = 3
+
+[node name="Destructable566" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(272, -127)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable567" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(304, -97)
+frame = 5
+state = 3
+
+[node name="Destructable568" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(336, -127)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable569" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(368, -97)
+frame = 5
+state = 3
+
+[node name="Destructable570" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(176, -257)
+frame = 5
+state = 3
+
+[node name="Destructable571" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(208, -287)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable577" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(80, -257)
+frame = 5
+state = 3
+
+[node name="Destructable578" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(112, -287)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable572" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(240, -257)
+frame = 5
+state = 3
+
+[node name="Destructable573" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(272, -287)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable574" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(304, -257)
+frame = 5
+state = 3
+
+[node name="Destructable575" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(336, -287)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable576" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(368, -257)
+frame = 5
+state = 3
+
+[node name="Destructable585" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(48, -479)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable586" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(80, -449)
+frame = 5
+state = 3
+
+[node name="Destructable587" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(112, -479)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable588" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(144, -449)
+frame = 5
+state = 3
+
+[node name="Destructable589" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(176, -479)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable590" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(208, -449)
+frame = 5
+state = 3
+
+[node name="Destructable591" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(240, -479)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable592" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(272, -449)
+frame = 5
+state = 3
+
+[node name="Destructable602" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-176, -449)
+frame = 5
+state = 3
+
+[node name="Destructable603" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-144, -479)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable604" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-112, -449)
+frame = 5
+state = 3
+
+[node name="Destructable605" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-80, -479)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable606" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-48, -449)
+frame = 5
+state = 3
+
+[node name="Destructable607" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-16, -479)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable608" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(16, -449)
+frame = 5
+state = 3
+
+[node name="Destructable632" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(464, -831)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable633" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(496, -801)
+frame = 5
+state = 3
+
+[node name="Destructable634" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(528, -831)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable635" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(560, -801)
+frame = 5
+state = 3
+
+[node name="Destructable636" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(592, -831)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable637" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(624, -801)
+frame = 5
+state = 3
+
+[node name="Destructable638" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(656, -831)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable639" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(432, -801)
+frame = 5
+state = 3
+
+[node name="Destructable640" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(335, -831)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable641" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(367, -801)
+frame = 5
+state = 3
+
+[node name="Destructable642" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(399, -831)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable594" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(336, -449)
+frame = 5
+state = 3
+
+[node name="Destructable595" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(368, -479)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable257" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(400, 161)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable258" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(432, 191)
+frame = 5
+state = 3
+
+[node name="Destructable259" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(496, 191)
+frame = 5
+state = 3
+
+[node name="Destructable260" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(528, 161)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable261" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(560, 191)
+frame = 5
+state = 3
+
+[node name="Destructable262" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(592, 161)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable263" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(624, 191)
+frame = 5
+state = 3
+
+[node name="Destructable264" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(656, 161)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable265" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(688, 191)
+frame = 5
+state = 3
+
+[node name="Destructable266" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(720, 161)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable267" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(752, 191)
+frame = 5
+state = 3
+
+[node name="Destructable268" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(784, 161)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable269" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(624, 191)
+frame = 5
+state = 3
+
+[node name="Destructable549" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(496, 33)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable550" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(528, 63)
+frame = 5
+state = 3
+
+[node name="Destructable554" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(432, 63)
+frame = 5
+state = 3
+
+[node name="Destructable551" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(560, 33)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable552" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(592, 63)
+frame = 5
+state = 3
+
+[node name="Destructable270" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(656, 161)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable271" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(688, 191)
+frame = 5
+state = 3
+
+[node name="Destructable272" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(720, 161)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable273" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(752, 191)
+frame = 5
+state = 3
+
+[node name="Destructable274" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(784, 161)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable275" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(816, 191)
+frame = 5
+state = 3
+
+[node name="Destructable276" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(848, 161)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable277" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(592, 383)
+frame = 5
+state = 3
+
+[node name="Destructable278" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(624, 353)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable279" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(656, 383)
+frame = 5
+state = 3
+
+[node name="Destructable280" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(688, 353)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable281" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(464, 383)
+frame = 5
+state = 3
+
+[node name="Destructable282" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(496, 353)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable283" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(432, 353)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable284" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(528, 383)
+frame = 5
+state = 3
+
+[node name="Destructable285" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(560, 353)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable286" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(720, 383)
+frame = 5
+state = 3
+
+[node name="Destructable287" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(752, 353)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable288" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(880, 191)
+frame = 5
+state = 3
+
+[node name="Destructable289" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(848, 449)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable290" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(880, 479)
+frame = 5
+state = 3
+
+[node name="Destructable291" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(816, 479)
+frame = 5
+state = 3
+
+[node name="Destructable292" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(912, 449)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable293" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(944, 479)
+frame = 5
+state = 3
+
+[node name="Destructable294" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(976, 449)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable295" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1008, 479)
+frame = 5
+state = 3
+
+[node name="Destructable296" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1040, 449)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable297" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1072, 479)
+frame = 5
+state = 3
+
+[node name="Destructable298" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(944, 191)
+frame = 5
+state = 3
+
+[node name="Destructable299" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(976, 161)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable300" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1008, 191)
+frame = 5
+state = 3
+
+[node name="Destructable301" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1040, 161)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable302" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1104, 351)
+frame = 5
+state = 3
+
+[node name="Destructable303" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1136, 321)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable304" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1168, 351)
+frame = 5
+state = 3
+
+[node name="Destructable305" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1200, 321)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable306" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1232, 351)
+frame = 5
+state = 3
+
+[node name="Destructable307" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1424, 225)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable308" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1456, 255)
+frame = 5
+state = 3
+
+[node name="Destructable309" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1488, 225)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable310" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1520, 255)
+frame = 5
+state = 3
+
+[node name="Destructable311" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1584, 225)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable312" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1616, 255)
+frame = 5
+state = 3
+
+[node name="Destructable313" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1648, 225)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable314" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1680, 255)
+frame = 5
+state = 3
+
+[node name="Destructable315" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1712, 225)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable316" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1808, -255)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable350" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1840, -225)
+frame = 5
+state = 3
+
+[node name="Destructable364" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1872, -255)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable365" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1904, -225)
+frame = 5
+state = 3
+
+[node name="Destructable367" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1968, -225)
+frame = 5
+state = 3
+
+[node name="Destructable366" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1936, -255)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable368" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1616, -255)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable369" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1648, -225)
+frame = 5
+state = 3
+
+[node name="Destructable374" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1584, -225)
+frame = 5
+state = 3
+
+[node name="Destructable370" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1680, -255)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable371" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1712, -225)
+frame = 5
+state = 3
+
+[node name="Destructable372" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1776, -225)
+frame = 5
+state = 3
+
+[node name="Destructable373" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1744, -255)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable375" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1808, -607)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable376" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1616, -607)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable377" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1648, -577)
+frame = 5
+state = 3
+
+[node name="Destructable378" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1584, -577)
+frame = 5
+state = 3
+
+[node name="Destructable379" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1680, -607)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable380" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1712, -577)
+frame = 5
+state = 3
+
+[node name="Destructable381" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1776, -577)
+frame = 5
+state = 3
+
+[node name="Destructable382" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1744, -607)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable387" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1840, -447)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable388" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1872, -417)
+frame = 5
+state = 3
+
+[node name="Destructable389" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1808, -417)
+frame = 5
+state = 3
+
+[node name="Destructable390" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1904, -447)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable391" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1936, -417)
+frame = 5
+state = 3
+
+[node name="Destructable392" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1968, -447)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable317" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1808, 383)
+frame = 5
+state = 3
+
+[node name="Destructable318" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1840, 353)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable319" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1872, 383)
+frame = 5
+state = 3
+
+[node name="Destructable320" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1904, 353)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable321" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1936, 383)
+frame = 5
+state = 3
+
+[node name="Destructable322" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1968, 353)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable323" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2000, 383)
+frame = 5
+state = 3
+
+[node name="Destructable324" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1776, 65)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable325" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1808, 95)
+frame = 5
+state = 3
+
+[node name="Destructable326" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1840, 65)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable327" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1872, 95)
+frame = 5
+state = 3
+
+[node name="Destructable328" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1904, 65)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable329" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1936, 95)
+frame = 5
+state = 3
+
+[node name="Destructable330" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1968, 65)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable331" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2000, 95)
+frame = 5
+state = 3
+
+[node name="Destructable332" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2032, 65)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable333" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2064, 95)
+frame = 5
+state = 3
+
+[node name="Destructable334" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2096, 65)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable335" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2128, 95)
+frame = 5
+state = 3
+
+[node name="Destructable336" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2160, 65)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable337" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2192, 95)
+frame = 5
+state = 3
+
+[node name="Destructable338" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2224, 65)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable339" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2256, 95)
+frame = 5
+state = 3
+
+[node name="Destructable340" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2288, 65)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable341" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2352, 65)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable342" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2320, 95)
+frame = 5
+state = 3
+
+[node name="Destructable343" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1744, 255)
+frame = 5
+state = 3
+
+[node name="Destructable344" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1328, 255)
+frame = 5
+state = 3
+
+[node name="Destructable345" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1360, 225)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable346" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1392, 255)
+frame = 5
+state = 3
+
+[node name="Destructable398" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1424, 33)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable399" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1456, 63)
+frame = 5
+state = 3
+
+[node name="Destructable400" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1488, 33)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable401" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1520, 63)
+frame = 5
+state = 3
+
+[node name="Destructable402" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1328, 63)
+frame = 5
+state = 3
+
+[node name="Destructable403" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1360, 33)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable404" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1392, 63)
+frame = 5
+state = 3
+
+[node name="Destructable410" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1168, 33)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable411" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1200, 63)
+frame = 5
+state = 3
+
+[node name="Destructable412" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1232, 33)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable413" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1264, 63)
+frame = 5
+state = 3
+
+[node name="Destructable414" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1104, 33)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable415" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1136, 63)
+frame = 5
+state = 3
+
+[node name="Destructable416" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(976, 33)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable417" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1008, 63)
+frame = 5
+state = 3
+
+[node name="Destructable418" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1040, 33)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable419" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1072, 63)
+frame = 5
+state = 3
+
+[node name="Destructable421" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(944, 63)
+frame = 5
+state = 3
+
+[node name="Destructable405" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1424, -383)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable406" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1456, -353)
+frame = 5
+state = 3
+
+[node name="Destructable407" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1488, -383)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable408" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1520, -353)
+frame = 5
+state = 3
+
+[node name="Destructable409" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1392, -353)
+frame = 5
+state = 3
+
+[node name="Destructable449" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1360, -511)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable451" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1328, -481)
+frame = 5
+state = 3
+
+[node name="Destructable450" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1296, -511)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable452" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1264, -481)
+frame = 5
+state = 3
+
+[node name="Destructable453" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1232, -511)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable454" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1200, -481)
+frame = 5
+state = 3
+
+[node name="Destructable455" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1168, -511)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable456" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1136, -481)
+frame = 5
+state = 3
+
+[node name="Destructable480" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1104, -639)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable481" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1072, -609)
+frame = 5
+state = 3
+
+[node name="Destructable482" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1040, -639)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable483" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1008, -609)
+frame = 5
+state = 3
+
+[node name="Destructable484" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(976, -639)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable485" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(944, -609)
+frame = 5
+state = 3
+
+[node name="Destructable486" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(912, -639)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable487" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(880, -609)
+frame = 5
+state = 3
+
+[node name="Destructable488" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(848, -639)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable489" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(816, -609)
+frame = 5
+state = 3
+
+[node name="Destructable490" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(784, -639)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable491" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(752, -609)
+frame = 5
+state = 3
+
+[node name="Destructable620" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(688, -671)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable621" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(656, -641)
+frame = 5
+state = 3
+
+[node name="Destructable622" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(624, -671)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable624" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(560, -671)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable623" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(592, -641)
+frame = 5
+state = 3
+
+[node name="Destructable630" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(720, -831)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable631" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(688, -801)
+frame = 5
+state = 3
+
+[node name="Destructable492" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1072, -481)
+frame = 5
+state = 3
+
+[node name="Destructable493" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1040, -511)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable494" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1008, -481)
+frame = 5
+state = 3
+
+[node name="Destructable495" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(976, -511)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable496" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(944, -481)
+frame = 5
+state = 3
+
+[node name="Destructable497" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(912, -511)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable498" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(880, -481)
+frame = 5
+state = 3
+
+[node name="Destructable499" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(848, -511)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable500" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(816, -481)
+frame = 5
+state = 3
+
+[node name="Destructable501" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(784, -511)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable502" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(752, -481)
+frame = 5
+state = 3
+
+[node name="Destructable503" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(720, -511)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable457" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1296, -287)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable458" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1264, -257)
+frame = 5
+state = 3
+
+[node name="Destructable459" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1232, -287)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable460" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1200, -257)
+frame = 5
+state = 3
+
+[node name="Destructable461" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1168, -287)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable462" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1136, -257)
+frame = 5
+state = 3
+
+[node name="Destructable463" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1072, -257)
+frame = 5
+state = 3
+
+[node name="Destructable464" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1040, -287)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable465" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1008, -257)
+frame = 5
+state = 3
+
+[node name="Destructable466" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(976, -287)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable467" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(944, -257)
+frame = 5
+state = 3
+
+[node name="Destructable507" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(880, -257)
+frame = 5
+state = 3
+
+[node name="Destructable508" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(848, -287)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable509" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(816, -257)
+frame = 5
+state = 3
+
+[node name="Destructable510" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(784, -287)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable511" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(752, -257)
+frame = 5
+state = 3
+
+[node name="Destructable512" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(688, -257)
+frame = 5
+state = 3
+
+[node name="Destructable513" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(656, -287)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable540" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(848, -63)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable541" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(816, -33)
+frame = 5
+state = 3
+
+[node name="Destructable546" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(880, -33)
+frame = 5
+state = 3
+
+[node name="Destructable542" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(784, -63)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable547" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(720, -63)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable543" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(752, -33)
+frame = 5
+state = 3
+
+[node name="Destructable544" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(688, -33)
+frame = 5
+state = 3
+
+[node name="Destructable545" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(656, -63)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable515" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(592, -287)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable516" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(560, -257)
+frame = 5
+state = 3
+
+[node name="Destructable517" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(528, -287)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable518" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(496, -257)
+frame = 5
+state = 3
+
+[node name="Destructable519" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(464, -287)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable520" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(432, -257)
+frame = 5
+state = 3
+
+[node name="Destructable441" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1328, -257)
+frame = 5
+state = 3
+
+[node name="Destructable347" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1264, 321)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable348" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1296, 479)
+frame = 5
+state = 3
+
+[node name="Destructable349" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1328, 449)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable351" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1360, 479)
+frame = 5
+state = 3
+
+[node name="Destructable352" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1392, 449)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable353" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1424, 479)
+frame = 5
+state = 3
+
+[node name="Destructable354" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1456, 449)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable355" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1488, 479)
+frame = 5
+state = 3
+
+[node name="Destructable356" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1520, 449)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable357" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(16, 31)
+frame = 5
+state = 3
+
+[node name="Destructable358" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(48, 1)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable359" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(112, 1)
+rotation = -3.14159
+frame = 5
+state = 3
+
+[node name="Destructable360" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(159, 16)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable361" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(129, -16)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable362" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(159, 80)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable363" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(129, 48)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable383" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(159, 144)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable384" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(129, 112)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable385" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(129, 176)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable386" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(607, 208)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable393" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(607, 272)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable394" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(577, 240)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable395" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(607, 336)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable396" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(577, 304)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable397" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(447, 432)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable420" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(417, 400)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable422" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(447, 496)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable423" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(417, 464)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable424" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(447, 560)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable425" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(417, 528)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable426" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1087, 176)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable427" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1087, 240)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable428" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1057, 208)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable429" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1057, 272)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable430" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1087, 304)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable431" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1057, 336)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable432" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1087, 368)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable433" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1057, 400)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable434" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1087, 432)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable435" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1281, 368)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable436" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1311, 400)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable437" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1311, 336)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable438" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1281, 304)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable439" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1281, 240)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable440" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1311, 272)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable442" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1281, 176)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable443" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1311, 208)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable444" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1281, 112)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable445" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1311, 144)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable446" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(897, 80)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable447" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(897, 144)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable448" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(927, 112)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable468" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(927, -16)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable469" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(927, -80)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable470" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(897, 16)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable471" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(927, -144)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable472" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(897, -112)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable473" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(927, -208)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable474" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(897, -176)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable475" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(897, -240)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable530" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(639, -16)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable539" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(639, 48)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable531" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(639, -80)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable532" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(609, 16)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable533" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(639, -144)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable534" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(609, -112)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable538" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(609, -48)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable548" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(415, 16)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable553" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(415, -48)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable555" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(385, 48)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable556" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(385, -16)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable557" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(415, -112)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable558" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(415, -176)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable559" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(385, -80)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable560" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(385, -144)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable561" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(415, -240)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable562" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(385, -208)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable593" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(415, -400)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable596" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(385, -368)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable599" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(415, -336)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable600" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(385, -304)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable597" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(415, -464)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable598" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(385, -432)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable535" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(639, -208)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable536" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(609, -176)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable537" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(609, -240)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable504" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(927, -336)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable505" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(897, -304)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable506" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(897, -368)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable476" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1311, 80)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable477" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1281, 432)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable478" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, 464)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable479" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, 496)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable514" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, 528)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable521" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, 560)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable522" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, 592)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable523" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, 656)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable524" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, 624)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable525" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, 272)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable526" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, 304)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable527" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, 336)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable528" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, 368)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable529" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, 400)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable579" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, 432)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable580" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1791, 272)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable581" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1761, 304)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable582" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1791, 336)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable583" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2017, 336)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable584" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2047, 368)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable601" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1761, 368)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable609" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1791, 144)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable610" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1761, 176)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable611" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1761, 112)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable612" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1791, 208)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable613" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2047, 240)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable614" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2017, 272)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable615" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2017, 208)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable616" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2047, 304)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable617" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2047, 112)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable618" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2017, 144)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable619" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2047, 176)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable625" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1857, 48)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable626" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1887, -48)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable627" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1857, -16)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable628" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1857, -80)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable629" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1887, 16)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable643" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1887, -176)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable644" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1857, -144)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable645" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1857, -208)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable646" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1887, -112)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable647" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1983, -336)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable648" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1983, -400)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable649" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1953, -304)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable650" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1953, -368)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable651" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1983, -272)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable652" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, 208)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable653" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, 112)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable654" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, 144)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable655" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, 80)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable656" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, 176)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable657" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, -16)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable658" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, 16)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable659" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, -48)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable660" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, 48)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable661" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, -144)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable662" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, -112)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable663" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, -176)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable664" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, -80)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable665" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, -272)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable666" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, -240)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable667" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, -304)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable668" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, -208)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable669" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1311, -16)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable670" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1281, 16)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable671" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1281, -48)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable672" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1311, -144)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable673" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1281, -112)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable674" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1281, -176)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable675" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1375, -272)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable676" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1345, -304)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable677" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1375, -336)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable678" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1345, -368)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable679" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1375, -400)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable680" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1375, -464)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable681" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1345, -432)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable682" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1311, -80)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable683" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1281, -240)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable684" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1311, -208)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable685" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1089, -176)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable686" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1089, -240)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable687" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1119, -208)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable688" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1089, -304)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable689" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1089, -368)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable690" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1119, -336)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable691" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1089, -432)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable692" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1119, -400)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable693" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1119, -464)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable694" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(705, -336)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable695" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(705, -400)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable696" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(735, -368)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable697" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(735, -304)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable698" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(545, -336)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable699" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(545, -400)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable700" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(575, -368)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable701" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(575, -304)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable702" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(705, -464)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable703" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(705, -624)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable704" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(735, -432)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable705" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1089, -560)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable706" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1119, -528)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable707" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1119, -592)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable708" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, -400)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable709" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, -432)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable710" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, -336)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable711" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, -528)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable712" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, -496)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable713" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, -560)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable714" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, -464)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable715" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1793, -464)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable716" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1823, -560)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable717" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1793, -528)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable718" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1823, -496)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable719" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, -624)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable720" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, -720)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable721" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, -688)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable722" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, -752)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable723" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, -784)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable724" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1537, -816)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable725" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1567, -656)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable726" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(799, 368)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable727" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(769, 400)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable728" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(769, 464)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable729" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(799, 432)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable730" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(159, -48)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable731" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(129, -80)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable732" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(159, -176)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable733" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(129, -144)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable734" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(159, -240)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable735" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(129, -208)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable736" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(63, -304)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable737" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(33, -272)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable738" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(63, -368)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable739" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(33, -336)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable740" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(63, -432)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable741" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(33, -400)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable742" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(319, -528)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable743" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(289, -496)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable744" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(319, -592)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable745" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(289, -560)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable746" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(319, -656)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable747" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(289, -624)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable748" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(319, -720)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable749" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(289, -688)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable750" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(319, -784)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable751" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(289, -752)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable752" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(735, -656)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable753" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(735, -720)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable754" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(705, -688)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable755" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(735, -784)
+rotation = -1.5708
+frame = 5
+state = 3
+
+[node name="Destructable756" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(705, -752)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable757" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(289, -816)
+rotation = 1.5708
+frame = 5
+state = 3
+
+[node name="Destructable758" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(80, 31)
+frame = 5
+state = 3
+
+[node name="Destructable759" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(65, -4)
+state = 4
+
+[node name="Destructable760" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(278, -90)
+frame = 7
+state = 4
+
+[node name="Destructable761" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(455, 194)
+frame = 7
+state = 4
+
+[node name="Destructable762" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(633, 157)
+frame = 7
+state = 4
+
+[node name="Destructable763" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(489, 386)
+frame = 7
+state = 4
+
+[node name="Destructable764" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(804, 396)
+frame = 7
+state = 4
+
+[node name="Destructable765" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1031, 483)
+frame = 7
+state = 4
+
+[node name="Destructable766" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1091, 291)
+frame = 7
+state = 4
+
+[node name="Destructable767" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(853, 198)
+frame = 7
+state = 4
+
+[node name="Destructable768" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1324, 484)
+frame = 7
+state = 4
+
+[node name="Destructable769" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1570, 511)
+frame = 7
+state = 4
+
+[node name="Destructable770" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1531, 275)
+frame = 7
+state = 4
+
+[node name="Destructable771" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1422, 69)
+frame = 7
+state = 4
+
+[node name="Destructable772" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1757, 338)
+frame = 7
+state = 4
+
+[node name="Destructable773" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1912, 99)
+frame = 7
+state = 4
+
+[node name="Destructable774" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2101, 100)
+frame = 7
+state = 4
+
+[node name="Destructable775" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1891, -94)
+frame = 7
+state = 4
+
+[node name="Destructable776" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1693, -220)
+frame = 7
+state = 4
+
+[node name="Destructable777" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1948, -333)
+frame = 7
+state = 4
+
+[node name="Destructable778" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1885, -451)
+frame = 7
+state = 4
+
+[node name="Destructable779" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1746, -573)
+frame = 7
+state = 4
+
+[node name="Destructable780" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1531, -636)
+frame = 7
+state = 4
+
+[node name="Destructable781" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1504, -348)
+frame = 7
+state = 4
+
+[node name="Destructable782" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1315, -136)
+frame = 7
+state = 4
+
+[node name="Destructable783" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1123, -408)
+frame = 7
+state = 4
+
+[node name="Destructable784" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(953, -253)
+frame = 7
+state = 4
+
+[node name="Destructable785" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(766, -69)
+frame = 7
+state = 4
+
+[node name="Destructable786" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1155, 67)
+frame = 7
+state = 4
+
+[node name="Destructable787" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(579, 69)
+frame = 7
+state = 4
+
+[node name="Destructable788" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(446, -252)
+frame = 7
+state = 4
+
+[node name="Destructable789" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(144, -292)
+frame = 7
+state = 4
+
+[node name="Destructable790" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-3, -484)
+frame = 7
+state = 4
+
+[node name="Destructable791" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(324, -575)
+frame = 7
+state = 4
+
+[node name="Destructable792" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(701, -725)
+frame = 7
+state = 4
+
+[node name="Destructable793" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(701, -412)
+frame = 7
+state = 4
+
+[node name="Destructable794" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1038, -603)
+frame = 7
+state = 4
+
+[node name="Destructable795" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1278, -478)
+frame = 7
+state = 4
+
+[node name="Destructable796" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-397, -102)
+frame = 11
+state = 6
+
+[node name="Destructable797" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-412, -103)
+frame = 11
+state = 6
+
+[node name="Destructable798" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-427, -103)
+frame = 11
+state = 6
+
+[node name="Destructable799" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-442, -102)
+frame = 11
+state = 6
+
+[node name="Destructable800" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-457, -102)
+frame = 11
+state = 6
+
+[node name="Destructable801" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-472, -103)
+frame = 11
+state = 6
+
+[node name="Destructable802" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-487, -102)
+frame = 11
+state = 6
+
+[node name="Destructable803" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-502, -102)
+frame = 11
+state = 6
+
+[node name="Destructable806" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(308, -282)
+frame = 11
+state = 6
+
+[node name="Destructable807" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(293, -283)
+frame = 11
+state = 6
+
+[node name="Destructable808" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(278, -283)
+frame = 11
+state = 6
+
+[node name="Destructable809" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(263, -282)
+frame = 11
+state = 6
+
+[node name="Destructable810" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(248, -282)
+frame = 11
+state = 6
+
+[node name="Destructable811" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(233, -283)
+frame = 11
+state = 6
+
+[node name="Destructable812" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(218, -282)
+frame = 11
+state = 6
+
+[node name="Destructable813" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(203, -282)
+frame = 11
+state = 6
+
+[node name="Destructable814" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(228, -475)
+frame = 11
+state = 6
+
+[node name="Destructable815" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(213, -476)
+frame = 11
+state = 6
+
+[node name="Destructable816" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(198, -476)
+frame = 11
+state = 6
+
+[node name="Destructable817" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(183, -475)
+frame = 11
+state = 6
+
+[node name="Destructable818" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(168, -475)
+frame = 11
+state = 6
+
+[node name="Destructable819" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(153, -476)
+frame = 11
+state = 6
+
+[node name="Destructable820" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(138, -475)
+frame = 11
+state = 6
+
+[node name="Destructable821" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(123, -475)
+frame = 11
+state = 6
+
+[node name="Destructable822" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(565, -827)
+frame = 11
+state = 6
+
+[node name="Destructable823" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(550, -828)
+frame = 11
+state = 6
+
+[node name="Destructable824" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(535, -828)
+frame = 11
+state = 6
+
+[node name="Destructable825" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(520, -827)
+frame = 11
+state = 6
+
+[node name="Destructable826" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(505, -827)
+frame = 11
+state = 6
+
+[node name="Destructable827" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(490, -828)
+frame = 11
+state = 6
+
+[node name="Destructable828" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(475, -827)
+frame = 11
+state = 6
+
+[node name="Destructable829" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(460, -827)
+frame = 11
+state = 6
+
+[node name="Destructable830" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(913, -507)
+frame = 11
+state = 6
+
+[node name="Destructable831" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(898, -508)
+frame = 11
+state = 6
+
+[node name="Destructable832" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(883, -508)
+frame = 11
+state = 6
+
+[node name="Destructable833" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(868, -507)
+frame = 11
+state = 6
+
+[node name="Destructable834" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(853, -507)
+frame = 11
+state = 6
+
+[node name="Destructable835" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(838, -508)
+frame = 11
+state = 6
+
+[node name="Destructable836" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(823, -507)
+frame = 11
+state = 6
+
+[node name="Destructable837" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(808, -507)
+frame = 11
+state = 6
+
+[node name="Destructable838" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(816, -59)
+frame = 11
+state = 6
+
+[node name="Destructable839" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(801, -60)
+frame = 11
+state = 6
+
+[node name="Destructable840" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(786, -60)
+frame = 11
+state = 6
+
+[node name="Destructable841" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(771, -59)
+frame = 11
+state = 6
+
+[node name="Destructable842" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(756, -59)
+frame = 11
+state = 6
+
+[node name="Destructable843" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(741, -60)
+frame = 11
+state = 6
+
+[node name="Destructable844" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(726, -59)
+frame = 11
+state = 6
+
+[node name="Destructable845" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(711, -59)
+frame = 11
+state = 6
+
+[node name="Destructable846" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(757, 356)
+frame = 11
+state = 6
+
+[node name="Destructable847" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(742, 355)
+frame = 11
+state = 6
+
+[node name="Destructable848" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(727, 355)
+frame = 11
+state = 6
+
+[node name="Destructable849" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(712, 356)
+frame = 11
+state = 6
+
+[node name="Destructable850" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(697, 356)
+frame = 11
+state = 6
+
+[node name="Destructable851" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(682, 355)
+frame = 11
+state = 6
+
+[node name="Destructable852" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(667, 356)
+frame = 11
+state = 6
+
+[node name="Destructable853" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(652, 356)
+frame = 11
+state = 6
+
+[node name="Destructable854" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1473, 454)
+frame = 11
+state = 6
+
+[node name="Destructable855" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1458, 453)
+frame = 11
+state = 6
+
+[node name="Destructable856" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1443, 453)
+frame = 11
+state = 6
+
+[node name="Destructable857" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1428, 454)
+frame = 11
+state = 6
+
+[node name="Destructable858" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1413, 454)
+frame = 11
+state = 6
+
+[node name="Destructable859" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1398, 453)
+frame = 11
+state = 6
+
+[node name="Destructable860" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1383, 454)
+frame = 11
+state = 6
+
+[node name="Destructable861" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1368, 454)
+frame = 11
+state = 6
+
+[node name="Destructable862" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1955, 357)
+frame = 11
+state = 6
+
+[node name="Destructable863" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1940, 356)
+frame = 11
+state = 6
+
+[node name="Destructable864" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1925, 356)
+frame = 11
+state = 6
+
+[node name="Destructable865" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1910, 357)
+frame = 11
+state = 6
+
+[node name="Destructable866" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1895, 357)
+frame = 11
+state = 6
+
+[node name="Destructable867" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1880, 356)
+frame = 11
+state = 6
+
+[node name="Destructable868" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1865, 357)
+frame = 11
+state = 6
+
+[node name="Destructable869" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1850, 357)
+frame = 11
+state = 6
+
+[node name="Destructable870" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1717, 229)
+frame = 11
+state = 6
+
+[node name="Destructable871" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1702, 228)
+frame = 11
+state = 6
+
+[node name="Destructable872" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1687, 228)
+frame = 11
+state = 6
+
+[node name="Destructable873" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1672, 229)
+frame = 11
+state = 6
+
+[node name="Destructable874" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1657, 229)
+frame = 11
+state = 6
+
+[node name="Destructable875" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1642, 228)
+frame = 11
+state = 6
+
+[node name="Destructable876" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1627, 229)
+frame = 11
+state = 6
+
+[node name="Destructable877" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1612, 229)
+frame = 11
+state = 6
+
+[node name="Destructable878" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1734, -603)
+frame = 11
+state = 6
+
+[node name="Destructable879" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1719, -604)
+frame = 11
+state = 6
+
+[node name="Destructable880" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1704, -604)
+frame = 11
+state = 6
+
+[node name="Destructable881" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1689, -603)
+frame = 11
+state = 6
+
+[node name="Destructable882" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1674, -603)
+frame = 11
+state = 6
+
+[node name="Destructable883" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1659, -604)
+frame = 11
+state = 6
+
+[node name="Destructable884" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1644, -603)
+frame = 11
+state = 6
+
+[node name="Destructable885" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1629, -603)
+frame = 11
+state = 6
+
+[node name="Destructable886" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1256, -283)
+frame = 11
+state = 6
+
+[node name="Destructable887" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1241, -284)
+frame = 11
+state = 6
+
+[node name="Destructable888" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1226, -284)
+frame = 11
+state = 6
+
+[node name="Destructable889" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1211, -283)
+frame = 11
+state = 6
+
+[node name="Destructable890" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1196, -283)
+frame = 11
+state = 6
+
+[node name="Destructable891" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1181, -284)
+frame = 11
+state = 6
+
+[node name="Destructable892" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1166, -283)
+frame = 11
+state = 6
+
+[node name="Destructable893" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1151, -283)
+frame = 11
+state = 6
+
+[node name="Destructable894" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1477, 36)
+frame = 11
+state = 6
+
+[node name="Destructable895" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1462, 35)
+frame = 11
+state = 6
+
+[node name="Destructable896" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1447, 35)
+frame = 11
+state = 6
+
+[node name="Destructable897" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1432, 36)
+frame = 11
+state = 6
+
+[node name="Destructable898" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1417, 36)
+frame = 11
+state = 6
+
+[node name="Destructable899" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1402, 35)
+frame = 11
+state = 6
+
+[node name="Destructable900" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1387, 36)
+frame = 11
+state = 6
+
+[node name="Destructable901" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1372, 36)
+frame = 11
+state = 6
+
+[node name="Destructable804" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(791, 165)
+frame = 11
+state = 6
+
+[node name="Destructable805" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(776, 164)
+frame = 11
+state = 6
+
+[node name="Destructable902" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(761, 164)
+frame = 11
+state = 6
+
+[node name="Destructable903" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(746, 165)
+frame = 11
+state = 6
+
+[node name="Destructable904" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(731, 165)
+frame = 11
+state = 6
+
+[node name="Destructable905" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(716, 166)
+frame = 11
+state = 6
+
+[node name="Destructable906" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(701, 165)
+frame = 11
+state = 6
+
+[node name="Destructable907" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(686, 165)
+frame = 11
+state = 6
+
+[node name="Destructable908" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1252, 325)
+frame = 11
+state = 6
+
+[node name="Destructable909" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1237, 324)
+frame = 11
+state = 6
+
+[node name="Destructable910" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1222, 324)
+frame = 11
+state = 6
+
+[node name="Destructable911" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1207, 325)
+frame = 11
+state = 6
+
+[node name="Destructable912" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1192, 325)
+frame = 11
+state = 6
+
+[node name="Destructable913" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1177, 324)
+frame = 11
+state = 6
+
+[node name="Destructable914" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1162, 325)
+frame = 11
+state = 6
+
+[node name="Destructable915" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1147, 325)
+frame = 11
+state = 6
+
+[node name="Destructable916" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-396, -139)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable917" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-411, -139)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable918" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-426, -138)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable919" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-441, -137)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable920" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-456, -138)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable921" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-471, -137)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable922" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-486, -139)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable923" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-501, -138)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable924" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(293, 187)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable925" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(278, 187)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable926" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(263, 188)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable927" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(248, 189)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable928" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(233, 188)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable929" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(218, 189)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable930" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(203, 187)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable931" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(188, 188)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable932" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(933, 474)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable933" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(918, 474)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable934" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(903, 475)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable935" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(888, 476)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable936" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(873, 475)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable937" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(858, 476)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable938" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(843, 474)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable939" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(828, 475)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable940" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1459, 250)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable941" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1444, 250)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable942" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1429, 251)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable943" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1414, 252)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable944" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1399, 251)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable945" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1384, 252)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable946" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1369, 250)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable947" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1354, 251)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable948" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1733, -229)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable949" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1718, -229)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable950" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1703, -228)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable951" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1688, -227)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable952" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1673, -228)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable953" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1658, -227)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable954" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1643, -229)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable955" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1628, -228)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable956" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1292, -485)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable957" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1277, -485)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable958" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1262, -484)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable959" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1247, -483)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable960" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1232, -484)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable961" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1217, -483)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable962" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1202, -485)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable963" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1187, -484)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable964" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(947, -614)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable965" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(932, -614)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable966" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(917, -613)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable967" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(902, -612)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable968" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(887, -613)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable969" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(872, -612)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable970" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(857, -614)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable971" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(842, -613)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable972" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(307, -101)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable973" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(292, -101)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable974" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(277, -100)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable975" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(262, -99)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable976" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(247, -100)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable977" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(232, -99)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable978" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(217, -101)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable979" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(202, -100)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable980" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-59, -454)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable981" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-74, -454)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable982" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-89, -453)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable983" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-104, -452)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable984" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-119, -453)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable985" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-134, -452)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable986" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-149, -454)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable987" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-164, -453)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable988" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1093, 59)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable989" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1078, 59)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable990" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1063, 60)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable991" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1048, 61)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable992" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1033, 60)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable993" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1018, 61)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable994" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1003, 59)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable995" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(988, 60)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable996" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1991, 92)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable997" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1976, 93)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable998" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1961, 92)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable999" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1946, 93)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable1000" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1931, 91)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable1001" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1916, 92)
+rotation = -3.14159
+frame = 11
+state = 6
+
+[node name="Destructable1002" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-545, -138)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1003" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-546, -153)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1004" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-545, -168)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1005" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-544, -123)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1006" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-545, -108)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1007" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-545, -93)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1008" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-544, -78)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1009" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-545, -63)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1014" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1307, -103)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1015" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1306, -118)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1016" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1307, -133)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1017" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1308, -88)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1018" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1307, -73)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1019" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1307, -58)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1020" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1308, -43)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1021" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1307, -28)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1010" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(635, -184)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1011" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(634, -199)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1012" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(635, -214)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1013" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(636, -169)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1022" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(635, -154)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1023" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(635, -139)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1024" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(636, -124)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1025" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(635, -109)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1026" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(443, 474)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1027" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(442, 459)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1028" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(443, 444)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1029" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(444, 489)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1030" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(443, 504)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1031" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(443, 519)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1032" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(444, 534)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1033" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(443, 549)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1034" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1083, 218)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1035" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1082, 203)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1036" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1083, 188)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1037" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1084, 233)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1038" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1083, 248)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1039" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1083, 263)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1040" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1084, 278)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1041" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1083, 293)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1042" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1563, 377)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1043" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1562, 362)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1044" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1563, 347)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1045" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1564, 392)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1046" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1563, 407)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1047" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1563, 422)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1048" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1564, 437)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1049" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1563, 452)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1050" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2043, 218)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1051" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2042, 203)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1052" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2043, 188)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1053" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2044, 233)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1054" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2043, 248)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1055" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2043, 263)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1056" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2044, 278)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1057" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(2043, 293)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1058" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1563, -486)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1059" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1562, -501)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1060" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1563, -516)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1061" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1564, -471)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1062" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1563, -456)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1063" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1563, -441)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1064" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1564, -426)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1065" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1563, -411)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1066" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(732, -392)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1067" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(731, -407)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1068" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(732, -422)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1069" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(733, -377)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1070" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(732, -362)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1071" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(732, -347)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1072" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(733, -332)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1073" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(732, -317)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1074" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(60, -389)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1075" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(59, -404)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1076" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(60, -419)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1077" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(59, -374)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1078" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(60, -359)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1079" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(60, -344)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1080" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(59, -329)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1081" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(60, -314)
+rotation = 1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1082" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-588, -138)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1083" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-587, -153)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1084" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-587, -168)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1085" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-587, -123)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1086" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-586, -108)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1087" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-586, -93)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1088" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-587, -78)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1089" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(-586, -63)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1090" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(387, -391)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1091" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(388, -406)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1092" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(388, -421)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1093" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(388, -376)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1094" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(389, -361)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1095" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(389, -346)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1096" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(388, -331)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1097" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(389, -316)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1098" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(292, -710)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1099" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(293, -725)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1100" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(293, -740)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1101" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(293, -695)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1102" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(294, -680)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1103" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(294, -665)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1104" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(293, -650)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1105" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(294, -635)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1106" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1092, -409)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1107" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1093, -424)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1108" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1093, -439)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1109" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1093, -394)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1110" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1094, -379)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1111" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1094, -364)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1112" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1093, -349)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1113" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1094, -334)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1114" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(901, -200)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1115" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(902, -215)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1116" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(902, -230)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1117" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(902, -185)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1118" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(903, -170)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1119" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(903, -155)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1120" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(902, -140)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1121" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(903, -125)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1122" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1539, -134)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1123" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1540, -149)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1124" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1540, -164)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1125" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1540, -119)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1126" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1541, -104)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1127" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1541, -89)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1128" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1540, -74)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1129" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1541, -59)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1130" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1956, -358)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1131" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1957, -373)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1132" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1957, -388)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1133" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1957, -343)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1134" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1958, -328)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1135" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1958, -313)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1136" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1957, -298)
+rotation = -1.5708
+frame = 11
+state = 6
+
+[node name="Destructable1137" parent="Destructables" instance=ExtResource("13_n1sat")]
+position = Vector2(1958, -283)
+rotation = -1.5708
+frame = 11
+state = 6
