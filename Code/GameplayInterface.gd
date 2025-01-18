@@ -26,6 +26,30 @@ func _ready():
 	$OptionsMenu/HBoxContainer/VBoxContainer/HSliderMusic.set("value",AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Music")))
 	$OptionsMenu/HBoxContainer/VBoxContainer/HSliderEffects.set("value",AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Effects")))
 	$OptionsMenu/HBoxContainer/VBoxContainer/HSliderUI.set("value",AudioServer.get_bus_volume_db(AudioServer.get_bus_index("UI")))
+	if Globals.minigun_unlock == true:
+		$EquipmentMenu/MechImage/MinigunL.disabled = false
+		$EquipmentMenu/MechImage/MinigunR.disabled = false
+	else:
+		$EquipmentMenu/MechImage/MinigunL.disabled = true
+		$EquipmentMenu/MechImage/MinigunR.disabled = true
+	if Globals.rocket_unlock == true:
+		$EquipmentMenu/MechImage/RocketL.disabled = false
+		$EquipmentMenu/MechImage/RocketR.disabled = false
+	else:
+		$EquipmentMenu/MechImage/RocketL.disabled = true
+		$EquipmentMenu/MechImage/RocketR.disabled = true
+	if Globals.legs_unlock == 1:
+		$EquipmentMenu/MechImage/Biped.disabled = true
+		$EquipmentMenu/MechImage/Quadruped.disabled = false
+		$EquipmentMenu/MechImage/Threads.disabled = true
+	elif Globals.legs_unlock == 2:
+		$EquipmentMenu/MechImage/Biped.disabled = false
+		$EquipmentMenu/MechImage/Quadruped.disabled = false
+		$EquipmentMenu/MechImage/Threads.disabled = true
+	elif Globals.legs_unlock == 3:
+		$EquipmentMenu/MechImage/Biped.disabled = false
+		$EquipmentMenu/MechImage/Quadruped.disabled = false
+		$EquipmentMenu/MechImage/Threads.disabled = false
 
 func _input(event):
 	if Input.is_action_just_pressed("pause"):

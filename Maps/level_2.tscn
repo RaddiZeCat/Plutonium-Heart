@@ -17,6 +17,7 @@
 script = ExtResource("1_6mpgh")
 
 [node name="Mech" parent="." instance=ExtResource("2_863rm")]
+unique_name_in_owner = true
 position = Vector2(14, 16)
 
 [node name="TileMap" type="TileMap" parent="."]

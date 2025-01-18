@@ -1,12 +1,13 @@
 extends Node
 
 @export var test_Scene = "res://Maps/test_scene.tscn"
+@export var level_0:String
 @export var level_1 = "res://Maps/level_1.tscn"
-@export var level_2:String #TODO put in Levels
-@export var level_3:String
-@export var level_4:String
+@export var level_2 = "res://Maps/level_2.tscn"
+@export var level_3 = "res://Maps/level_3.tscn"
 @export var mainMenu = "res://Maps/main_menu.tscn"
 @export var end_scene = "res://Maps/end_scene.tscn"
+var tutorial
 var level1 = "res://Maps/level_1.tscn"
 var level2 = "res://Maps/level_2.tscn"
 var level3 = "res://Maps/level_3.tscn"
@@ -31,7 +32,7 @@ var legs = LegState.QUADRUPED
 var minigun_unlock = true	#TODO set to false & 1
 var rocket_unlock = true
 var legs_unlock:int = 3
-var level_unlock:int = 4
+var level_unlock:int = 3
 
 #TODO level unlock
 
@@ -64,7 +65,7 @@ func reset(save:String): #TODO set to false & 1
 	minigun_unlock = true
 	rocket_unlock = true
 	legs_unlock = 3
-	level_unlock = 4
+	level_unlock = 3
 	saveGame()
 
 func settingsSave():

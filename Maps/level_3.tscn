@@ -18,6 +18,7 @@
 script = ExtResource("1_wrog0")
 
 [node name="Mech" parent="." instance=ExtResource("2_cogyn")]
+unique_name_in_owner = true
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("3_aqj2h")

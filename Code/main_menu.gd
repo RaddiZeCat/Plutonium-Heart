@@ -7,6 +7,7 @@ extends Control
 @onready var creditsMenu = $CreditsMenu
 @onready var audioMusic = $MusicAudioStreamPlayer
 @onready var audioUI = $UIAudioStreamPlayer
+@onready var levelMenu = $"Level Menu"
 
 @export var klick1:AudioStream
 @export var klick2:AudioStream
@@ -35,6 +36,26 @@ func _input(event):
 	elif Input.is_action_just_pressed("ui_down"):
 		audioUI.set_stream(hover)
 		audioUI.play()
+
+func levelPresent():
+	$"Level Menu/VBoxContainer/TextureButtonTutorial".visible = false
+	$"Level Menu/VBoxContainer/TextureButtonLevel1".visible = false
+	$"Level Menu/VBoxContainer/TextureButtonLevel2".visible = false
+	$"Level Menu/VBoxContainer/TextureButtonLevel3".visible = false
+	if Globals.level_unlock == 0:
+		$"Level Menu/VBoxContainer/TextureButtonTutorial".visible = true
+	elif Globals.level_unlock == 1:
+		$"Level Menu/VBoxContainer/TextureButtonTutorial".visible = true
+		$"Level Menu/VBoxContainer/TextureButtonLevel1".visible = true
+	elif Globals.level_unlock == 2:
+		$"Level Menu/VBoxContainer/TextureButtonTutorial".visible = true
+		$"Level Menu/VBoxContainer/TextureButtonLevel1".visible = true
+		$"Level Menu/VBoxContainer/TextureButtonLevel2".visible = true
+	elif Globals.level_unlock == 3:
+		$"Level Menu/VBoxContainer/TextureButtonTutorial".visible = true
+		$"Level Menu/VBoxContainer/TextureButtonLevel1".visible = true
+		$"Level Menu/VBoxContainer/TextureButtonLevel2".visible = true
+		$"Level Menu/VBoxContainer/TextureButtonLevel3".visible = true
 
 #region Clicks
 func _on_texture_button_play_pressed():
@@ -70,7 +91,10 @@ func _on_texture_button_save_1_pressed():
 	audioUI.play()
 	Globals.current_save = Globals.save_1
 	Globals.loadGame()
-	SceneSwitcher.switch_scene(Globals.level_1)
+	$PlayMenu.visible = false
+	$"Level Menu".visible = true
+	levelPresent()
+	$"Level Menu/VBoxContainer/TextureButtonTutorial".grab_focus()
 
 
 func _on_texture_button_save_2_pressed():
@@ -78,7 +102,10 @@ func _on_texture_button_save_2_pressed():
 	audioUI.play()
 	Globals.current_save = Globals.save_2
 	Globals.loadGame()
-	SceneSwitcher.switch_scene(Globals.level_1)
+	$PlayMenu.visible = false
+	$"Level Menu".visible = true
+	levelPresent()
+	$"Level Menu/VBoxContainer/TextureButtonTutorial".grab_focus()
 
 
 func _on_texture_button_save_3_pressed():
@@ -86,7 +113,10 @@ func _on_texture_button_save_3_pressed():
 	audioUI.play()
 	Globals.current_save = Globals.save_3
 	Globals.loadGame()
-	SceneSwitcher.switch_scene(Globals.level_1)
+	$PlayMenu.visible = false
+	$"Level Menu".visible = true
+	levelPresent()
+	$"Level Menu/VBoxContainer/TextureButtonTutorial".grab_focus()
 
 
 func _on_texture_button_back_pressed():
@@ -264,3 +294,34 @@ func _on_texture_button_back_3_mouse_entered():
 
 func _on_music_audio_stream_player_finished():
 	audioMusic.play()
+
+
+func _on_texture_button_tutorial_pressed():
+	audioUI.set_stream(klick1)
+	audioUI.play()
+
+
+func _on_texture_button_level_1_pressed():
+	audioUI.set_stream(klick1)
+	audioUI.play()
+	SceneSwitcher.switch_scene(Globals.level_1)
+
+
+func _on_texture_button_level_2_pressed():
+	audioUI.set_stream(klick1)
+	audioUI.play()
+	SceneSwitcher.switch_scene(Globals.level_2)
+
+
+func _on_texture_button_level_3_pressed():
+	audioUI.set_stream(klick1)
+	audioUI.play()
+	SceneSwitcher.switch_scene(Globals.level_3)
+
+
+func _on_texture_button_level_back_pressed():
+	audioUI.set_stream(klick1)
+	audioUI.play()
+	levelMenu.visible = false
+	mainMenu.visible = true
+	$MainMenu/VBoxContainer/TextureButtonPlay.grab_focus()
