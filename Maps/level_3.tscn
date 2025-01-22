@@ -38,6 +38,7 @@ bus = &"Music"
 [node name="MapTrigger" parent="." instance=ExtResource("6_cmrqg")]
 position = Vector2(2144, 80)
 function = 0
+nextLevel = 3
 
 [node name="MapTrigger2" parent="." instance=ExtResource("6_cmrqg")]
 position = Vector2(399, -721)

@@ -161,7 +161,7 @@ func _on_threads_pressed():
 	klick()
 
 
-func _on_reset_pressed(): #TODO Replace with better Options
+func _on_reset_pressed(): #the Button has beed hidden
 	scene.unpause()
 	Globals.settingsSave()
 	get_tree().reload_current_scene()

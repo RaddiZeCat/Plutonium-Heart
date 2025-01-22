@@ -20,7 +20,6 @@ func _ready():
 	$OptionsMenu/HBoxContainer/VBoxContainer/HSliderEffects.set("value",AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Effects")))
 	$OptionsMenu/HBoxContainer/VBoxContainer/HSliderUI.set("value",AudioServer.get_bus_volume_db(AudioServer.get_bus_index("UI")))
 	$MainMenu/VBoxContainer/TextureButtonPlay.grab_focus()
-	#TODO unlock levels based on Globals.level_unlock
 	audioMusic.play()
 
 func _input(event):

@@ -64,9 +64,9 @@ var DamageMultiplyer
 
 
 func _ready():
-	setWeapon1(gunStateL) #TODO Globals.gunStateL
-	setWeapon2(gunStateR) #TODO Globals.gunStateR
-	setLegs(legState) #TODO Globals.legState
+	setWeapon1(gunStateL)
+	setWeapon2(gunStateR)
+	setLegs(legState)
 
 func _physics_process(delta):
 	var input_horizontal = Input.get_axis("move_left","move_right")

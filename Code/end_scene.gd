@@ -21,11 +21,10 @@ func _ready():
 		victoryScreen.visible = false
 
 
-
 func _on_texture_button_next_level_2_pressed():
 	audioUI.set_stream(klick1)
 	audioUI.play()
-	#SceneSwitcher.switch_scene(Globals.level_2)
+	
 
 
 func _on_texture_button_main_menu_pressed():

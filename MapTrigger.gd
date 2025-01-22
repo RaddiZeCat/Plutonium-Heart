@@ -11,7 +11,15 @@ func _on_body_entered(body):
 		match function:
 			Function.WIN:
 				Globals.victorious = true
-				Globals.level_unlock = nextLevel
+				if Globals.level_unlock < nextLevel:
+					Globals.level_unlock = nextLevel
+					if nextLevel == 2:
+						Globals.minigun_unlock = true
+						Globals.legs_unlock = 2
+					if nextLevel == 3:
+						Globals.rocket_unlock = true
+						Globals.legs_unlock = 3
+				Globals.saveGame()
 				SceneSwitcher.switch_scene(Globals.end_scene)
 			Function.CUTSCENE:
 				pass
