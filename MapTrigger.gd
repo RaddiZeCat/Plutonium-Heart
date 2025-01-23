@@ -31,9 +31,11 @@ func _on_body_entered(body):
 				pass
 			Function.MECHANIC:
 				body.atMechanic = true
+				body.e.visible = true
 
 func _on_body_exited(body):
 	if body.is_in_group("player"):
 		match function:
 			Function.MECHANIC:
 				body.atMechanic = false
+				body.e.visible = false

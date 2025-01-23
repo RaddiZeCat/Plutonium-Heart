@@ -14,6 +14,8 @@ extends CharacterBody2D
 @onready var proximitySensor = $Area2DActivator
 @onready var audioTank = $TankAudioStreamPlayer2D
 @onready var audioGun = $GunAudioStreamPlayer2D
+@onready var scene = get_tree().get_root()
+@onready var explosiveDecal = load("res://Prefabs/explosion.tscn")
 var currentHealth
 var reactionSpeed
 enum TankState{SEARCH,SHOOT}
@@ -80,6 +82,9 @@ func _on_timer_timeout():
 func hit(damage):
 	currentHealth = currentHealth - damage
 	if currentHealth <= 0:
+		var i = explosiveDecal.instantiate()
+		scene.add_child(i)
+		i.transform = $".".global_transform
 		queue_free()
 
 

@@ -78,7 +78,7 @@ func _on_texture_button_credits_pressed():
 	creditsMenu.visible = true
 	audioUI.set_stream(klick1)
 	audioUI.play()
-	$CreditsMenu/VBoxContainer/TextureButtonBack3.grab_focus()
+	$CreditsMenu/TextureButtonBack3.grab_focus()
 
 
 func _on_texture_button_quit_pressed():
@@ -298,6 +298,7 @@ func _on_music_audio_stream_player_finished():
 func _on_texture_button_tutorial_pressed():
 	audioUI.set_stream(klick1)
 	audioUI.play()
+	SceneSwitcher.switch_scene(Globals.level_0)
 
 
 func _on_texture_button_level_1_pressed():

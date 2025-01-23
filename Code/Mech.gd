@@ -16,6 +16,7 @@ extends CharacterBody2D
 @onready var currentHealth:int = health
 @onready var healthBar = $CameraMarker2D/Camera2D/GameplayInterface/Healthbar
 @onready var gameplayInterface = $CameraMarker2D/Camera2D/GameplayInterface
+@onready var e = $CameraMarker2D/Camera2D/GameplayInterface/E
 
 @export var bullet:PackedScene
 @export var minibullet:PackedScene
