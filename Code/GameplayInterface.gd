@@ -57,7 +57,7 @@ func _input(event):
 			klick2()
 			scene.pause()
 			optionsMenu.visible = true #change to optionsMenu insted of pauseMenu
-			$EquipmentMenu/MechImage/ShieldL.grab_focus()
+			$OptionsMenu/HBoxContainer/VBoxContainer3/TextureButtonBack2.grab_focus()
 		elif scene.get_tree().paused == true:
 			scene.unpause()
 			klick2()

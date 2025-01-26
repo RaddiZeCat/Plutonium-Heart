@@ -27,10 +27,10 @@ var gunRight = GunState.SHIELD
 enum LegState{BIPED,QUADRUPED,THREADS}
 var legs = LegState.QUADRUPED
 
-var minigun_unlock = true	#TODO set to false & 1
-var rocket_unlock = true
-var legs_unlock:int = 3
-var level_unlock:int = 3
+var minigun_unlock = false
+var rocket_unlock = false
+var legs_unlock:int = 1
+var level_unlock:int = 1
 
 var masterVolume:float
 var musicVolume:float
@@ -56,12 +56,12 @@ func loadGame():
 		legs_unlock = file.get_var(legs_unlock)
 		level_unlock = file.get_var(level_unlock)
 
-func reset(save:String): #TODO set to false & 1
+func reset(save:String):
 	current_save = save
-	minigun_unlock = true
-	rocket_unlock = true
-	legs_unlock = 3
-	level_unlock = 3
+	minigun_unlock = false
+	rocket_unlock = false
+	legs_unlock = 1
+	level_unlock = 1
 	saveGame()
 
 func settingsSave():

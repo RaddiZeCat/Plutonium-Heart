@@ -35,6 +35,14 @@ func _input(event):
 	elif Input.is_action_just_pressed("ui_down"):
 		audioUI.set_stream(hover)
 		audioUI.play()
+	elif Input.is_action_just_pressed("toggleui"):
+		Globals.minigun_unlock = true
+		Globals.rocket_unlock = true
+		Globals.legs_unlock = 3
+		Globals.level_unlock = 3
+		Globals.saveGame()
+		audioUI.set_stream(klick2)
+		audioUI.play()
 
 func levelPresent():
 	$"Level Menu/VBoxContainer/TextureButtonTutorial".visible = false
@@ -324,4 +332,4 @@ func _on_texture_button_level_back_pressed():
 	audioUI.play()
 	levelMenu.visible = false
 	mainMenu.visible = true
-	$MainMenu/VBoxContainer/TextureButtonPlay.grab_focus()
+	$PlayMenu/VBoxContainer/TextureButtonBack.grab_focus()
