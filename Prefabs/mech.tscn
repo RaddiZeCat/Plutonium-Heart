@@ -287,9 +287,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -9.0
+offset_left = -8.0
 offset_top = -10.0
-offset_right = 2.0
+offset_right = 3.0
 offset_bottom = 7.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -332,7 +332,7 @@ offset_bottom = 10.0
 tooltip_text = "Shield-Wave-Emitter
 Firerate: 2/s
 Destroys Projectiles"
-focus_neighbor_left = NodePath("../../VBoxContainer/Reset")
+focus_neighbor_left = NodePath("../../VBoxContainer/Back")
 focus_neighbor_right = NodePath("../ShieldR")
 focus_neighbor_bottom = NodePath("../LMGL")
 theme = ExtResource("29_oi7t7")
@@ -390,7 +390,7 @@ tooltip_text = "Light Machine Gun
 Firerate: 5/s
 Damage: 2
 "
-focus_neighbor_left = NodePath("../../VBoxContainer/Reset")
+focus_neighbor_left = NodePath("../../VBoxContainer/Back")
 focus_neighbor_top = NodePath("../ShieldL")
 focus_neighbor_right = NodePath("../LMGR")
 focus_neighbor_bottom = NodePath("../MinigunL")
@@ -449,7 +449,7 @@ offset_bottom = 62.0
 tooltip_text = "Rotary Machine Gun
 Firerate: 10/s
 Damage: 1"
-focus_neighbor_left = NodePath("../../VBoxContainer/Reset")
+focus_neighbor_left = NodePath("../../VBoxContainer/Menu")
 focus_neighbor_top = NodePath("../LMGL")
 focus_neighbor_right = NodePath("../MinigunR")
 focus_neighbor_bottom = NodePath("../RocketL")
@@ -509,7 +509,7 @@ tooltip_text = "Rocket Launcher
 Firerate: 1/s
 Damage: 5
 Secondary Damage: 5"
-focus_neighbor_left = NodePath("../../VBoxContainer/Reset")
+focus_neighbor_left = NodePath("../../VBoxContainer/Quit")
 focus_neighbor_top = NodePath("../MinigunL")
 focus_neighbor_right = NodePath("../RocketR")
 focus_neighbor_bottom = NodePath("../Biped")

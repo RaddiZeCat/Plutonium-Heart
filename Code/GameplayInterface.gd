@@ -56,19 +56,20 @@ func _input(event):
 		if scene.get_tree().paused == false:
 			klick2()
 			scene.pause()
-			optionsMenu.visible = true #change to optionsMenu insted of pauseMenu
-			$OptionsMenu/HBoxContainer/VBoxContainer3/TextureButtonBack2.grab_focus()
+			optionsMenu.visible = true
+			$EquipmentMenu/VBoxContainer/Back.grab_focus()
 		elif scene.get_tree().paused == true:
 			scene.unpause()
 			klick2()
-			optionsMenu.visible = false #change it here too
+			optionsMenu.visible = false
 		#attach sceneCode to every Scene Root
 
 func openMechanic():
 	pauseMenu.visible = true
 	scene.pause()
+	$EquipmentMenu/VBoxContainer/Back.grab_focus()
 	klick2()
-	$OptionsMenu/HBoxContainer/VBoxContainer3/TextureButtonBack2.grab_focus()
+	
 
 func closeMechanic():
 	pauseMenu.visible = false
