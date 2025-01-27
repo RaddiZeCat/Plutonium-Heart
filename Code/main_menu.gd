@@ -21,6 +21,10 @@ func _ready():
 	$OptionsMenu/HBoxContainer/VBoxContainer/HSliderUI.set("value",AudioServer.get_bus_volume_db(AudioServer.get_bus_index("UI")))
 	$MainMenu/VBoxContainer/TextureButtonPlay.grab_focus()
 	audioMusic.play()
+	Globals.minigun_unlock = false
+	Globals.rocket_unlock = false
+	Globals.legs_unlock = 1
+	Globals.level_unlock = 1
 
 func _input(event):
 	if Input.is_action_just_pressed("ui_left"):

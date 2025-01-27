@@ -17,6 +17,8 @@ extends CharacterBody2D
 @onready var healthBar = $CameraMarker2D/Camera2D/GameplayInterface/Healthbar
 @onready var gameplayInterface = $CameraMarker2D/Camera2D/GameplayInterface
 @onready var e = $CameraMarker2D/Camera2D/GameplayInterface/E
+@onready var explosiveDecal = load("res://Prefabs/explosion.tscn")
+@onready var exploded = false
 
 @export var bullet:PackedScene
 @export var minibullet:PackedScene
@@ -30,6 +32,7 @@ extends CharacterBody2D
 @onready var atMechanic = false
 @onready var mechanicOpen = false
 var uiOpen = true
+var dead = false
 
 enum GunState{SHIELD,LMG,MINIGUN,SHOTGUN,LAUNCHER}
 var gunStateL = Globals.gunLeft
@@ -184,7 +187,15 @@ func heal(energy):
 
 func game_over():
 	print("Game Over")
+	dead = true
 	Globals.victorious = false
+	if exploded == false:
+		exploded = true
+		var i = explosiveDecal.instantiate()
+		scene.get_root().add_child(i)
+		i.transform = $".".global_transform
+		$".".visible = false
+	await get_tree().create_timer(2).timeout
 	SceneSwitcher.switch_scene(Globals.end_scene)
 	pass
 

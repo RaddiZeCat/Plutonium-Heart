@@ -54,14 +54,15 @@ func _physics_process(delta: float)-> void:
 			velocity = Vector2.ZERO
 	
 	if shoot == true:
-		if shotTimer.time_left > 0.0:
-			pass
-		else:
-			var p = projectile.instantiate()
-			owner.add_child(p)
-			p.transform = $Turret/Marker2D.global_transform
-			audioGun.play()
-			shotTimer.start(shotCooldown)
+		if player.dead == false:
+			if shotTimer.time_left > 0.0:
+				pass
+			else:
+				var p = projectile.instantiate()
+				owner.add_child(p)
+				p.transform = $Turret/Marker2D.global_transform
+				audioGun.play()
+				shotTimer.start(shotCooldown)
 	
 	legs.look_at($".".position + Vector2($".".velocity.x,$".".velocity.y))
 	turret.look_at(player.position)

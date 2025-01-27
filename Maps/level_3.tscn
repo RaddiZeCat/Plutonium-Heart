@@ -16,6 +16,7 @@
 
 [node name="Level3" type="Node2D"]
 script = ExtResource("1_wrog0")
+track = ExtResource("5_rhs0v")
 
 [node name="Mech" parent="." instance=ExtResource("2_cogyn")]
 unique_name_in_owner = true
@@ -6715,3 +6716,5 @@ position = Vector2(1958, -283)
 rotation = -1.5708
 frame = 13
 state = 7
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

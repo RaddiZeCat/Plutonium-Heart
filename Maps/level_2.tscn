@@ -15,6 +15,7 @@
 
 [node name="Level2" type="Node2D"]
 script = ExtResource("1_6mpgh")
+track = ExtResource("5_ea7wx")
 
 [node name="Mech" parent="." instance=ExtResource("2_863rm")]
 unique_name_in_owner = true
@@ -7422,3 +7423,5 @@ state = 4
 [node name="Destructable1215" parent="Destructables" instance=ExtResource("12_wp3et")]
 position = Vector2(608, 196)
 rotation = -3.14159
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

@@ -15,6 +15,7 @@
 
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_mfdkw")
+track = ExtResource("5_wvx4q")
 
 [node name="Mech" parent="." instance=ExtResource("1_u2kfb")]
 unique_name_in_owner = true

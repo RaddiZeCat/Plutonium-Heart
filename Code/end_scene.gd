@@ -20,7 +20,7 @@ func _ready():
 	elif Globals.victorious == false:
 		lossScreen.visible = true
 		victoryScreen.visible = false
-		$"Loss Screen/VBoxContainer/TextureButtonMainMenu".grab_ocus()
+		$"Loss Screen/VBoxContainer/TextureButtonMainMenu".grab_focus()
 
 
 func _on_texture_button_next_level_2_pressed():

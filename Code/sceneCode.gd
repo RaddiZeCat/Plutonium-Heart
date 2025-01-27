@@ -1,6 +1,7 @@
 extends Node2D
 
 @onready var audioMusic = $AudioStreamPlayer
+@export var track:AudioStream
 
 func pause():
 	get_tree().paused = true
