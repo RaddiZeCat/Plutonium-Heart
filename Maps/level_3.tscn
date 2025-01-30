@@ -67,16 +67,16 @@ texture = ExtResource("7_so451")
 [node name="Tanks" type="Node2D" parent="."]
 
 [node name="EnemyLMG" parent="Tanks" instance=ExtResource("8_vsvwc")]
-position = Vector2(658, 370)
+position = Vector2(677, 381)
 
 [node name="EnemyLMG2" parent="Tanks" instance=ExtResource("8_vsvwc")]
-position = Vector2(1073, 375)
+position = Vector2(1070, 375)
 
 [node name="EnemyLMG3" parent="Tanks" instance=ExtResource("8_vsvwc")]
 position = Vector2(1525, 466)
 
 [node name="EnemyLMG4" parent="Tanks" instance=ExtResource("8_vsvwc")]
-position = Vector2(1557, 50)
+position = Vector2(1518, 45)
 
 [node name="EnemyLMG5" parent="Tanks" instance=ExtResource("8_vsvwc")]
 position = Vector2(1867, 77)
@@ -91,7 +91,7 @@ position = Vector2(1795, 369)
 position = Vector2(1815, -435)
 
 [node name="EnemyLMG9" parent="Tanks" instance=ExtResource("8_vsvwc")]
-position = Vector2(1166, -502)
+position = Vector2(1160, -493)
 
 [node name="EnemyLMG10" parent="Tanks" instance=ExtResource("8_vsvwc")]
 position = Vector2(726, -486)
@@ -100,31 +100,31 @@ position = Vector2(726, -486)
 position = Vector2(717, -807)
 
 [node name="EnemyLMG12" parent="Tanks" instance=ExtResource("8_vsvwc")]
-position = Vector2(304, -700)
+position = Vector2(313, -698)
 
 [node name="EnemyLMG13" parent="Tanks" instance=ExtResource("8_vsvwc")]
-position = Vector2(62, -455)
+position = Vector2(48, -461)
 
 [node name="EnemyLMG14" parent="Tanks" instance=ExtResource("8_vsvwc")]
 position = Vector2(614, -159)
 
 [node name="EnemyLMG15" parent="Tanks" instance=ExtResource("8_vsvwc")]
-position = Vector2(1110, 44)
+position = Vector2(1117, 49)
 
 [node name="EnemyLMG16" parent="Tanks" instance=ExtResource("8_vsvwc")]
-position = Vector2(917, -255)
+position = Vector2(911, -270)
 
 [node name="EnemyLMG17" parent="Tanks" instance=ExtResource("8_vsvwc")]
 position = Vector2(1297, -194)
 
 [node name="EnemyLMG18" parent="Tanks" instance=ExtResource("8_vsvwc")]
-position = Vector2(822, 173)
+position = Vector2(819, 168)
 
 [node name="EnemyLMG19" parent="Tanks" instance=ExtResource("9_yefg4")]
 position = Vector2(600, 176)
 
 [node name="EnemyLMG20" parent="Tanks" instance=ExtResource("9_yefg4")]
-position = Vector2(787, 423)
+position = Vector2(777, 424)
 
 [node name="EnemyLMG21" parent="Tanks" instance=ExtResource("9_yefg4")]
 position = Vector2(1065, 230)
@@ -136,52 +136,52 @@ position = Vector2(965, 45)
 position = Vector2(630, -47)
 
 [node name="EnemyLMG24" parent="Tanks" instance=ExtResource("9_yefg4")]
-position = Vector2(915, -158)
+position = Vector2(926, -165)
 
 [node name="EnemyLMG25" parent="Tanks" instance=ExtResource("9_yefg4")]
-position = Vector2(565, -366)
+position = Vector2(552, -364)
 
 [node name="EnemyLMG26" parent="Tanks" instance=ExtResource("9_yefg4")]
-position = Vector2(150, -261)
+position = Vector2(140, -271)
 
 [node name="EnemyLMG27" parent="Tanks" instance=ExtResource("9_yefg4")]
-position = Vector2(49, -334)
+position = Vector2(36, -316)
 
 [node name="EnemyLMG28" parent="Tanks" instance=ExtResource("9_yefg4")]
 position = Vector2(260, -464)
 
 [node name="EnemyLMG29" parent="Tanks" instance=ExtResource("9_yefg4")]
-position = Vector2(390, -445)
+position = Vector2(387, -454)
 
 [node name="EnemyLMG30" parent="Tanks" instance=ExtResource("9_yefg4")]
 position = Vector2(336, -816)
 
 [node name="EnemyLMG31" parent="Tanks" instance=ExtResource("9_yefg4")]
-position = Vector2(563, -813)
+position = Vector2(584, -805)
 
 [node name="EnemyLMG32" parent="Tanks" instance=ExtResource("9_yefg4")]
-position = Vector2(719, -588)
+position = Vector2(726, -623)
 
 [node name="EnemyLMG33" parent="Tanks" instance=ExtResource("9_yefg4")]
-position = Vector2(973, -631)
+position = Vector2(976, -621)
 
 [node name="EnemyLMG34" parent="Tanks" instance=ExtResource("9_yefg4")]
-position = Vector2(1104, -370)
+position = Vector2(1117, -370)
 
 [node name="EnemyLMG35" parent="Tanks" instance=ExtResource("9_yefg4")]
-position = Vector2(1357, -363)
+position = Vector2(1351, -347)
 
 [node name="EnemyLMG36" parent="Tanks" instance=ExtResource("9_yefg4")]
 position = Vector2(1549, -510)
 
 [node name="EnemyLMG37" parent="Tanks" instance=ExtResource("9_yefg4")]
-position = Vector2(1962, -364)
+position = Vector2(1980, -368)
 
 [node name="EnemyLMG38" parent="Tanks" instance=ExtResource("9_yefg4")]
 position = Vector2(1763, -242)
 
 [node name="EnemyLMG39" parent="Tanks" instance=ExtResource("9_yefg4")]
-position = Vector2(1877, -89)
+position = Vector2(1864, -102)
 
 [node name="EnemyLMG40" parent="Tanks" instance=ExtResource("9_yefg4")]
 position = Vector2(1782, 115)
@@ -190,55 +190,55 @@ position = Vector2(1782, 115)
 position = Vector2(1982, 376)
 
 [node name="EnemyLMG42" parent="Tanks" instance=ExtResource("9_yefg4")]
-position = Vector2(1592, 230)
+position = Vector2(1590, 243)
 
 [node name="EnemyLMG43" parent="Tanks" instance=ExtResource("9_yefg4")]
-position = Vector2(1550, 363)
+position = Vector2(1537, 349)
 
 [node name="EnemyLMG44" parent="Tanks" instance=ExtResource("9_yefg4")]
 position = Vector2(1290, 403)
 
 [node name="EnemyLMG45" parent="Tanks" instance=ExtResource("9_yefg4")]
-position = Vector2(1447, 42)
+position = Vector2(1434, 53)
 
 [node name="EnemyLMG46" parent="Tanks" instance=ExtResource("9_yefg4")]
 position = Vector2(1257, 47)
 
 [node name="EnemyLMG47" parent="Tanks" instance=ExtResource("9_yefg4")]
-position = Vector2(393, -82)
+position = Vector2(406, -70)
 
 [node name="EnemyLMG48" parent="Tanks" instance=ExtResource("9_yefg4")]
 position = Vector2(347, 184)
 
 [node name="EnemyLMG49" parent="Tanks" instance=ExtResource("9_yefg4")]
-position = Vector2(188, 161)
+position = Vector2(176, 163)
 
 [node name="EnemyLMG50" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(301, -109)
+position = Vector2(298, -121)
 
 [node name="EnemyLMG51" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(315, -283)
+position = Vector2(330, -268)
 
 [node name="EnemyLMG52" parent="Tanks" instance=ExtResource("10_0pgvx")]
 position = Vector2(308, -559)
 
 [node name="EnemyLMG53" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(169, -461)
+position = Vector2(171, -453)
 
 [node name="EnemyLMG54" parent="Tanks" instance=ExtResource("10_0pgvx")]
 position = Vector2(311, -628)
 
 [node name="EnemyLMG55" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(488, -810)
+position = Vector2(467, -805)
 
 [node name="EnemyLMG56" parent="Tanks" instance=ExtResource("10_0pgvx")]
 position = Vector2(722, -694)
 
 [node name="EnemyLMG57" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(849, -621)
+position = Vector2(820, -631)
 
 [node name="EnemyLMG58" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(858, -496)
+position = Vector2(848, -486)
 
 [node name="EnemyLMG59" parent="Tanks" instance=ExtResource("10_0pgvx")]
 position = Vector2(1000, -497)
@@ -247,16 +247,16 @@ position = Vector2(1000, -497)
 position = Vector2(917, -356)
 
 [node name="EnemyLMG61" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(731, -280)
+position = Vector2(722, -270)
 
 [node name="EnemyLMG62" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(817, -43)
+position = Vector2(837, -44)
 
 [node name="EnemyLMG63" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(1298, -88)
+position = Vector2(1285, -88)
 
 [node name="EnemyLMG64" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(1555, -64)
+position = Vector2(1562, -58)
 
 [node name="EnemyLMG65" parent="Tanks" instance=ExtResource("10_0pgvx")]
 position = Vector2(1546, -194)
@@ -277,22 +277,22 @@ position = Vector2(1874, -10)
 position = Vector2(1750, 238)
 
 [node name="EnemyLMG71" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(1407, 241)
+position = Vector2(1394, 228)
 
 [node name="EnemyLMG72" parent="Tanks" instance=ExtResource("10_0pgvx")]
 position = Vector2(1292, 214)
 
 [node name="EnemyLMG73" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(1082, 303)
+position = Vector2(1057, 298)
 
 [node name="EnemyLMG74" parent="Tanks" instance=ExtResource("10_0pgvx")]
 position = Vector2(920, 177)
 
 [node name="EnemyLMG75" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(907, 466)
+position = Vector2(882, 454)
 
 [node name="EnemyLMG76" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(706, 183)
+position = Vector2(713, 187)
 
 [node name="EnemyLMG77" parent="Tanks" instance=ExtResource("10_0pgvx")]
 position = Vector2(468, 178)
@@ -301,28 +301,28 @@ position = Vector2(468, 178)
 position = Vector2(478, 48)
 
 [node name="EnemyLMG79" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(1104, -248)
+position = Vector2(1104, -271)
 
 [node name="EnemyLMG80" parent="Tanks" instance=ExtResource("10_0pgvx")]
 position = Vector2(1356, -491)
 
 [node name="EnemyLMG81" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(2031, 245)
+position = Vector2(2018, 245)
 
 [node name="EnemyLMG82" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(730, -45)
+position = Vector2(730, -39)
 
 [node name="EnemyLMG83" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(1014, -273)
+position = Vector2(1033, -269)
 
 [node name="EnemyLMG84" parent="Tanks" instance=ExtResource("10_0pgvx")]
 position = Vector2(1007, 460)
 
 [node name="EnemyLMG85" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(1622, -246)
+position = Vector2(1607, -239)
 
 [node name="EnemyLMG86" parent="Tanks" instance=ExtResource("10_0pgvx")]
-position = Vector2(625, -660)
+position = Vector2(622, -653)
 
 [node name="EnemyLMG87" parent="Tanks" instance=ExtResource("10_0pgvx")]
 position = Vector2(1102, -607)

@@ -65,6 +65,12 @@ var DamageMultiplyer
 @export var audioMinigun:AudioStream
 @export var audioRocket:AudioStream
 @export var charge:AudioStream
+@export var stomp:AudioStream
+@export var crush:AudioStream
+@export var tankIdle:AudioStream
+@export var tankDrive:AudioStream
+var moving = false
+@onready var motionChecker = $Sprite2D
 
 
 func _ready():
@@ -97,8 +103,10 @@ func _physics_process(delta):
 	
 	if(input != Vector2.ZERO):
 		legAnimator.play(legWalk)
+		motionChecker.visible = true
 	else:
 		legAnimator.play(legIdle)
+		motionChecker.visible = false
 	
 	legs.look_at(mech.position + input)
 	body.look_at(cameraMarker.global_position)
@@ -169,6 +177,29 @@ func _process(delta):
 		else:
 			shoot2()
 			timerR.start(waitR)
+
+func step():
+	match legState:
+		LegState.BIPED:
+			audioMech.play()
+		LegState.QUADRUPED:
+			audioMech.play()
+		LegState.THREADS:
+			pass
+
+func _on_sprite_2d_visibility_changed():
+	print(motionChecker.visible)
+	match legState:
+		LegState.THREADS:
+			if motionChecker.visible == true:
+				audioMech.set_stream(tankDrive)
+			else:
+				audioMech.set_stream(tankIdle)
+
+func _on_mech_audio_stream_player_2d_finished():
+	match legState:
+		LegState.THREADS:
+			audioMech.play()
 
 func hit(damage):
 	currentHealth -= (damage * DamageMultiplyer)
@@ -269,16 +300,27 @@ func setLegs(legState):
 			legIdle = "LegsIdle"
 			legWalk = "LegsWalk"
 			DamageMultiplyer = 2
+			audioMech.set_stream(stomp)
+			audioMech.max_polyphony = 2
 		LegState.QUADRUPED:
 			accelerationDuration = 1
 			speed = 35
 			legIdle = "QuadIdle"
 			legWalk = "QuadWalk"
 			DamageMultiplyer = 1
+			audioMech.set_stream(stomp)
+			audioMech.max_polyphony = 2
 		LegState.THREADS:
 			accelerationDuration = 0.7
 			speed = 25
 			legIdle = "TrakIdle"
 			legWalk = "TrakWalk"
 			DamageMultiplyer = 0.5
+			audioMech.set_stream(tankIdle)
+			audioMech.max_polyphony = 1
+			audioMech.play()
+
+
+
+
 

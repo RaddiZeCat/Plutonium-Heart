@@ -3,6 +3,7 @@ extends Sprite2D
 
 @onready var image = $"."
 @onready var eyes = $Area2D
+@onready var audio = $AudioStreamPlayer2D
 
 enum State{BENCH,REDLIGHT,STREETLIGHTON,STREETLIGHTOFF,BIN,TREE,RCAR,BCAR,GCAR}
 @export var state = State.BENCH
@@ -49,3 +50,4 @@ func _on_area_2d_body_entered(body):
 		State.GCAR:
 			image.set_frame(16)
 	eyes.set_deferred("monitoring",false)
+	audio.play()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://du4w5dcflie8w"]
+[gd_scene load_steps=58 format=3 uid="uid://du4w5dcflie8w"]
 
 [ext_resource type="Script" path="res://Code/Mech.gd" id="1_xw55t"]
 [ext_resource type="PackedScene" uid="uid://bjnxt3imrjojp" path="res://Prefabs/bullet.tscn" id="2_gkgy7"]
@@ -17,12 +17,16 @@
 [ext_resource type="AudioStream" uid="uid://mjpnvc2ucm5i" path="res://Assets/Audio/Effects/Guns/EnergyCell.wav" id="11_b5k1p"]
 [ext_resource type="Texture2D" uid="uid://deknjvlhmk4sh" path="res://Assets/UI/HealthBar.png" id="11_clugo"]
 [ext_resource type="AudioStream" uid="uid://c1md7y6mg24g0" path="res://Assets/Audio/UI/Button1.wav" id="11_k1uml"]
+[ext_resource type="AudioStream" uid="uid://bjjdl1e0nkf8h" path="res://Assets/Audio/Effects/Environment/Stomp.wav" id="12_gk73h"]
 [ext_resource type="AudioStream" uid="uid://kagqe8ac23v6" path="res://Assets/Audio/UI/Hover.wav" id="12_jmcqv"]
 [ext_resource type="Texture2D" uid="uid://ccjmxrytp2tdd" path="res://Assets/UI/EquipRobot.png" id="12_kqr31"]
+[ext_resource type="AudioStream" uid="uid://b33dekcwj70x6" path="res://Assets/Audio/Effects/Environment/Crush.wav" id="13_46mbx"]
 [ext_resource type="AudioStream" uid="uid://duayusab3s0ye" path="res://Assets/Audio/UI/Scroll.wav" id="13_fpui2"]
 [ext_resource type="Texture2D" uid="uid://j3ol3ubrq3dp" path="res://Assets/UI/Sammelsorium/EquipmentButton1.png" id="13_nr70g"]
 [ext_resource type="Texture2D" uid="uid://dkfqb5vh7bikv" path="res://Assets/UI/Sammelsorium/EquipmentButton2.png" id="14_17h8v"]
+[ext_resource type="AudioStream" uid="uid://dij4rkhyulgln" path="res://Assets/Audio/Effects/Environment/TankIdle.wav" id="14_gt37l"]
 [ext_resource type="Texture2D" uid="uid://buad20wo8rs70" path="res://Assets/UI/Sammelsorium/EquipmentButton3.png" id="14_puoa7"]
+[ext_resource type="AudioStream" uid="uid://b0vx8pd70qewi" path="res://Assets/Audio/Effects/Environment/Tank.wav" id="15_8kbip"]
 [ext_resource type="Texture2D" uid="uid://b8byhjrwtbskl" path="res://Assets/UI/Sammelsorium/EquipmentButton4.png" id="15_kc585"]
 [ext_resource type="Texture2D" uid="uid://b0n5m1ewg2cit" path="res://Assets/Player/Guns1.png" id="17_hwa0e"]
 [ext_resource type="AudioStream" uid="uid://ba6wqh8jiormc" path="res://Assets/Audio/UI/Button2.wav" id="17_xt14d"]
@@ -86,6 +90,23 @@ tracks/0/keys = {
 "update": 1,
 "values": [0, 1, 2, 3, 3]
 }
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"step"
+}, {
+"args": [],
+"method": &"step"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_kiiw6"]
 resource_name = "QuadIdle"
@@ -107,7 +128,7 @@ tracks/0/keys = {
 resource_name = "QuadWalk"
 length = 0.6
 loop_mode = 1
-step = 0.05
+step = 0.025
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -119,6 +140,23 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [4, 5, 6, 7]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.15, 0.45),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"step"
+}, {
+"args": [],
+"method": &"step"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_h517x"]
@@ -151,6 +189,20 @@ tracks/0/keys = {
 "update": 1,
 "values": [8]
 }
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = false
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"step"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_2bmg8"]
 resource_name = "TrakWalk"
@@ -167,6 +219,20 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [8, 9, 10, 11]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = false
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"step"
+}]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lwfnm"]
@@ -201,6 +267,10 @@ audioLMG = ExtResource("21_0oe7c")
 audioMinigun = ExtResource("9_1dv2o")
 audioRocket = ExtResource("10_e2yhj")
 charge = ExtResource("11_b5k1p")
+stomp = ExtResource("12_gk73h")
+crush = ExtResource("13_46mbx")
+tankIdle = ExtResource("14_gt37l")
+tankDrive = ExtResource("15_8kbip")
 
 [node name="Body Collision" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ydudx")
@@ -924,8 +994,13 @@ one_shot = true
 [node name="TimerR" type="Timer" parent="."]
 one_shot = true
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+
 [node name="MechAudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 process_mode = 3
+volume_db = -5.0
+max_polyphony = 2
 panning_strength = 3.0
 bus = &"Effects"
 
@@ -991,3 +1066,5 @@ process_mode = 3
 [connection signal="value_changed" from="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer/HSliderEffects" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_h_slider_effects_value_changed"]
 [connection signal="mouse_entered" from="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer/HSliderUI" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_h_slider_ui_mouse_entered"]
 [connection signal="value_changed" from="CameraMarker2D/Camera2D/GameplayInterface/OptionsMenu/HBoxContainer/VBoxContainer/HSliderUI" to="CameraMarker2D/Camera2D/GameplayInterface" method="_on_h_slider_ui_value_changed"]
+[connection signal="visibility_changed" from="Sprite2D" to="." method="_on_sprite_2d_visibility_changed"]
+[connection signal="finished" from="MechAudioStreamPlayer2D" to="." method="_on_mech_audio_stream_player_2d_finished"]

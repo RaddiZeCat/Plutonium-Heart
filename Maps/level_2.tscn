@@ -58,19 +58,19 @@ texture = ExtResource("7_uqpj7")
 [node name="Tanks" type="Node2D" parent="."]
 
 [node name="EnemyLMG" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(301, 110)
+position = Vector2(295, 114)
 
 [node name="EnemyLMG2" parent="Tanks" instance=ExtResource("8_hrxlp")]
 position = Vector2(437, 114)
 
 [node name="EnemyLMG3" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(320, -101)
+position = Vector2(308, -103)
 
 [node name="EnemyLMG4" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(397, -106)
+position = Vector2(399, -115)
 
 [node name="EnemyLMG5" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(606, 187)
+position = Vector2(557, 249)
 
 [node name="EnemyLMG6" parent="Tanks" instance=ExtResource("9_jui2i")]
 position = Vector2(470, -18)
@@ -82,217 +82,217 @@ position = Vector2(317, 295)
 position = Vector2(186, 368)
 
 [node name="EnemyLMG9" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(262, 462)
+position = Vector2(244, 455)
 
 [node name="EnemyLMG10" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(378, 462)
+position = Vector2(370, 457)
 
 [node name="EnemyLMG11" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(515, 463)
+position = Vector2(504, 462)
 
 [node name="EnemyLMG12" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(566, 387)
+position = Vector2(563, 383)
 
 [node name="EnemyLMG13" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(676, 334)
+position = Vector2(658, 324)
 
 [node name="EnemyLMG14" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(826, 333)
+position = Vector2(834, 334)
 
 [node name="EnemyLMG15" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(723, 144)
+position = Vector2(716, 146)
 
 [node name="EnemyLMG16" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(748, -8)
+position = Vector2(736, -13)
 
 [node name="EnemyLMG17" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(626, -219)
+position = Vector2(622, -240)
 
 [node name="EnemyLMG18" parent="Tanks" instance=ExtResource("8_hrxlp")]
 position = Vector2(622, -123)
 
 [node name="EnemyLMG19" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(405, -247)
+position = Vector2(407, -240)
 
 [node name="EnemyLMG20" parent="Tanks" instance=ExtResource("8_hrxlp")]
 position = Vector2(87, -211)
 
 [node name="EnemyLMG21" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(-76, -246)
+position = Vector2(-90, -229)
 
 [node name="EnemyLMG22" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(-81, -344)
+position = Vector2(-90, -362)
 
 [node name="EnemyLMG23" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(83, -371)
+position = Vector2(87, -367)
 
 [node name="EnemyLMG24" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(20, -434)
+position = Vector2(20, -427)
 
 [node name="EnemyLMG25" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(-169, -490)
+position = Vector2(-188, -474)
 
 [node name="EnemyLMG26" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(-177, -618)
+position = Vector2(-189, -625)
 
 [node name="EnemyLMG27" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(-304, -704)
+position = Vector2(-298, -696)
 
 [node name="EnemyLMG28" parent="Tanks" instance=ExtResource("9_jui2i")]
 position = Vector2(-22, -710)
 
 [node name="EnemyLMG29" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(31, -609)
+position = Vector2(84, -606)
 
 [node name="EnemyLMG30" parent="Tanks" instance=ExtResource("8_hrxlp")]
 position = Vector2(-301, -869)
 
 [node name="EnemyLMG31" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(-175, -905)
+position = Vector2(-180, -923)
 
 [node name="EnemyLMG32" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(-41, -907)
+position = Vector2(-47, -919)
 
 [node name="EnemyLMG33" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(79, -815)
+position = Vector2(67, -819)
 
 [node name="EnemyLMG34" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(162, -913)
+position = Vector2(169, -902)
 
 [node name="EnemyLMG35" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(310, -915)
+position = Vector2(310, -905)
 
 [node name="EnemyLMG36" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(400, -841)
+position = Vector2(385, -842)
 
 [node name="EnemyLMG37" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(521, -777)
+position = Vector2(525, -771)
 
 [node name="EnemyLMG38" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(405, -686)
+position = Vector2(384, -664)
 
 [node name="EnemyLMG39" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(226, -589)
+position = Vector2(232, -596)
 
 [node name="EnemyLMG40" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(244, -439)
+position = Vector2(248, -456)
 
 [node name="EnemyLMG41" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(483, -582)
+position = Vector2(494, -604)
 
 [node name="EnemyLMG42" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(504, -447)
+position = Vector2(487, -428)
 
 [node name="EnemyLMG43" parent="Tanks" instance=ExtResource("8_hrxlp")]
 position = Vector2(694, -427)
 
 [node name="EnemyLMG44" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(722, -568)
+position = Vector2(702, -585)
 
 [node name="EnemyLMG45" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(727, -705)
+position = Vector2(713, -708)
 
 [node name="EnemyLMG46" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(832, -790)
+position = Vector2(819, -792)
 
 [node name="EnemyLMG47" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(1054, -785)
+position = Vector2(1038, -771)
 
 [node name="EnemyLMG48" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(1099, -611)
+position = Vector2(1115, -614)
 
 [node name="EnemyLMG49" parent="Tanks" instance=ExtResource("9_jui2i")]
 position = Vector2(1092, -404)
 
 [node name="EnemyLMG50" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(884, -357)
+position = Vector2(870, -358)
 
 [node name="EnemyLMG51" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(750, -237)
+position = Vector2(750, -231)
 
 [node name="EnemyLMG52" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(880, -89)
+position = Vector2(889, -89)
 
 [node name="EnemyLMG53" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(1035, -139)
+position = Vector2(1011, -131)
 
 [node name="EnemyLMG54" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(893, 67)
+position = Vector2(868, 72)
 
 [node name="EnemyLMG55" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(991, 332)
+position = Vector2(985, 332)
 
 [node name="EnemyLMG56" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(1040, 158)
+position = Vector2(1039, 172)
 
 [node name="EnemyLMG57" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(1234, 359)
+position = Vector2(1233, 374)
 
 [node name="EnemyLMG58" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(845, 489)
+position = Vector2(859, 523)
 
 [node name="EnemyLMG59" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(1000, 530)
+position = Vector2(981, 535)
 
 [node name="EnemyLMG60" parent="Tanks" instance=ExtResource("9_jui2i")]
 position = Vector2(1185, 526)
 
 [node name="EnemyLMG61" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(1392, 529)
+position = Vector2(1391, 518)
 
 [node name="EnemyLMG62" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(1451, 380)
+position = Vector2(1455, 367)
 
 [node name="EnemyLMG63" parent="Tanks" instance=ExtResource("8_hrxlp")]
 position = Vector2(1447, 201)
 
 [node name="EnemyLMG64" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(1228, 182)
+position = Vector2(1231, 168)
 
 [node name="EnemyLMG65" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(1364, 36)
+position = Vector2(1347, 36)
 
 [node name="EnemyLMG66" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(1303, -114)
+position = Vector2(1307, -91)
 
 [node name="EnemyLMG67" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(1480, -66)
+position = Vector2(1492, -67)
 
 [node name="EnemyLMG68" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(1546, -185)
+position = Vector2(1547, -184)
 
 [node name="EnemyLMG69" parent="Tanks" instance=ExtResource("8_hrxlp")]
 position = Vector2(1643, -382)
 
 [node name="EnemyLMG70" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(1443, -496)
+position = Vector2(1445, -505)
 
 [node name="EnemyLMG71" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(1295, -328)
+position = Vector2(1302, -330)
 
 [node name="EnemyLMG72" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(1266, -842)
+position = Vector2(1260, -860)
 
 [node name="EnemyLMG73" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(1464, -840)
+position = Vector2(1461, -853)
 
 [node name="EnemyLMG74" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(1548, -686)
+position = Vector2(1546, -695)
 
 [node name="EnemyLMG75" parent="Tanks" instance=ExtResource("9_jui2i")]
 position = Vector2(1551, -496)
 
 [node name="EnemyLMG76" parent="Tanks" instance=ExtResource("9_jui2i")]
-position = Vector2(1395, -46)
+position = Vector2(1396, -51)
 
 [node name="EnemyLMG77" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(1133, -502)
+position = Vector2(1143, -501)
 
 [node name="EnemyLMG78" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(877, -493)
+position = Vector2(873, -492)
 
 [node name="EnemyLMG79" parent="Tanks" instance=ExtResource("8_hrxlp")]
-position = Vector2(1005, -401)
+position = Vector2(1005, -410)
 
 [node name="Mines" type="Node2D" parent="."]
 

@@ -87,13 +87,13 @@ prehide = true
 [node name="Tanks" type="Node2D" parent="."]
 
 [node name="EnemyLMG" parent="Tanks" instance=ExtResource("9_e2t3m")]
-position = Vector2(-154, -13)
+position = Vector2(-173, 12)
 
 [node name="EnemyLMG2" parent="Tanks" instance=ExtResource("9_e2t3m")]
-position = Vector2(22, 49)
+position = Vector2(72, 13)
 
 [node name="EnemyLMG3" parent="Tanks" instance=ExtResource("9_e2t3m")]
-position = Vector2(202, 17)
+position = Vector2(190, 18)
 
 [node name="EnemyLMG4" parent="Tanks" instance=ExtResource("9_e2t3m")]
 position = Vector2(396, 256)
@@ -102,10 +102,10 @@ position = Vector2(396, 256)
 position = Vector2(499, 224)
 
 [node name="EnemyLMG6" parent="Tanks" instance=ExtResource("9_e2t3m")]
-position = Vector2(374, -220)
+position = Vector2(369, -233)
 
 [node name="EnemyLMG7" parent="Tanks" instance=ExtResource("9_e2t3m")]
-position = Vector2(642, -236)
+position = Vector2(633, -237)
 
 [node name="EnemyLMG8" parent="Tanks" instance=ExtResource("9_e2t3m")]
 position = Vector2(881, -9)
@@ -117,16 +117,16 @@ position = Vector2(848, -496)
 position = Vector2(984, -433)
 
 [node name="EnemyLMG11" parent="Tanks" instance=ExtResource("9_e2t3m")]
-position = Vector2(1040, -551)
+position = Vector2(1046, -544)
 
 [node name="EnemyLMG12" parent="Tanks" instance=ExtResource("9_e2t3m")]
-position = Vector2(928, 84)
+position = Vector2(929, 62)
 
 [node name="EnemyLMG13" parent="Tanks" instance=ExtResource("9_e2t3m")]
-position = Vector2(1078, -21)
+position = Vector2(1051, -17)
 
 [node name="EnemyLMG14" parent="Tanks" instance=ExtResource("9_e2t3m")]
-position = Vector2(1075, -236)
+position = Vector2(1069, -236)
 
 [node name="Pickups" type="Node2D" parent="."]
 
