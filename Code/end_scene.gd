@@ -20,8 +20,11 @@ func _ready():
 	elif Globals.victorious == false:
 		lossScreen.visible = true
 		victoryScreen.visible = false
-		$"Loss Screen/VBoxContainer/TextureButtonMainMenu".grab_focus()
+		$"Loss Screen/VBoxContainer/TextureButtonRetry".grab_focus()
 
+func mouseOver():
+	audioUI.set_stream(hover)
+	audioUI.play()
 
 func _on_texture_button_next_level_2_pressed():
 	audioUI.set_stream(klick1)
@@ -41,3 +44,25 @@ func _on_texture_button_quit_pressed():
 
 func _on_music_audio_stream_player_finished():
 	audioMusic.play()
+
+
+func _on_texture_button_retry_pressed():
+	audioUI.set_stream(klick1)
+	audioUI.play()
+	SceneSwitcher.switch_scene(Globals.lastScene)
+
+
+func _on_texture_button_next_level_2_mouse_entered():
+	mouseOver()
+
+
+func _on_texture_button_main_menu_mouse_entered():
+	mouseOver()
+
+
+func _on_texture_button_quit_mouse_entered():
+	mouseOver()
+
+
+func _on_texture_button_retry_mouse_entered():
+	mouseOver()

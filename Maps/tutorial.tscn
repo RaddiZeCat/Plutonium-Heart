@@ -51,7 +51,7 @@ texture = ExtResource("8_sxems")
 
 [node name="Textbox" parent="Hints" instance=ExtResource("6_n7eqe")]
 position = Vector2(-793, 57)
-hint = "use the right stick or mouse to look around and the left stick, WASD or the arrow keyes to move"
+hint = "use the right stick or mouse to look around and the left stick, WASD or the arrow keys to move"
 hide = true
 
 [node name="Textbox2" parent="Hints" instance=ExtResource("6_n7eqe")]

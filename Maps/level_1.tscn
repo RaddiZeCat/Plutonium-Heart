@@ -4265,11 +4265,6 @@ position = Vector2(-146, -865)
 frame = 5
 state = 3
 
-[node name="Destructable223" parent="Destructables" instance=ExtResource("12_ge1wa")]
-position = Vector2(-211, -545)
-frame = 5
-state = 3
-
 [node name="Destructable224" parent="Destructables" instance=ExtResource("12_ge1wa")]
 position = Vector2(-82, -865)
 frame = 5

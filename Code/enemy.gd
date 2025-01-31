@@ -11,6 +11,8 @@ extends CharacterBody2D
 @export var shotCooldown:float = 1
 @export var projectile:PackedScene
 @export var proximityActivated = true
+@export var tankIdle:AudioStream
+@export var tankDrive:AudioStream
 @onready var proximitySensor = $Area2DActivator
 @onready var audioTank = $TankAudioStreamPlayer2D
 @onready var audioGun = $GunAudioStreamPlayer2D
@@ -23,6 +25,11 @@ var tankState = TankState.SEARCH
 var walk = true
 var shoot = false
 var hunt = false
+var driving = false:
+	set(value):
+		if driving != value:
+			driving = value
+			changeAudio()
 
 func _ready():
 	if proximityActivated == false:
@@ -34,6 +41,7 @@ func _ready():
 	var rng = RandomNumberGenerator.new()
 	reactionSpeed = rng.randf_range(1.0,3.0)
 	$Timer.wait_time = reactionSpeed
+	audioTank.play()
 
 func _physics_process(delta: float)-> void:
 	var dir = to_local(navAgent.get_next_path_position()).normalized()
@@ -50,8 +58,10 @@ func _physics_process(delta: float)-> void:
 		if walk == true:
 			velocity = dir * speed
 			move_and_slide()
+			driving = true
 		else:
 			velocity = Vector2.ZERO
+			driving = false
 	
 	if shoot == true:
 		if player.dead == false:
@@ -74,6 +84,14 @@ func _physics_process(delta: float)-> void:
 	
 	
  
+func changeAudio():
+	if driving:
+		audioTank.set_stream(tankDrive)
+		audioTank.play()
+	else:
+		audioTank.set_stream(tankIdle)
+		audioTank.play()
+
 func seek() -> void:
 	navAgent.target_position = player.global_position
 
@@ -104,3 +122,7 @@ func _on_area_2d_activator_body_entered(body):
 	if proximityActivated == true:
 		hunt = true
 		proximitySensor.set_deferred("monitoring",false)
+
+
+func _on_tank_audio_stream_player_2d_finished():
+	audioTank.play()

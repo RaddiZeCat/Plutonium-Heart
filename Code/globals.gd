@@ -12,6 +12,7 @@ var level1 = "res://Maps/level_1.tscn"
 var level2 = "res://Maps/level_2.tscn"
 var level3 = "res://Maps/level_3.tscn"
 var currentScene = level_1
+var lastScene = level_1
 
 var settings_save = "user://Settings.save"
 var save_1 = "user://Slot1.save"

@@ -310,24 +310,28 @@ func _on_music_audio_stream_player_finished():
 func _on_texture_button_tutorial_pressed():
 	audioUI.set_stream(klick1)
 	audioUI.play()
+	Globals.lastScene = Globals.level_0
 	SceneSwitcher.switch_scene(Globals.level_0)
 
 
 func _on_texture_button_level_1_pressed():
 	audioUI.set_stream(klick1)
 	audioUI.play()
+	Globals.lastScene = Globals.level_1
 	SceneSwitcher.switch_scene(Globals.level_1)
 
 
 func _on_texture_button_level_2_pressed():
 	audioUI.set_stream(klick1)
 	audioUI.play()
+	Globals.lastScene = Globals.level_2
 	SceneSwitcher.switch_scene(Globals.level_2)
 
 
 func _on_texture_button_level_3_pressed():
 	audioUI.set_stream(klick1)
 	audioUI.play()
+	Globals.lastScene = Globals.level_3
 	SceneSwitcher.switch_scene(Globals.level_3)
 
 

@@ -179,6 +179,7 @@ func _process(delta):
 			timerR.start(waitR)
 
 func step():
+	
 	match legState:
 		LegState.BIPED:
 			audioMech.play()
@@ -188,13 +189,15 @@ func step():
 			pass
 
 func _on_sprite_2d_visibility_changed():
-	print(motionChecker.visible)
+	print(motionChecker.visible," ",legState)
 	match legState:
 		LegState.THREADS:
 			if motionChecker.visible == true:
 				audioMech.set_stream(tankDrive)
+				audioMech.play()
 			else:
 				audioMech.set_stream(tankIdle)
+				audioMech.play()
 
 func _on_mech_audio_stream_player_2d_finished():
 	match legState:
@@ -292,7 +295,8 @@ func setWeapon2(gunStateR):
 			gun2.flip_v = false
 	pass
 
-func setLegs(legState):
+func setLegs(newLegState):
+	legState = newLegState
 	match legState:
 		LegState.BIPED:
 			accelerationDuration = 2
