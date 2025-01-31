@@ -154,6 +154,8 @@ func shoot1():
 	owner.add_child(l)
 	l.friendly = true
 	l.transform = muzzle1.global_transform
+	var rng = RandomNumberGenerator.new()
+	audioGun1.pitch_scale = rng.randf_range(0.8,1.2)
 	audioGun1.play()
 
 func shoot2():
@@ -161,6 +163,8 @@ func shoot2():
 	owner.add_child(r)
 	r.friendly = true
 	r.transform = muzzle2.global_transform
+	var rng = RandomNumberGenerator.new()
+	audioGun2.pitch_scale = rng.randf_range(0.8,1.2)
 	audioGun2.play()
 
 func _process(delta):
@@ -179,7 +183,8 @@ func _process(delta):
 			timerR.start(waitR)
 
 func step():
-	
+	var rng = RandomNumberGenerator.new()
+	audioMech.pitch_scale = rng.randf_range(0.8,1.2)
 	match legState:
 		LegState.BIPED:
 			audioMech.play()

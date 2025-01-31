@@ -50,4 +50,6 @@ func _on_area_2d_body_entered(body):
 		State.GCAR:
 			image.set_frame(16)
 	eyes.set_deferred("monitoring",false)
+	var rng = RandomNumberGenerator.new()
+	audio.pitch_scale = rng.randf_range(0.8,1.2)
 	audio.play()
