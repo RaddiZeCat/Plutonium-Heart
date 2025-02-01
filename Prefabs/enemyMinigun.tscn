@@ -1,10 +1,12 @@
-[gd_scene load_steps=13 format=3 uid="uid://dwf1fhpajhp5i"]
+[gd_scene load_steps=15 format=3 uid="uid://dwf1fhpajhp5i"]
 
 [ext_resource type="Script" path="res://Code/enemy.gd" id="1_s8ocf"]
 [ext_resource type="PackedScene" uid="uid://dq4qkqyv8qvnc" path="res://Prefabs/miniBullet.tscn" id="2_fxdls"]
 [ext_resource type="Texture2D" uid="uid://ckv63fk25nu0l" path="res://Assets/Enemy/EnemyTank.png" id="3_06j20"]
 [ext_resource type="Texture2D" uid="uid://b2ohmycpafy5o" path="res://Assets/Enemy/EnemyTankTurret2.png" id="4_cntpx"]
+[ext_resource type="AudioStream" uid="uid://b0vx8pd70qewi" path="res://Assets/Audio/Effects/Environment/Tank.wav" id="4_vfmd4"]
 [ext_resource type="AudioStream" uid="uid://umuhhp020efo" path="res://Assets/Audio/Effects/Guns/Minigun.wav" id="5_unn4v"]
+[ext_resource type="AudioStream" uid="uid://dij4rkhyulgln" path="res://Assets/Audio/Effects/Environment/TankIdle.wav" id="6_lql2o"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qet7y"]
 
@@ -79,6 +81,8 @@ script = ExtResource("1_s8ocf")
 speed = 25
 shotCooldown = 0.2
 projectile = ExtResource("2_fxdls")
+tankIdle = ExtResource("6_lql2o")
+tankDrive = ExtResource("4_vfmd4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_qet7y")
@@ -129,9 +133,12 @@ stream = ExtResource("5_unn4v")
 bus = &"Effects"
 
 [node name="TankAudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_lql2o")
+max_distance = 400.0
 bus = &"Effects"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
 [connection signal="body_entered" from="Area2DActivator" to="." method="_on_area_2d_activator_body_entered"]
+[connection signal="finished" from="TankAudioStreamPlayer2D" to="." method="_on_tank_audio_stream_player_2d_finished"]

@@ -71,6 +71,8 @@ func _physics_process(delta: float)-> void:
 				var p = projectile.instantiate()
 				owner.add_child(p)
 				p.transform = $Turret/Marker2D.global_transform
+				var rng = RandomNumberGenerator.new()
+				audioGun.pitch_scale = rng.randf_range(0.8,1.2)
 				audioGun.play()
 				shotTimer.start(shotCooldown)
 	

@@ -174,11 +174,9 @@ proximityActivated = false
 
 [node name="EnemyLMG6" parent="Tanks" instance=ExtResource("4_i4np7")]
 position = Vector2(365, -203)
-proximityActivated = false
 
 [node name="EnemyLMG7" parent="Tanks" instance=ExtResource("4_i4np7")]
 position = Vector2(541, -207)
-proximityActivated = false
 
 [node name="EnemyLMG8" parent="Tanks" instance=ExtResource("4_i4np7")]
 position = Vector2(399, 52)

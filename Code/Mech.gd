@@ -194,7 +194,6 @@ func step():
 			pass
 
 func _on_sprite_2d_visibility_changed():
-	print(motionChecker.visible," ",legState)
 	match legState:
 		LegState.THREADS:
 			if motionChecker.visible == true:
