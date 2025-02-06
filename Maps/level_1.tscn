@@ -4705,12 +4705,6 @@ rotation = 3.14159
 frame = 5
 state = 3
 
-[node name="Destructable333" parent="Destructables" instance=ExtResource("12_ge1wa")]
-position = Vector2(1268, -703)
-rotation = 3.14159
-frame = 13
-state = 7
-
 [node name="Destructable130" parent="Destructables" instance=ExtResource("12_ge1wa")]
 position = Vector2(1132, -511)
 rotation = 3.14159
@@ -4970,5 +4964,11 @@ state = 5
 position = Vector2(759, -1032)
 frame = 9
 state = 5
+
+[node name="Destructable333" parent="." instance=ExtResource("12_ge1wa")]
+position = Vector2(1268, -703)
+rotation = 3.14159
+frame = 5
+state = 3
 
 [connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]
